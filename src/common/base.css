@@ -1,0 +1,22 @@
+body {
+  font-family: 'SUIT', sans-serif;
+  color: #121212;
+  background: #f000;
+  line-height: 1.15;
+  font-weight: 400;
+}
+
+/* 링크 스타일 */
+a {
+  color: inhert;
+  text-decoration: none;
+}
+
+/* Components Container 스타일링 */
+.components-container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  row-gap: 1rem;
+  padding: 1rem;
+}
