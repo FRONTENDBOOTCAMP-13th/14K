@@ -1,0 +1,211 @@
+@import "../../common/best-reset.css";
+@import "../../common/theme.css";
+/* 모바일 화면 */
+.mobile {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "Pretendard", sans-serif;
+  /* 상단 text 부분 */
+  .appdownload {
+    position: relative;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+    background: black;
+    width: 100%;
+    height: 3.125rem;
+    color: white;
+    /* 로고 텍스트 */
+    .logotext {
+      font-weight: 400;
+      margin-left: 1.25rem;
+      border: 0.0625rem solid rgba(48, 48, 51);
+      font-size: 1rem;
+      padding: 0.3125rem;
+      border-radius: 0.5rem;
+    }
+    /* 기본 텍스트 */
+    .apptext {
+      font-weight: 700;
+      margin-left: 0.25rem;
+      font-size: 0.875rem;
+      .redtext {
+        color: red;
+      }
+    }
+    .showappbtn {
+      font-weight: 500;
+      margin-right: 0.3125rem;
+      width: 5rem;
+      height: 1.875rem;
+      color: white;
+      background: orangered;
+      border-radius: 624.9375rem;
+      font-size: 0.625rem;
+      cursor: pointer;
+    }
+  }
+  @media (min-width: 33.8125rem) {
+    display: none;
+  }
+  /* 로고 및 아이콘 부분 */
+  .icon {
+    margin-top: 0.9375rem;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    .mobileIcon {
+      a {
+        text-decoration: none;
+      }
+      .ShoppingbagIcon {
+        margin-right: 0.875rem;
+      }
+    }
+  }
+}
+
+/* 테블릿, 웹 화면 */
+header.webheader {
+  display: none;
+  font-family: "Pretendard", sans-serif;
+  padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+
+  /* 뷰포트가 33.8125rem 이전에는 화면에 출력되지 않음 */
+  @media (min-width: 33.8125rem) {
+    display: block;
+  }
+  @media (min-width: 45rem) {
+    padding: 2.5rem 3rem 1.25rem 3rem;
+  }
+}
+/* 로고 부분 */
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  .Icons {
+    display: block;
+    > li {
+      display: inline;
+    }
+
+    :nth-child(n + 2) {
+      margin-left: 1.125rem;
+    }
+
+    /* 75rem 이기 전 text를 display:none 처리 후 75rem일때 출력 */
+    .Icontext {
+      display: none;
+    }
+    @media (min-width: 75rem) {
+      .Icontext {
+        display: inline-block;
+        font-size: 0.625rem;
+        line-height: 0.75rem;
+        margin-left: 0.125rem;
+        margin-right: 0.5rem;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+      }
+    }
+    /* 뷰포트가 75rem 일때 Search Icon 숨김 */
+    @media (min-width: 75rem) {
+      li:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+/* 헤드라인 */
+.headline {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 2.375rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.875rem;
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+
+    li {
+      margin-right: 1.25rem;
+      display: inline-flex;
+      a {
+        font-size: 1.25rem;
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+
+        /* 뷰포트 720일 때 */
+        @media (min-width: 45rem) {
+          font-size: 1.875rem;
+          line-height: 2.8125rem;
+        }
+        /* 뷰포트 1200일 때 */
+        @media (min-width: 75rem) {
+          font-size: 2.5rem;
+          line-height: 3.75rem;
+        }
+      }
+    }
+  }
+
+  /* Search Icon */
+  .searchIcon {
+    display: none;
+    margin: 0.9375rem;
+    @media (min-width: 75rem) {
+      display: inline-flex;
+    }
+  }
+}
+/* 카테고리 */
+.categorywrap {
+  font-weight: 600;
+  line-height: 1.125rem;
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-items: center;
+    li {
+      display: inline-flex;
+      align-items: baseline;
+      a {
+        font-size: 0.75rem;
+        color: black;
+        text-decoration: none;
+      }
+    }
+    /* Event 앞 bar 이미지 */
+    .bar {
+      height: 1rem;
+      width: 0.125rem;
+      background-color: gray;
+      opacity: 0.5;
+      vertical-align: middle;
+    }
+
+    .italic {
+      font-weight: 200;
+      font-style: italic;
+      opacity: 0.5;
+    }
+  }
+  /* 뷰포트 720일 때 */
+  @media (min-width: 45rem) {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
