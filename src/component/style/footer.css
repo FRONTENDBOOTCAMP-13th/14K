@@ -1,0 +1,177 @@
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+
+/* 미디어쿼리 - 화면 크기에 따라 표시 여부 조정 */
+
+@media (max-width: 541px) {
+  .footer-mobile {
+    display: block;
+  }
+  .footer-web {
+    display: none;
+  }
+}
+
+@media (min-width: 542px) and (max-width: 899px) {
+  .footer-web {
+    display: block;
+    overflow: hidden;
+  }
+  .footer-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .footer-web {
+    display: block;
+  }
+  .footer-mobile {
+    display: none;
+  }
+}
+
+/* 모바일 버전 */
+
+.footer-mobile {
+  padding: 20px 12px 80px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #e9e9e9;
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-nav a::after {
+  content: "|";
+  margin: 0 10px;
+  color: #888;
+}
+
+.footer-nav a:last-child::after {
+  content: "";
+}
+.footer-nav a:first-child {
+  font-weight: 700;
+}
+.footer-nav a:visited {
+  color: black;
+}
+
+.footer-company p {
+  margin-bottom: 10px;
+}
+
+.footer-company a,
+.footer-web-company a {
+  background-color: var(--color-gray-3);
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  padding: 3px;
+}
+
+/* 웹 버전 */
+
+.footer-customer,
+.footer-links,
+.footer-web-nav {
+  box-sizing: border-box;
+  padding: 9px 50px 6px;
+}
+
+.footer-customer,
+.footer-links {
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.footer-time {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #5d5d5d;
+}
+
+.sns-icons {
+  width: 148px;
+}
+
+.sns-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link-title {
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 100px;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.footer-notice {
+  flex-grow: 2;
+}
+
+.footer-notice li,
+.footer-column li {
+  list-style: none;
+  font-size: 12px;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 899px) {
+  .footer-notice {
+    overflow: hidden;
+  }
+  .footer-notice li {
+    max-width: 200px;
+  }
+}
+
+.btn {
+  background-color: #303033;
+  color: white;
+  font-size: 15px;
+  width: 94px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-web-company {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #939393;
+}
