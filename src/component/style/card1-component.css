@@ -1,0 +1,98 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+
+body {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+.main-card1 {
+  a {
+    display: grid;
+    grid-area: 1 / 1;
+    align-items: center;
+    position: relative;
+    padding-inline: 1.5rem;
+
+    img {
+      border-radius: 6px;
+    }
+
+    & > * {
+      grid-area: 1 /1;
+    }
+
+    .button-wrap {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin-inline: 20px;
+
+      button {
+        all: unset;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+
+    .card-title {
+      font-size: 32px;
+      line-height: 130%;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .card-context {
+      font-size: 18px;
+      line-height: 150%;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .card-number {
+      font-size: 11px;
+      line-height: 130%;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .context-wrap {
+      position: absolute;
+      bottom: 60px;
+      padding-inline: 40px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 15px;
+      width: 100%;
+    }
+
+    .card-number {
+      /* border: 2px solid red; */
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      column-gap: 8px;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 130%;
+
+      .dot {
+        position: relative;
+        top: -2px;
+      }
+
+      .num-after {
+        display: inline-block;
+        opacity: 0.6;
+      }
+
+      .bar {
+        display: inline-block;
+        height: 1px;
+        background: #fff;
+        flex-grow: 1;
+        margin-right: 40px;
+      }
+    }
+  }
+}

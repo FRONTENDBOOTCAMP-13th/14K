@@ -1,0 +1,55 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+@import "/src/component/style/card1-component.css";
+@import "/src/component/style/card2-component.css";
+
+.card-container {
+  .card-list-mobile {
+    @media (min-width: 540px) {
+      display: none;
+    }
+  }
+
+  .card-list-web {
+    display: none;
+
+    @media (min-width: 540px) {
+      display: grid;
+      grid-template-columns: minmax(360px, 2fr) minmax(152px, 1fr) minmax(
+          152px,
+          1fr
+        );
+      column-rule: 1px solid black;
+
+      .magazine-list {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-right: 3%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .card-list1 {
+        display: flex;
+        flex-flow: column nowrap;
+        .ad-img {
+          width: 100%;
+          aspect-ratio: 9 / 16;
+        }
+        border-left: 1px solid var(--gray-300);
+      }
+
+      .card-list2 {
+        display: flex;
+        flex-flow: column nowrap;
+        .ad-img {
+          width: 100%;
+          aspect-ratio: 9 / 16;
+        }
+        border-left: 1px solid var(--gray-300);
+      }
+    }
+  }
+}

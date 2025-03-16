@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="/src/images/farvicon/29cm.ico" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link
+      rel="stylesheet"
+      href="/src/component/style/card-list-component.css"
+    />
+  </head>
+  <body>
+    <h1>card component</h1>
+
+    <div class="card-container">
+      <div class="card-list-mobile">
+        <div class="main-card1">
+          <a href="">
+            <img src="/src/images/mainpageimages/comfort 2x.png" alt="" />
+            <div class="button-wrap">
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.1553 20.3299L26.0779 6.40735L27.2564 7.58585L14.5123 20.3299L27.2564 33.0739L26.0779 34.2526L12.1553 20.3299Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="41"
+                  viewBox="0 0 40 41"
+                  fill="none"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M27.8453 20.3299L13.9227 34.2526L12.7441 33.0739L25.4883 20.3299L12.7441 7.58585L13.9227 6.40735L27.8453 20.3299Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="context-wrap">
+              <!-- 32px 130% 700 (255,255,255) -->
+              <h2 class="card-title">지금 가장 탁월한 셔츠</h2>
+              <!-- 18px 150% 500 (255,255,255) -->
+              <p class="card-context">남성의류 추천 컬렉션</p>
+              <!-- 11px 130% 600 (255,255,255) / opacity: .6 -->
+              <p class="card-number">
+                <span>01</span>
+                <span class="dot">.</span>
+                <span class="num-after">51</span>
+                <span class="bar"></span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- 카드 컴포넌트 -->
+        <div class="card">
+          <a href="/src/component/main-card-component.html"
+            ><img
+              class="card-img"
+              src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+              alt=""
+            />
+
+            <h2>메인 타이틀</h2>
+            <p class="card-context">
+              벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+              부드러운 실루엣이 특징이에요.
+            </p>
+          </a>
+
+          <ul>
+            <!-- 카드 아이템 1 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like1" class="like-icon" />
+                <label for="like1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+
+            <!-- 카드 아이템 2 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like2" class="like-icon" />
+                <label for="like2">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 카드 컴포넌트 -->
+        <div class="card">
+          <a href="/src/component/main-card-component.html"
+            ><img
+              class="card-img"
+              src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+              alt=""
+            />
+
+            <h2>메인 타이틀</h2>
+            <p class="card-context">
+              벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+              부드러운 실루엣이 특징이에요.
+            </p>
+          </a>
+
+          <ul>
+            <!-- 카드 아이템 1 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like3" class="like-icon" />
+                <label for="like3">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+
+            <!-- 카드 아이템 2 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like4" class="like-icon" />
+                <label for="like4">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 카드 컴포넌트 -->
+        <div class="card">
+          <a href="/src/component/main-card-component.html"
+            ><img
+              class="card-img"
+              src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+              alt=""
+            />
+
+            <h2>메인 타이틀</h2>
+            <p class="card-context">
+              벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+              부드러운 실루엣이 특징이에요.
+            </p>
+          </a>
+
+          <ul>
+            <!-- 카드 아이템 1 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like5" class="like-icon" />
+                <label for="like5">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+
+            <!-- 카드 아이템 2 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like6" class="like-icon" />
+                <label for="like6">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 카드 컴포넌트 -->
+        <div class="card">
+          <a href="/src/component/main-card-component.html"
+            ><img
+              class="card-img"
+              src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+              alt=""
+            />
+
+            <h2>메인 타이틀</h2>
+            <p class="card-context">
+              벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+              부드러운 실루엣이 특징이에요.
+            </p>
+          </a>
+
+          <ul>
+            <!-- 카드 아이템 1 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like7" class="like-icon" />
+                <label for="like7">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+
+            <!-- 카드 아이템 2 -->
+            <li>
+              <a href="/">
+                <img
+                  class="item-img"
+                  src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                  alt="."
+                />
+                <div class="item-content-wrap">
+                  <h3>벤앤쿠</h3>
+                  <p class="item-context">
+                    [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                  </p>
+                  <p>
+                    <span class="discount">10%</span
+                    ><span class="price">199,452</span>
+                  </p>
+                </div>
+              </a>
+
+              <div class="like-state">
+                <input type="checkbox" id="like8" class="like-icon" />
+                <label for="like8">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/grayborderheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+                <p>10</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 뷰포트 540 이상일 시 -->
+      <div class="card-list-web">
+        <!-- 잡지 모음 -->
+        <div class="magazine-list">
+          <a href="/">
+            <img
+              src="/src/images/mainpageimages/Link → SOMEWHEREBUTTER.svg"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="/src/images/mainpageimages/Link → MONTHLY BEAUTY.svg"
+              alt=""
+            />
+          </a>
+          <a href=""
+            ><img src="/src/images/mainpageimages/Link → RONRON.svg" alt=""
+          /></a>
+          <a href="">
+            <img
+              src="/src/images/mainpageimages/Link → SOMEWHEREBUTTER.svg"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              src="/src/images/mainpageimages/Link → MONTHLY BEAUTY.svg"
+              alt=""
+            />
+          </a>
+          <a href=""
+            ><img src="/src/images/mainpageimages/Link → RONRON.svg" alt=""
+          /></a>
+        </div>
+
+        <!-- 카드 리스트 1 -->
+        <div class="card-list1">
+          <a href="">
+            <img
+              class="ad-img"
+              src="/src/images/mainpageimages/magazine1.jpg"
+              alt=""
+            />
+          </a>
+
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의
+                통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수
+                있습니다. 그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI
+                코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만
+                의존하는 주니어 개발자는 경쟁력을 갖출 수 없기 때문입니다.
+                오히려 더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록
+                문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히
+                배제하는 것이 아닌 학습을 위한 파트너로서 활용할 것을
+                추천합니다.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+                부드러운 실루엣이 특징이에요.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+                부드러운 실루엣이 특징이에요.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+                부드러운 실루엣이 특징이에요.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 카드 리스트 2 -->
+        <div class="card-list2">
+          <a href="">
+            <img
+              class="ad-img"
+              src="/src/images/mainpageimages/magazine2.png"
+              alt=""
+            />
+          </a>
+
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+                부드러운 실루엣이 특징이에요.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+                부드러운 실루엣이 특징이에요.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+                부드러운 실루엣이 특징이에요.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- 카드 컴포넌트 -->
+          <div class="card">
+            <a href="/src/component/main-card-component.html"
+              ><img
+                class="card-img"
+                src="/src/images/itemimages/11ee5877610abc3583bc15813a0e9fe5.jpg.svg"
+                alt=""
+              />
+
+              <h2>메인 타이틀</h2>
+              <p class="card-context">
+                벤앤쿠의 25SS 컬렉션은 섬세한 감성이 담긴 컬러와 디테일, 그리고
+                부드러운 실루엣이 특징이에요.
+              </p>
+            </a>
+
+            <ul>
+              <!-- 카드 아이템 1 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+
+              <!-- 카드 아이템 2 -->
+              <li>
+                <a href="/">
+                  <img
+                    class="item-img"
+                    src="/src/images/itemimages/11ef7675ca75223ea27f7136564ec3a7.jpg.svg"
+                    alt="."
+                  />
+                  <div class="item-content-wrap">
+                    <h3>벤앤쿠</h3>
+                    <p class="item-context">
+                      [29CM단독] Silk Organza Aura Scarf -Pink Tangerine
+                    </p>
+                    <p>
+                      <span class="discount">10%</span
+                      ><span class="price">199,452</span>
+                    </p>
+                  </div>
+                </a>
+
+                <div class="like-state">
+                  <input type="checkbox" id="like-icon" class="like-icon" />
+                  <label for="like-icon">
+                    <img
+                      class="check default"
+                      src="/src/images/Iconimages/grayborderheart.svg"
+                      alt="찜하기 해제"
+                    />
+                    <img
+                      class="check check-on"
+                      src="/src/images/Iconimages/redheart.svg"
+                      alt="찜하기 설정"
+                    />
+                  </label>
+                  <p>10</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
