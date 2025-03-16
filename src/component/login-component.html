@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="/src/images/farvicon/29cm.ico" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/component/style/login-component.css" />
+  </head>
+  <body>
+    <!-- 맨 위 창 -->
+    <div class="appdownload">
+      <div class="apptextwrap">
+        <span class="logotext">29</span>
+        <span class="apptext"
+          >29CM 앱 설치하고 <span class="redtext">15% </span>할인 받기</span
+        >
+      </div>
+      <button class="showappbtn">앱으로 보기</button>
+    </div>
+    <div class="container">
+      <!-- 제목 컴포넌트 -->
+      <div class="login-title">
+        <a href="https://www.29cm.co.kr/" class="logo">
+          <img src="/src/images/logoimage/29Cm logo.svg" alt="logo" />
+        </a>
+        <h1>이메일로</h1>
+        <h1>로그인/회원가입 하기</h1>
+      </div>
+      <!-- 이메일(아이디) 컴포넌트 -->
+      <form class="input">
+        <div class="login-id" tabindex="1">
+          <label for="userid" class="sr-only">이메일(아이디)</label>
+          <input
+            type="text"
+            id="userid"
+            name="userid"
+            required
+            placeholder="abc@email.com"
+          />
+          <span class="error-message" id="userid-error"
+            >이메일(아이디)를 입력하세요.</span
+          >
+        </div>
+        <div class="login-password" tabindex="2">
+          <label for="userpassword" class="sr-only">비밀번호</label>
+          <input
+            type="text"
+            id="userpassword"
+            name="userpassword"
+            required
+            placeholder="8자 이상의 비밀번호"
+          />
+          <span class="error-message" id="password-error"
+            >비밀번호를 입력하세요.</span
+          >
+        </div>
+      </form>
+      <div class="button-login-email">
+        <button type="submit" class="login-button">로그인</button>
+        <button type="submit" class="email-button">이메일로 가입하기</button>
+      </div>
+      <!-- 계정 찾기, 비밀번호 변경, 문의하기 컴포넌트 -->
+      <div class="user-support">
+        <div class="support find-account">
+          <a href="https://auth.29cm.co.kr/recover-account">계정 찾기</a>
+        </div>
+        <div class="support change-password">
+          <a href="https://auth.29cm.co.kr/recover-account?type=password"
+            >비밀번호 변경</a
+          >
+        </div>
+        <div class="support contact-from">
+          <a href="/">문의하기</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
