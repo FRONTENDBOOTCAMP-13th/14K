@@ -1,0 +1,80 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+
+body {
+  padding: 80px;
+}
+
+.card3 {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 0.75rem;
+  border: 3px solid red;
+  padding: 20px;
+
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 700;
+  font-family: "Pretendard Variable", sans-serif;
+  color: #000;
+
+  .wrap {
+    display: grid;
+    position: relative;
+
+    & > * {
+      grid-area: 1 /1;
+    }
+
+    .main-img {
+      width: 100%;
+    }
+
+    .like-icon {
+      display: none;
+    }
+
+    .check {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+
+      &.check-on {
+        display: none;
+      }
+    }
+    .like-icon:checked + label .check-on {
+      display: inline-block;
+    }
+
+    .like-icon:checked + label .default {
+      display: none;
+    }
+  }
+  .context {
+    font-weight: 400;
+    margin-top: -6px;
+  }
+
+  .discount {
+    font-size: 14px;
+    color: #ff4800;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .icon-wrap {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 3px;
+    align-items: center;
+    font-size: 10px;
+    line-height: 120%;
+    font-weight: 500;
+    color: rgba(93, 93, 93, 0.64);
+  }
+}
