@@ -46,28 +46,33 @@
             required
             placeholder="abc@email.com"
           />
-          <span class="error-message" id="userid-error"
+          <!-- <span class="error-message" id="userid-error"
             >이메일(아이디)를 입력하세요.</span
-          >
+          > -->
         </div>
         <div class="login-password" tabindex="2">
           <label for="userpassword" class="sr-only">비밀번호</label>
           <input
-            type="text"
+            type="password"
             id="userpassword"
             name="userpassword"
             required
             placeholder="8자 이상의 비밀번호"
           />
-          <span class="error-message" id="password-error"
+          <!-- <span class="error-message" id="password-error"
             >비밀번호를 입력하세요.</span
-          >
+          > -->
+
+          <input type="checkbox" id="toggle-password" class="toggle-password" />
+          <label for="toggle-password" class="password-eye"></label>
+        </div>
+        <!-- 로그인 버튼 컴포넌트 -->
+        <div class="button-login-email">
+          <button type="submit" class="login-button">로그인</button>
+          <button type="button" class="email-button">이메일로 가입하기</button>
         </div>
       </form>
-      <div class="button-login-email">
-        <button type="submit" class="login-button">로그인</button>
-        <button type="submit" class="email-button">이메일로 가입하기</button>
-      </div>
+
       <!-- 계정 찾기, 비밀번호 변경, 문의하기 컴포넌트 -->
       <div class="user-support">
         <div class="support find-account">
