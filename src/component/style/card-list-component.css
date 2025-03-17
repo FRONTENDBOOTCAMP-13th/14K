@@ -2,6 +2,7 @@
 @import "/src/common/best-reset.css";
 @import "/src/component/style/card1-component.css";
 @import "/src/component/style/card2-component.css";
+@import "/src/component/style/card3-component.css";
 
 .card-container {
   .card-list-mobile {
