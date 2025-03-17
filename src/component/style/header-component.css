@@ -1,5 +1,15 @@
 @import "../../common/best-reset.css";
 @import "../../common/theme.css";
+
+/* 헤더 sticky구현을 위한 부모 요소 overflow visible */
+/* 헤더의 sticky 고정을 위해 page 제작시 사용된 태그를 추가해주세요. */
+body,
+html,
+.mobile {
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow-y: visible; /* 세로 스크롤 허용 */
+}
+
 /* 모바일 화면 */
 .mobile {
   width: 100%;
@@ -10,7 +20,6 @@
   .headercontext {
     position: relative;
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     vertical-align: center;
@@ -55,6 +64,7 @@
 /* 모바일 로고 및 아이콘 부분 */
 .icon {
   position: sticky;
+  width: 100%;
   top: 0;
   z-index: 100;
   background: white;
@@ -64,6 +74,9 @@
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-bottom: 0.5rem;
+  /* sticky 작동을 위한 추가 속성 */
+  position: -webkit-sticky;
+  position: sticky;
   .mobileIcon {
     a {
       text-decoration: none;
@@ -80,12 +93,6 @@
   }
 }
 
-main {
-  background: pink;
-  height: 6000px;
-  overflow: visible;
-}
-
 /* 테블릿, 웹 화면 */
 header.webheader {
   position: sticky;
@@ -94,6 +101,7 @@ header.webheader {
   display: none;
   font-family: "Pretendard", sans-serif;
   padding: 2.5rem 1.5rem 1.25rem 1.5rem;
+  z-index: 100;
 
   /* 뷰포트가 33.8125rem 이전에는 화면에 출력되지 않음 */
   @media (min-width: 33.8125rem) {
@@ -103,6 +111,7 @@ header.webheader {
     padding: 2.5rem 3rem 1.25rem 3rem;
   }
 }
+
 /* 로고 부분 */
 .logo {
   display: flex;
