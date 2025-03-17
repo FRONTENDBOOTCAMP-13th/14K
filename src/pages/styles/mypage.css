@@ -40,7 +40,11 @@ body * {
       }
     }
   }
-
+  @media (min-width: 64rem) {
+    display: none;
+  }
+  margin: 0 auto;
+  max-width: 800px;
   /* 회원 등급 */
   .mypageusertier {
     display: flex;
