@@ -87,6 +87,7 @@
 .footer-web-nav {
   box-sizing: border-box;
   padding: 9px 50px 6px;
+  min-width: 900px;
 }
 
 .footer-customer,
@@ -124,6 +125,11 @@
 }
 
 .footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-etc-column {
   display: flex;
   justify-content: space-between;
 }
