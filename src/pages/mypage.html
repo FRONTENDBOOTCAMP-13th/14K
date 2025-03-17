@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vite와 Tailwind CSS의 만남</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/pages/styles/mypage.css" />
+  </head>
+  <body>
+    <!-- 모바일 헤더 -->
+    <div class="mobile">
+      <div class="headercontext">
+        <div class="apptextwrap">
+          <span class="logotext">29</span>
+          <span class="apptext"
+            >29CM 앱 설치하고 <span class="redtext">15% </span>할인 받기</span
+          >
+        </div>
+        <button class="showappbtn">앱으로 보기</button>
+      </div>
+    </div>
+
+    <!-- 모바일 버전 sticky에 해당하는 부분 -->
+    <div class="icon">
+      <a href="/"
+        ><img
+          src="../images/logoimage/29Cm logo.svg"
+          class="logoimage"
+          alt="로고 이미지"
+      /></a>
+      <div class="mobileIcon">
+        <a href="/">
+          <img
+            width="13.5px"
+            height="15.75px"
+            src="../images/Iconimages/shopping-bag-Icon.svg"
+            alt="ShoppingbagIcon"
+            class="ShoppingbagIcon"
+          />
+        </a>
+
+        <a href="/">
+          <img
+            width="14.03px"
+            height="14.03px"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="SearchIcon"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- 웹 헤더 -->
+    <header class="webheader">
+      <div class="logo">
+        <a href="../../index.html"
+          ><img
+            src="../images/logoimage/29Cm logo.svg"
+            width="60"
+            height="16"
+            alt="29cm 로고 이미지"
+        /></a>
+        <ul class="Icons">
+          <li class="MypageIcon" tabindex="0">
+            <a href="/" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="14.63px"
+                src="../../src/images/Iconimages/mypageIcon.svg"
+                alt="My Page Icon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">MY PAGE</a>
+          </li>
+          <li class="MylikeIcon" tabindex="0">
+            <a href="/" tabindex="-1"
+              ><img
+                width="14.25px"
+                height="12.92px"
+                src="../../src/images/Iconimages/blackheartIcon.svg"
+                alt="My Like Icon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">MY LIKE</a>
+          </li>
+          <li class="ShoppingBagIcon" tabindex="0">
+            <a href="/" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="15.75px"
+                src="../../src/images/Iconimages/shopping-bag-Icon.svg"
+                alt="Shopping Bag Icon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">SHOPPING BAG</a>
+          </li>
+          <li class="loginIcon" tabindex="-1">
+            <a href="/" tabindex="-1"
+              ><img
+                width="12px"
+                height="15px"
+                src="../../src/images/Iconimages/loginIcon.svg"
+                alt="LoginIcon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">LOGIN</a>
+          </li>
+          <li class="SearchIcon">
+            <a href="/"
+              ><img
+                width="14.03px"
+                height="14.03px"
+                src="../../src/images/Iconimages/reading-glasses.svg"
+                alt="Search Icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="headline">
+        <ul>
+          <li><a href=".">Special-Order</a></li>
+          <li><a href=".">Showcase</a></li>
+          <li><a href=".">PT</a></li>
+          <li><a href=".">29Magazine</a></li>
+        </ul>
+
+        <a href="" class="searchIcon"
+          ><img
+            width="34.29"
+            height="34.3"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="검색 아이콘"
+        /></a>
+      </div>
+
+      <div class="categorywrap">
+        <ul class="category">
+          <li><a href="/">BEST</a></li>
+          <li><a href="/" tabindex="-1">WOMEN</a></li>
+          <li><a href="/" tabindex="-1">MEN</a></li>
+          <li><a href="/" tabindex="-1">INTERIOR</a></li>
+          <li><a href="/" tabindex="-1">KITCHEN</a></li>
+          <li><a href="/" tabindex="-1">ELECTRONICS</a></li>
+          <li><a href="/" tabindex="-1">DIGITAL</a></li>
+          <li><a href="/" tabindex="-1">BEAUTY</a></li>
+          <li><a href="/" tabindex="-1">FOOD</a></li>
+          <li><a href="/" tabindex="-1">LEISURE</a></li>
+          <li><a href="/" tabindex="-1">KIDS</a></li>
+          <li><a href="/" tabindex="-1">CULTURE</a></li>
+          <li class="bar"></li>
+          <li><a href="/" class="italic">Event</a></li>
+          <li><a href="/" class="italic">Lookbook</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- mypage mobile 화면 -->
+    <div class="mypagemobile">
+      <!-- 모바일 회원 이름 -->
+      <div class="mypageusername">
+        <span>김*섭</span>
+        <div class="likelink">
+          <a href="/"
+            ><img src="../images/Iconimages/redheart.svg" alt="좋아요 버튼"
+          /></a>
+          <span class="likecount">7</span>
+        </div>
+      </div>
+      <!-- 회원 등급  -->
+      <div class="mypageusertier">
+        <div class="usertiertext">
+          <span class="explain">회원등급</span><span class="tier">GREEN</span>
+        </div>
+        <div class="btnwrap">
+          <button class="showbenefitbtn"><a href="/">할인혜택 보기</a></button>
+        </div>
+      </div>
+      <!-- 쿠폰 및 마일리지 -->
+      <div class="mypagebenefit">
+        <div class="mypagecoupon">
+          <span class="mypagenametag">사용가능쿠폰</span>
+          <span class="mypagebenefitcount">23</span>
+        </div>
+        <div class="mypagemileage">
+          <span class="mypagenametag">마일리지</span>
+          <span class="mypagebenefitcount">0</span>
+        </div>
+      </div>
+
+      <!-- 친구 초대 -->
+      <a href="/" class="mypageinvite">
+        <img
+          src="../images/mypageimages/invite.webp"
+          width="80px"
+          height="80px"
+          alt="초대 이미지"
+        />
+        <div class="invitetext">
+          <span class="maintext">친구 소개로 혜택과 취향을 나눠요</span>
+          <span class="subtext">3,000 마일리지 함께 지급</span>
+        </div>
+      </a>
+      <!-- 각종 정보 리스트 -->
+      <nav class="mypagenav">
+        <div class="myshoppinginfo">
+          <h3>나의 쇼핑 정보</h3>
+          <ul class="infolist">
+            <li><a href="/">주문배송조회</a></li>
+            <li><a href="/">취소/교환/반품 내역</a></li>
+            <li><a href="/">상품 리뷰</a></li>
+            <li><a href="/">증빙서류 발급</a></li>
+          </ul>
+        </div>
+        <div class="myaccountinfo">
+          <h3>나의 계정 정보</h3>
+          <ul class="infolist">
+            <li><a href="/">회원정보수정</a></li>
+            <li><a href="/">회원등급</a></li>
+            <li><a href="/">쿠폰</a></li>
+            <li><a href="/">마일리지</a></li>
+          </ul>
+        </div>
+        <div class="helpcenter">
+          <h3>고객센터</h3>
+          <ul class="infolist">
+            <li><a href="/">1:1 문의</a></li>
+            <li><a href="/">상품 Q&A내역</a></li>
+            <li><a href="/">FAQ</a></li>
+            <li><a href="/">고객의 소리리</a></li>
+          </ul>
+        </div>
+        <div class="about29cm">
+          <h3>ABOUT 29CM</h3>
+          <ul class="infolist">
+            <li><a href="/">공지사항</a></li>
+            <li><a href="/">인재채용</a></li>
+            <li><a href="/">29CM 소개</a></li>
+          </ul>
+        </div>
+        <div class="mypagehomeinfo">
+          <a href="mailto:customer@29cm.co.kr">customer@29cm.co.kr</a>
+          <span
+            >하단 1:1 문의, 고객센터 전화하기를 통해서 상담가능합니다.
+            <br />상품문의는 각 상품 Q&A를 이용해주세요.</span
+          >
+          <span
+            >고객센터 운영시간: 평일 09:00 ~ 18:00 <br />(점심시간: 12:00 ~
+            13:00 제외)</span
+          >
+
+          <div class="mypagebtnwrap">
+            <div class="abovebtn">
+              <div class="abovebtn1">1:1 문의</div>
+              <div class="abovebtn2">고객센터 전화하기</div>
+            </div>
+            <div class="belowbtn">LOGOUT</div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- 🔥 모바일용 -->
+    <div class="footer-mobile">
+      <nav class="footer-nav">
+        <a href="/">개인정보 처리방침</a>
+        <a href="/">이용약관</a>
+        <a href="/">분쟁해결기준</a>
+        <a href="/">안전거래센터</a>
+        <a href="/">결제대행 위탁사</a>
+      </nav>
+      <div class="footer-company">
+        <p>상호명: 주식회사 무신사 (MUSINSA Co., Ltd.)</p>
+        <p>
+          사업장소재지: 서울특별시 성동구 아차산로 13길 11, 1층 (성수동2가,
+          무신사캠퍼스)
+        </p>
+        <p>팩스: 070-8622-7737</p>
+        <p>사업자등록번호: 211-88-79575</p>
+        <p>
+          통신판매업신고: 2022-서울성동-01952
+          <a href="/" class="button">사업자정보확인</a>
+        </p>
+        <p>전화번호: 1660-2929</p>
+        <p>이메일: customer@29cm.co.kr</p>
+        <p>대표: 조만호, 박준모</p>
+        <p>개인정보 보호책임자: 이재환</p>
+        <p>호스팅서비스: (주)무신사</p>
+        <p>
+          일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+          상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+          페이지에서 구체적인 내용을 확인하시기 바랍니다.
+        </p>
+      </div>
+    </div>
+    <!-- 🔥 모바일용 끝-->
+
+    <!-- 🔥 웹용 시작-->
+    <div class="footer-web">
+      <div class="footer-customer">
+        <p class="footer-title">고객센터 <strong>1660-2929</strong></p>
+        <p class="footer-time">
+          운영시간 : 평일 09:00 - 18:00 (점심시간 12:00 - 13:00 제외)
+        </p>
+        <div class="btn-icons">
+          <div class="footer-buttons">
+            <button class="btn">FAQ</button>
+            <button class="btn">1:1 문의</button>
+          </div>
+          <div class="sns-icons">
+            <img src="/src/images/footerimages/InstargramIcon.svg" alt="" />
+            <img src="/src/images/footerimages/youtubeIcon.svg" alt="" />
+            <img src="/src/images/footerimages/appleIcon.svg" alt="" />
+            <img src="/src/images/footerimages/playstoreIcon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-notice-column">
+          <div class="footer-column">
+            <p class="footer-link-title">NOTICE</p>
+            <ul class="footer-notice">
+              <li>[공지] 무통장 입금 이용 가능한 은행 제외 안내</li>
+              <li>[공지] 29CM 고객센터 전화번호 변경 안내</li>
+              <li>
+                [공지] 29CM 안전 거래 정책 위반 행위에 대한 조사 및 제재 사항
+                안내
+              </li>
+              <li>[공지] 2025 설 연휴 고객센터 휴무 및 배송/반품 일정 안내</li>
+              <li>
+                [공지] 개인정보 처리방침 개정 예정 안내 (시행일: 2024년 10월
+                23일)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-etc-column">
+          <div class="footer-column">
+            <p class="footer-link-title">ABOUT US</p>
+            <ul>
+              <li>29CM 소개</li>
+              <li>인재채용</li>
+              <li>상시 할인 혜택</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ORDER</p>
+            <ul>
+              <li>주문배송</li>
+              <li>취소/교환/반품 내역</li>
+              <li>상품 리뷰 내역</li>
+              <li>증빙서류발급</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ACCOUNT</p>
+            <ul>
+              <li>회원정보수정</li>
+              <li>회원등급</li>
+              <li>마일리지현황</li>
+              <li>쿠폰</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">HELP</p>
+            <ul>
+              <li>1:1 문의</li>
+              <li>마케팅 제휴, 입점, 대량 주문 문의</li>
+              <li>상품 Q&A내역</li>
+              <li>공지사항</li>
+              <li>FAQ</li>
+              <li>고객의 소리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-web-nav">
+        <nav class="footer-nav">
+          <a href="/">개인정보처리방침</a>
+          <a href="/">이용약관</a>
+          <a href="/">분쟁해결기준</a>
+          <a href="/">안전거래센터</a>
+          <a href="/">결제대행 위탁사</a>
+        </nav>
+        <div class="footer-web-company">
+          <div>
+            상호명: 주식회사 무신사 (MUSINSA Co., Ltd.) 사업장소재지: 서울특별시
+            성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스) 팩스:
+            070-8622-7737 사업자등록번호: 211-88-79575
+          </div>
+          <p>
+            통신판매업신고: 2022-서울성동-01952
+            <a href="/" class="button">사업자정보확인</a>
+          </p>
+          <p>
+            전화번호: 1660-2929 이메일: customer@29cm.co.kr 대표: 조만호, 박준모
+            개인정보 보호책임자: 이재환 호스팅서비스: (주)무신사, 상품정보,
+            거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인
+            내용을 확인하시기 바랍니다.
+          </p>
+          <p>
+            일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+            상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+            페이지에서 구체적인 내용을 확인하시기 바랍니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
