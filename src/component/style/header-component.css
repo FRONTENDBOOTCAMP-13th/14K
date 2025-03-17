@@ -7,7 +7,7 @@
   flex-flow: column nowrap;
   font-family: "Pretendard", sans-serif;
   /* 상단 text 부분 */
-  .appdownload {
+  .headercontext {
     position: relative;
     display: flex;
 
@@ -51,27 +51,46 @@
   @media (min-width: 33.8125rem) {
     display: none;
   }
-  /* 로고 및 아이콘 부분 */
-  .icon {
-    margin-top: 0.9375rem;
-    display: inline-flex;
-    justify-content: space-between;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-
-    .mobileIcon {
-      a {
-        text-decoration: none;
-      }
-      .ShoppingbagIcon {
-        margin-right: 0.875rem;
-      }
+}
+/* 모바일 로고 및 아이콘 부분 */
+.icon {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  margin-top: 0.375rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 0.5rem;
+  .mobileIcon {
+    a {
+      text-decoration: none;
+    }
+    .ShoppingbagIcon {
+      margin-right: 0.875rem;
     }
   }
+  .logoimage {
+    height: 1rem;
+  }
+  @media (min-width: 33.8125rem) {
+    display: none;
+  }
+}
+
+main {
+  background: pink;
+  height: 6000px;
+  overflow: visible;
 }
 
 /* 테블릿, 웹 화면 */
 header.webheader {
+  position: sticky;
+  top: 0;
+  background: white;
   display: none;
   font-family: "Pretendard", sans-serif;
   padding: 2.5rem 1.5rem 1.25rem 1.5rem;
@@ -141,11 +160,6 @@ header.webheader {
     li {
       margin-right: 1.25rem;
       display: inline-flex;
-
-      /* text underline */
-      :hover {
-        border-bottom: 5px solid black;
-      }
       a {
         font-size: 1.25rem;
         color: black;
@@ -187,11 +201,6 @@ header.webheader {
     li {
       display: inline-flex;
       align-items: baseline;
-
-      /* class가 italic인 부분 제외하고 언더라인 */
-      a:not(.italic):hover {
-        border-bottom: 3px solid black;
-      }
       a {
         font-size: 0.75rem;
         color: black;
