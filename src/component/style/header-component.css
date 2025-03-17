@@ -169,6 +169,11 @@ header.webheader {
     li {
       margin-right: 1.25rem;
       display: inline-flex;
+      :hover {
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 10px;
+      }
       a {
         font-size: 1.25rem;
         color: black;
@@ -210,6 +215,11 @@ header.webheader {
     li {
       display: inline-flex;
       align-items: baseline;
+      :not(.italic):hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 8px;
+      }
       a {
         font-size: 0.75rem;
         color: black;
