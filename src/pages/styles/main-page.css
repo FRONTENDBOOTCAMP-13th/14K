@@ -1,0 +1,20 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+@import "/src/component/style/header-component.css";
+@import "/src/component/style/card-list-component.css";
+@import "/src/component/style/footer.css";
+@import "/src/component/style/button-component.css"; /* body {
+  background: yellow;
+}
+
+header {
+  border: 5px solid gray;
+}
+
+main {
+  border: 5px solid gray;
+}
+
+footer {
+  border: 5px solid gray;
+} */
