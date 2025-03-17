@@ -33,11 +33,11 @@
   .showappbtn {
     font-weight: 500;
     margin-right: 0.3125rem;
-    width: 5rem;
-    height: 1.875rem;
+    width: 4.3rem;
+    height: 1.5rem;
     color: white;
     background: orangered;
-
+    border: 0;
     font-size: 0.625rem;
     cursor: pointer;
   }
@@ -48,10 +48,10 @@
 }
 
 .container {
-  margin: 14px;
+  margin: 0.875rem;
 
   @media (min-width: 540px) {
-    width: 400px;
+    width: 25rem;
     margin: auto;
   }
 }
@@ -59,8 +59,8 @@
 /* 제목 */
 .login-title {
   img {
-    width: 72px;
-    margin: 8px 0 80px 0;
+    width: 4rem;
+    margin: 0 0 4.375rem 0;
   }
 }
 
@@ -68,17 +68,19 @@
 .input {
   display: flex;
   flex-flow: column nowrap;
-  gap: 30px;
-  margin-top: 60px;
+  gap: 1.25rem;
+  margin-top: 3.75rem;
 
   input {
     border: 1px solid rgb(228, 228, 228);
-    border-radius: 4px;
-    height: 42px;
-  }
-  span {
-    display: none;
-    font-size: 14px;
+    border-radius: 0.25rem;
+    height: 2.75rem;
+    padding-left: 0.875rem;
+
+    &:focus {
+      border: 1px solid var(--color-black);
+      outline: none;
+    }
   }
 
   .login-id,
@@ -88,61 +90,57 @@
     flex: 1 0 0;
     gap: 0.3125rem;
 
-    .error-message {
-      display: none;
-      color: red;
-      font-size: 12px;
-    }
-
     ::placeholder {
-      padding: 14px;
       color: #9ca3af;
-      font-size: 14px;
+      font-size: var(--text-lg);
     }
   }
 
   .login-password {
     position: relative;
-  }
 
-  .login-password::after {
-    content: "";
-    background: url(/src/images/Iconimages/eyes.svg) no-repeat;
-    position: absolute;
-    right: 10px;
-    bottom: 7px;
-    width: 20px;
-    height: 20px;
-  }
-
-  /* @media (min-width: 540px) {
-    input {
-      width: 400px;
-      height: 44px;
+    .toggle-password {
+      display: none;
     }
-  } */
-}
 
-/* 로그인 버튼 */
-.button-login-email {
-  button {
-    height: 50px;
-    border-radius: 4px;
-    font-weight: bold;
+    .password-eye::after {
+      content: "";
+      background: url(/src/images/Iconimages/eyes.svg) no-repeat;
+      position: absolute;
+      right: 0.625rem;
+      bottom: 0.875rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      cursor: pointer;
+    }
+
+    .toggle-password:checked + .password-eye::after {
+      background: url(/src/images/Iconimages/eyes2.svg) no-repeat;
+    }
   }
 
-  .login-button {
-    color: var(--color-white);
-    background: var(--color-black);
-    margin: 80px 0 10px 0;
-    width: 100%;
-  }
+  /* 로그인 버튼 */
+  .button-login-email {
+    button {
+      height: 3.125rem;
+      border-radius: 0.25rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-  .email-button {
-    color: var(--color-black);
-    background: var(--color-white);
-    border: 1px solid rgb(228, 228, 228);
-    width: 100%;
+    .login-button {
+      color: var(--color-white);
+      background: var(--color-black);
+      margin: 3.75rem 0 0.625rem 0;
+      width: 100%;
+    }
+
+    .email-button {
+      color: var(--color-black);
+      background: var(--color-white);
+      border: 1px solid rgb(228, 228, 228);
+      width: 100%;
+    }
   }
 }
 
@@ -163,5 +161,5 @@
 .user-support .support:nth-child(n + 2) ::before {
   content: "|";
   color: var(--color-gray-3);
-  padding-inline: 8px;
+  padding-inline: 0.5rem;
 }
