@@ -141,6 +141,11 @@ header.webheader {
     li {
       margin-right: 1.25rem;
       display: inline-flex;
+
+      /* text underline */
+      :hover {
+        border-bottom: 5px solid black;
+      }
       a {
         font-size: 1.25rem;
         color: black;
@@ -182,6 +187,11 @@ header.webheader {
     li {
       display: inline-flex;
       align-items: baseline;
+
+      /* class가 italic인 부분 제외하고 언더라인 */
+      a:not(.italic):hover {
+        border-bottom: 3px solid black;
+      }
       a {
         font-size: 0.75rem;
         color: black;
