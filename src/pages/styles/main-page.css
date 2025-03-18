@@ -3,7 +3,9 @@
 @import "/src/component/style/header-component.css";
 @import "/src/component/style/card-list-component.css";
 @import "/src/component/style/footer.css";
-@import "/src/component/style/button-component.css"; /* body {
+@import "/src/component/style/button-component.css";
+
+/* body {
   background: yellow;
 }
 
