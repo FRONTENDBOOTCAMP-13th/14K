@@ -1,0 +1,158 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+
+/* 메뉴 컴포넌트 */
+nav {
+  .best-nav {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid var(--color-gray-3);
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    text-align: center;
+    color: var(--color-gray-3);
+    padding: 10px;
+    height: 46px;
+  }
+
+  input[type="radio"]:checked + label {
+    color: #333;
+  }
+
+  .best-nav :nth-child(n + 3)::before {
+    content: "|";
+    color: var(--color-gray-3);
+    padding-right: 1rem;
+  }
+}
+
+/* 버튼 컴포넌트 */
+.best-button-component {
+  input {
+    display: none;
+  }
+
+  label {
+    border: 1px solid var(--color-gray-2);
+    border-radius: 20px;
+    color: var(--color-black);
+    background: var(--color-white);
+    font-size: 13px;
+
+    padding: 8px 14px 8px 14px;
+  }
+
+  input[type="radio"]:checked + label {
+    color: var(--color-white);
+    background: var(--color-black);
+    border: none;
+    font-weight: 700;
+  }
+}
+
+/* 사이드바 컴포넌트 */
+.sidebar-component {
+  h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    border: 2px solid var(--color-black);
+    margin-bottom: 25px;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--color-black);
+    display: block;
+    margin-block: 15px;
+  }
+
+  a:hover {
+    color: #000;
+    font-weight: 600;
+  }
+}
+
+/* 카드 컴포넌트 */
+.best-card {
+  a {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 0.5rem;
+    padding: 20px;
+
+    font-size: 12px;
+    line-height: 130%;
+    font-family: "Pretendard Variable", sans-serif;
+    color: #000;
+    text-decoration: none;
+
+    .wrap {
+      position: relative;
+
+      .main-img {
+        position: relative;
+        width: 250px;
+        z-index: 1;
+      }
+
+      &::before {
+        content: "1";
+        position: absolute;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        font-size: 20px;
+        font-weight: 300;
+        padding-inline: 17px;
+        padding-block: 15px;
+        z-index: 10;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .context {
+      margin-top: -6px;
+    }
+
+    .original-price {
+      font-weight: 400;
+      text-decoration: line-through;
+      color: var(--color-gray-3);
+    }
+
+    .discount {
+      font-size: 14px;
+      color: var(--color-red);
+      margin-right: 5px;
+    }
+
+    .price {
+      font-size: 14px;
+    }
+
+    .icon-wrap {
+      display: flex;
+      flex-flow: row nowrap;
+      column-gap: 5px;
+      align-items: center;
+      font-size: 10px;
+      line-height: 120%;
+      font-weight: 500;
+      color: var(--color-black);
+    }
+  }
+}
