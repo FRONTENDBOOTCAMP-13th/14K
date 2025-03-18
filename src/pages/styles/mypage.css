@@ -3,6 +3,7 @@
 @import "../../component/style/header-component.css";
 @import "../../component/style/footer.css";
 @import "../../../public/font/pretendardvariable.css";
+@import "../../component/style/mypage-component.css";
 
 body * {
   font-family: "Pretendard Variable", sans-serif;
@@ -416,6 +417,7 @@ body * {
       flex-flow: row nowrap;
       width: auto;
       padding: 1rem 0;
+
       /* 회원등급 */
       .usertier {
         flex: 2;
@@ -424,6 +426,9 @@ body * {
         padding: 0 1.25rem;
         gap: 1.875rem;
         justify-content: space-between;
+        a:hover {
+          color: green;
+        }
         .tier {
           display: flex;
           flex-flow: row nowrap;
@@ -432,6 +437,7 @@ body * {
           .showbenefitbtn {
             border-radius: 624.9375rem;
             background: rgba(93, 93, 93, 0.08);
+            padding: 5px 12px;
             border: 0.0625rem solid rgba(93, 93, 93, 0.08);
             > a {
               color: black;
@@ -454,6 +460,9 @@ body * {
         flex: 1;
         gap: 1.875rem;
         padding: 0 1.25rem;
+        a:hover {
+          color: green;
+        }
       }
 
       /* 마일리지 */
@@ -463,6 +472,9 @@ body * {
         flex-flow: column nowrap;
         gap: 1.875rem;
         padding: 0 1.25rem;
+        a:hover {
+          color: green;
+        }
       }
 
       /* 회원정보 타이틀*/
@@ -471,7 +483,9 @@ body * {
         font-weight: 700;
         color: rgba(93, 93, 93, 0.64);
         line-height: 1.375rem;
+        text-decoration: none;
       }
+
       /* 회원정보 수치 */
       .userinfotier {
         font-size: 2.5rem;
@@ -527,6 +541,33 @@ body * {
           min-height: 9.375rem;
         }
       }
+      /* 최근 주문 제목 바 부분 */
+      .order-box {
+        .box-items {
+          .box-info {
+            display: flex;
+            flex-flow: row nowrap;
+            border-bottom: 0.125rem solid black;
+            padding: 0 0.75rem 1.25rem 1.25rem;
+            gap: 0.125rem;
+            align-items: center;
+            .order-date {
+              width: 7.7894rem;
+            }
+            .user-order {
+              width: 26.5869rem;
+              > span {
+                margin-left: 0.5rem;
+              }
+            }
+
+            .order-number {
+              width: 17.31rem;
+            }
+          }
+          border-bottom: 1px solid rgba(93, 93, 93, 0.08);
+        }
+      }
       /* 최근 주문, 나의 좋아요 font 수정 */
       .box-title {
         display: flex;
@@ -569,23 +610,19 @@ body * {
       .brand,
       .post {
         padding-top: 1.625rem;
-        padding-bottom: 14zpx;
+        padding-bottom: 14px;
+        .box-items {
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 1.25rem;
+        }
       }
 
       /* box-items에 최소높이 부여 */
       .box-items {
         min-height: 9.375rem;
-      }
-
-      .post {
-        width: 100%;
-        .box-items {
-          width: 100%;
-
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+        margin-top: 1.25rem;
+        margin-bottom: 2.5rem;
       }
     }
   }

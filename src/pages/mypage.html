@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vite와 Tailwind CSS의 만남</title>
-    <link rel="icon" href="/vite.svg" />
+    <title>감도 깊은 취향 셀렉트샵 29CM</title>
+    <link rel="icon" href="../images/farvicon/29cm.ico" />
     <link
       rel="preload"
       as="font"
@@ -316,7 +316,7 @@
       <div class="mypage-web-main">
         <div class="userinfo">
           <div class="usertier">
-            <span class="userinfotitle">회원등급 ></span>
+            <a href="#" class="userinfotitle">회원등급 ></a>
             <div class="tier">
               <span class="userinfotier">GREEN</span>
               <button type="button" class="showbenefitbtn">
@@ -325,11 +325,11 @@
             </div>
           </div>
           <div class="usecoupon">
-            <span class="userinfotitle">사용가능쿠폰 ></span>
+            <a href="#" class="userinfotitle">사용가능쿠폰 ></a>
             <span class="userinfotier">23</span>
           </div>
           <div class="mileage">
-            <span class="userinfotitle">마일리지 ></span>
+            <a href="#" class="userinfotitle">마일리지 ></a>
             <span class="userinfotier">0</span>
           </div>
         </div>
@@ -354,7 +354,29 @@
               <span class="box-title-text">최근 주문</span>
               <span class="show-more">더보기 ></span>
             </div>
-            <div class="box-items"></div>
+            <div class="box-items">
+              <div class="box-info">
+                <div class="order-date">주문일</div>
+                <div class="user-order">주문내역</div>
+                <div class="order-number">주문번호</div>
+                <div>결제금액</div>
+              </div>
+              <!-- 최근 주문 -->
+              <div class="mypage-current-order">
+                <div class="order-date"><span>2024.11.09</span></div>
+                <div class="user-order">
+                  <img
+                    src="../images/mypageimages/Sweatpants.webp"
+                    width="56px"
+                    height="56px"
+                    alt="Sweatpants"
+                  />
+                  <span>Soft Sweatpants - 17Colors</span>
+                </div>
+                <div class="order-number"><span>ORD2O241109-0863552</span></div>
+                <div class="pay"><span>44,260원</span></div>
+              </div>
+            </div>
           </div>
           <div class="userlike-box">
             <div class="box-title">
@@ -363,16 +385,153 @@
             </div>
             <div class="product">
               <span class="subtext">Product</span>
-              <div class="box-items"></div>
+              <div class="box-items">
+                <a href="#" class="mypage-product-items">
+                  <div class="img-wrap">
+                    <input
+                      type="checkbox"
+                      class="product-like"
+                      id="product-like"
+                    />
+                    <label
+                      for="product-like"
+                      class="product-like-label"
+                    ></label>
+                    <img
+                      width="174px"
+                      height="174px"
+                      src="../images/mypageimages/product/prochidabag-black.webp"
+                      alt="프로치다 백-블랙"
+                    />
+                  </div>
+
+                  <span class="item-text">프로치다 백 - 블랙 </span>
+                  <span class="item-price"
+                    ><span class="sale">5%</span>339,150</span
+                  >
+                </a>
+                <a href="#" class="mypage-product-items">
+                  <div class="img-wrap">
+                    <input
+                      type="checkbox"
+                      class="product-like2"
+                      id="product-like2"
+                    />
+                    <label
+                      for="product-like2"
+                      class="product-like-label2"
+                    ></label>
+                    <img
+                      width="174px"
+                      height="174px"
+                      src="../images/mypageimages/product/comfortshirt.webp"
+                      alt="Comfort Shirt"
+                    />
+                  </div>
+
+                  <span class="item-text">Comfort Shirt - 19 Color </span>
+                  <span class="item-price">189,000</span>
+                </a>
+                <a href="#" class="mypage-product-items">
+                  <div class="img-wrap">
+                    <input
+                      type="checkbox"
+                      class="product-like3"
+                      id="product-like3"
+                    />
+                    <label
+                      for="product-like3"
+                      class="product-like-label3"
+                    ></label>
+                    <img
+                      width="174px"
+                      height="174px"
+                      src="../images/mypageimages/product/yortparka.webp"
+                      alt="83플래그 요트 파카 NJK0745"
+                    />
+                  </div>
+
+                  <span class="item-text">프로치다 백 - 블랙 </span>
+                  <span class="item-price"
+                    ><span class="sale">10%</span>143,100</span
+                  >
+                </a>
+              </div>
             </div>
             <div class="brand">
               <span class="subtext">Brand</span>
-              <div class="box-items"></div>
+              <div class="box-items">
+                <a href="#" class="mypage-brand">
+                  <img
+                    src="../images/mypageimages/Brand/COOR.jpg"
+                    alt="COOR 브랜드"
+                  />
+                  <div class="brand-explain">
+                    <img
+                      src="../images/mypageimages/Brand/brandminiimage.jpg"
+                      alt="coor 이미지"
+                      width="48px"
+                      height="48px"
+                    />
+                    <div class="brand-text">
+                      <p>
+                        <span class="brand-name-kr">쿠어</span
+                        ><span class="show-more-btn">></span>
+                      </p>
+                      <p class="brand-name-en">COOR</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      class="brand-check-box"
+                      id="brand-check-box"
+                    />
+                    <label for="brand-check-box" class="brand-label"></label>
+                  </div>
+                </a>
+                <a href="#" class="mypage-brand">
+                  <img
+                    src="../images/mypageimages/Brand/beliea.webp"
+                    alt="COOR 브랜드"
+                  />
+                  <div class="brand-explain">
+                    <img
+                      src="../images/mypageimages/Brand/brandminiimage.jpg"
+                      alt="coor 이미지"
+                      width="48px"
+                      height="48px"
+                    />
+                    <div class="brand-text">
+                      <p>
+                        <span class="brand-name-kr">쿠어</span
+                        ><span class="show-more-btn">></span>
+                      </p>
+                      <p class="brand-name-en">COOR</p>
+                    </div>
+                    <input
+                      type="checkbox"
+                      class="brand-check-box"
+                      id="brand-check-box2"
+                    />
+                    <label for="brand-check-box2" class="brand-label"></label>
+                  </div>
+                </a>
+              </div>
             </div>
             <div class="post">
               <span class="subtext">Post</span>
               <div class="box-items">
-                <span>좋아요한 콘텐츠가 없습니다.</span>
+                <!-- Mypage Post -->
+                <a href="#" class="mypage-post">
+                  <img
+                    src="../images/mypageimages/Post/Postimages.jpg"
+                    alt="올해의 봄 가방"
+                  />
+                  <div class="post-explain">
+                    <span>엘리스펑크가 추천하는 올해의 봄 가방</span>
+                    <input type="checkbox" class="post-like-btn" />
+                    <label for="post-like-btn" class="post-like-label"></label>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
