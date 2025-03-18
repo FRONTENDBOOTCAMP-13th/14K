@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="/src/images/farvicon/29cm.ico" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/pages/styles/shoppingbag-page.css" />
+  </head>
+  <body>
+    <!-- 모바일 헤더 -->
+    <div class="mobile">
+      <div class="headercontext">
+        <div class="apptextwrap">
+          <span class="logotext">29</span>
+          <span class="apptext"
+            >29CM 앱 설치하고 <span class="redtext">15% </span>할인 받기</span
+          >
+        </div>
+        <button class="showappbtn">앱으로 보기</button>
+      </div>
+    </div>
+
+    <!-- 모바일 버전 sticky에 해당하는 부분 -->
+    <div class="icon">
+      <a href="/"
+        ><img
+          src="../images/logoimage/29Cm logo.svg"
+          class="logoimage"
+          alt="로고 이미지"
+      /></a>
+      <div class="mobileIcon">
+        <a href="/">
+          <img
+            width="13.5px"
+            height="15.75px"
+            src="../images/Iconimages/shopping-bag-Icon.svg"
+            alt="ShoppingbagIcon"
+            class="ShoppingbagIcon"
+          />
+        </a>
+
+        <a href="/">
+          <img
+            width="14.03px"
+            height="14.03px"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="SearchIcon"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- 웹 헤더 -->
+    <header class="webheader">
+      <div class="logo">
+        <a href="../../index.html"
+          ><img
+            src="../images/logoimage/29Cm logo.svg"
+            width="60"
+            height="16"
+            alt="29cm 로고 이미지"
+        /></a>
+        <ul class="Icons">
+          <li class="MypageIcon" tabindex="0">
+            <a href="/" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="14.63px"
+                src="../../src/images/Iconimages/mypageIcon.svg"
+                alt="My Page Icon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">MY PAGE</a>
+          </li>
+          <li class="MylikeIcon" tabindex="0">
+            <a href="/" tabindex="-1"
+              ><img
+                width="14.25px"
+                height="12.92px"
+                src="../../src/images/Iconimages/blackheartIcon.svg"
+                alt="My Like Icon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">MY LIKE</a>
+          </li>
+          <li class="ShoppingBagIcon" tabindex="0">
+            <a href="/" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="15.75px"
+                src="../../src/images/Iconimages/shopping-bag-Icon.svg"
+                alt="Shopping Bag Icon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">SHOPPING BAG</a>
+          </li>
+          <li class="loginIcon" tabindex="-1">
+            <a href="/" tabindex="-1"
+              ><img
+                width="12px"
+                height="15px"
+                src="../../src/images/Iconimages/loginIcon.svg"
+                alt="LoginIcon"
+            /></a>
+            <a href="/" class="Icontext" tabindex="-1">LOGIN</a>
+          </li>
+          <li class="SearchIcon">
+            <a href="/"
+              ><img
+                width="14.03px"
+                height="14.03px"
+                src="../../src/images/Iconimages/reading-glasses.svg"
+                alt="Search Icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="headline">
+        <ul>
+          <li><a href=".">Special-Order</a></li>
+          <li><a href=".">Showcase</a></li>
+          <li><a href=".">PT</a></li>
+          <li><a href=".">29Magazine</a></li>
+        </ul>
+
+        <a href="" class="searchIcon"
+          ><img
+            width="34.29"
+            height="34.3"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="검색 아이콘"
+        /></a>
+      </div>
+
+      <div class="categorywrap">
+        <ul class="category">
+          <li><a href="/">BEST</a></li>
+          <li><a href="/" tabindex="-1">WOMEN</a></li>
+          <li><a href="/" tabindex="-1">MEN</a></li>
+          <li><a href="/" tabindex="-1">INTERIOR</a></li>
+          <li><a href="/" tabindex="-1">KITCHEN</a></li>
+          <li><a href="/" tabindex="-1">ELECTRONICS</a></li>
+          <li><a href="/" tabindex="-1">DIGITAL</a></li>
+          <li><a href="/" tabindex="-1">BEAUTY</a></li>
+          <li><a href="/" tabindex="-1">FOOD</a></li>
+          <li><a href="/" tabindex="-1">LEISURE</a></li>
+          <li><a href="/" tabindex="-1">KIDS</a></li>
+          <li><a href="/" tabindex="-1">CULTURE</a></li>
+          <li class="bar"></li>
+          <li><a href="/" class="italic">Event</a></li>
+          <li><a href="/" class="italic">Lookbook</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- 최대할인 알림창 -->
+    <div class="cart-container">
+      <div class="discount-alert">
+        <p><strong>선택상품(3)</strong> 최대 할인이 적용됐어요.</p>
+        <label class="switch">
+          <input type="checkbox" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 모바일 sticky 부분 (전체선택 창) -->
+      <div class="selection-container">
+        <div class="left-section">
+          <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+          <p class="selection">전체선택 (3/3)</p>
+          <span class="divider"></span>
+          <p class="selection">선택삭제</p>
+        </div>
+        <div class="right-section">
+          <button class="coupon-btn">
+            쿠폰변경 <img src="/src/images/shoppingbagimages/next.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <!-- 🔥무브웜 개별 상품  -->
+      <div class="cart-item">
+        <div class="cart-header">
+          <span class="mob-brand">무브웜</span>
+        </div>
+
+        <div class="check-btn">
+          <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+          <button class="delete-btn">삭제</button>
+        </div>
+
+        <div class="cart-content">
+          <div class="item-info">
+            <div class="name-img">
+              <p class="name">Flare Tied Pants- 4Colors</p>
+              <img
+                src="/src/images/shoppingbagimages/m1.webp"
+                alt="상품 이미지"
+              />
+            </div>
+            <p class="price">
+              <span class="original">50,000원</span>
+              <span class="discounted">10% 45,000원</span>
+            </p>
+            <p class="option">옵션: [Color]Airy Blue [Size] S</p>
+          </div>
+        </div>
+
+        <div class="cart-bottom">
+          <div class="quantity">
+            <span class="minus">-</span>
+            <span>1</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <p class="coupon-text">쿠폰 적용 가격</p>
+
+        <div class="order-price">
+          <div>
+            <span class="discount-text">10%</span>
+            <span class="final-price">45,000원</span>
+          </div>
+
+          <div><button class="buy-btn">바로 구매하기</button></div>
+        </div>
+
+        <div class="coupon">
+          <div class="coupon-section">
+            <div>상품 쿠폰</div>
+            <div>사용 가능한 쿠폰 없음</div>
+          </div>
+          <div class="coupon-section">
+            <div>장바구니 쿠폰</div>
+            <div>GREEN 회원 10% 할인 쿠폰</div>
+          </div>
+        </div>
+
+        <div class="check-btn">
+          <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+          <button class="delete-btn">삭제</button>
+        </div>
+
+        <div class="cart-content">
+          <div class="item-info">
+            <div class="name-img">
+              <p class="name">Cozy Sweatpants - 3Colors</p>
+              <img
+                src="/src/images/shoppingbagimages/m2.webp"
+                alt="상품 이미지"
+              />
+            </div>
+            <p class="price">
+              <span class="original">68,000원</span>
+            </p>
+            <p class="option">옵션: [Color]Banana [Size] S</p>
+          </div>
+        </div>
+
+        <div class="cart-bottom">
+          <div class="quantity">
+            <span class="minus">-</span>
+            <span>1</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <p class="coupon-text">쿠폰 적용 가격</p>
+
+        <div class="order-price">
+          <div>
+            <span class="discount-text">10%</span>
+            <span class="final-price">61,200원</span>
+          </div>
+
+          <div><button class="buy-btn">바로 구매하기</button></div>
+        </div>
+
+        <div class="coupon">
+          <div class="coupon-section">
+            <div>상품 쿠폰</div>
+            <div>사용 가능한 쿠폰 없음</div>
+          </div>
+          <div class="coupon-section">
+            <div>장바구니 쿠폰</div>
+            <div>GREEN 회원 10% 할인 쿠폰</div>
+          </div>
+        </div>
+
+        <div class="total-price">
+          <p>쿠폰 적용가 40,500 + 배송비 3,000 = 43,500</p>
+        </div>
+      </div>
+
+      <!-- 추가 아이템도 같은 구조 반복 -->
+      <!-- 소일베이커 개별 상품  -->
+      <div class="cart-item">
+        <div class="cart-header">
+          <span class="mob-brand">소일베이커</span>
+        </div>
+
+        <div class="check-btn">
+          <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+          <button class="delete-btn">삭제</button>
+        </div>
+
+        <div class="cart-content">
+          <div class="item-info">
+            <div class="name-img">
+              <p class="name">다츠 타원 접시 (3colors)</p>
+              <img
+                src="/src/images/shoppingbagimages/s2.webp"
+                alt="상품 이미지"
+              />
+            </div>
+            <p class="price">
+              <span class="original">36,000원</span>
+              <span class="discounted">15% 30,600원</span>
+            </p>
+            <p class="option">옵션: [Color] 레몬</p>
+          </div>
+        </div>
+
+        <div class="cart-bottom">
+          <div class="quantity">
+            <span class="minus">-</span>
+            <span>1</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <p class="coupon-text">쿠폰 적용 가격</p>
+
+        <div class="order-price">
+          <div>
+            <span class="discount-text">29%</span>
+            <span class="final-price">25,582원</span>
+          </div>
+
+          <div><button class="buy-btn">바로 구매하기</button></div>
+        </div>
+
+        <div class="coupon">
+          <div class="coupon-section">
+            <div>상품 쿠폰</div>
+            <div>사용 가능한 쿠폰 없음</div>
+          </div>
+          <div class="coupon-section">
+            <div>장바구니 쿠폰</div>
+            <div>GREEN 회원 10% 할인 쿠폰</div>
+          </div>
+        </div>
+
+        <div class="total-price">
+          <p>쿠폰 적용가 25,582 + 배송비 4,000 = 29,582</p>
+        </div>
+      </div>
+
+      <!-- order summary -->
+      <div class="order-summary">
+        <div class="order-details">
+          <div class="row">
+            <span>주문 상품 수</span>
+            <span class="row-price">총 3개</span>
+          </div>
+          <div class="row">
+            <span>총 주문금액</span>
+            <span class="row-price">167,600원</span>
+          </div>
+          <div class="row">
+            <span>총 배송비</span>
+            <span class="row-price">4,000원</span>
+          </div>
+          <div class="row discount">
+            <span>쿠폰 할인 금액 ▼</span>
+            <span class="row-price">-17,737원</span>
+          </div>
+          <div class="final-total-price">
+            <span>총 결제금액</span>
+            <span class="final-mob-price">149,863원</span>
+          </div>
+        </div>
+
+        <div class="fake-border"></div>
+        <div class="hundred-warning">
+          <p>
+            <img
+              src="/src/images/shoppingbagimages/exclamation-mark.svg"
+              alt=""
+            />
+          </p>
+          <p>장바구니에 최대 100개의 상품을 담을 수 있습니다.</p>
+        </div>
+
+        <p class="other-customers">다른 고객이 함께 구매한 상품</p>
+
+        <div class="other-container">
+          <div class="others">
+            <img
+              class="other-image"
+              src="/src/images/shoppingbagimages/l1.webp"
+              alt="상품 이미지"
+            />
+            <div class="other-info">
+              <div class="other-text">
+                <p class="other-brand">무브웜</p>
+                <p class="other-product">Cave Sweatpants- 4Colors</p>
+                <p>
+                  <span class="other-discount">10%</span>
+                  <span class="other-price">62,100원</span>
+                </p>
+              </div>
+              <img
+                class="other-redlike"
+                src="/src/images/Iconimages/redheart.svg"
+                alt="좋아요"
+              />
+            </div>
+          </div>
+
+          <div class="others">
+            <img
+              class="other-image"
+              src="/src/images/shoppingbagimages/s1.webp"
+              alt="상품 이미지"
+            />
+            <div class="other-info">
+              <div class="other-text">
+                <p class="other-brand">무브웜</p>
+                <p class="other-product">Cave Sweatpants- 4Colors</p>
+                <p>
+                  <span class="other-discount">10%</span>
+                  <span class="other-price">62,100원</span>
+                </p>
+              </div>
+              <img
+                class="other-redlike"
+                src="/src/images/Iconimages/redheart.svg"
+                alt="좋아요"
+              />
+            </div>
+          </div>
+        </div>
+
+        <button class="order-btn">
+          <span class="original-price">167,600원</span>
+          <span class="discounted-price">149,863원 구매하기</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- 모바일용 끝 -->
+
+    <!-- 🔥웹용 시작 -->
+    <div class="cart-web-container">
+      <div class="breadcrumb">
+        <span class="active">01 SHOPPING BAG ></span>
+        <span class="inactive">02 ORDER > </span>
+        <span class="inactive">03 ORDER CONFIRMED</span>
+      </div>
+
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>
+              <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+            </th>
+            <th>상품 정보</th>
+            <th>수량</th>
+            <th>주문금액</th>
+            <th>배송비</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 상품 1 -->
+          <tr>
+            <td>
+              <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+            </td>
+            <td>
+              <div class="product-info">
+                <img
+                  src="/src/images/shoppingbagimages/m1.webp"
+                  alt="상품 이미지"
+                  class="product-img"
+                />
+
+                <div class="product-details">
+                  <p class="brand">무브웜</p>
+                  <p class="name">Flare Tied Pants - 4Colors</p>
+                  <p class="price">65,000원</p>
+                  <p class="option">옵션: [Color] Airy Blue [Size] M</p>
+                </div>
+
+                <!-- X 버튼 -->
+                <img
+                  src="/src/images/shoppingbagimages/close.svg"
+                  alt="닫기 버튼"
+                  class="close-btn"
+                />
+              </div>
+            </td>
+            <td>
+              <div class="quantity">
+                <span class="minus">-</span>
+                <span>1</span>
+                <span class="plus">+</span>
+              </div>
+            </td>
+            <td>
+              <p class="final-price">65,000원</p>
+              <button class="buy-btn">바로 구매하기</button>
+            </td>
+            <td rowspan="2">
+              <p class="shipping-info">조건무료 업체배송</p>
+              <span class="shipping-company">[MOVEWARM] </span>
+              <span class="shipping-detail">
+                제품으로만 100,000원 이상 구매 시 무료배송 됩니다.
+              </span>
+            </td>
+          </tr>
+
+          <!-- 상품 2 -->
+          <tr>
+            <td>
+              <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+            </td>
+            <td>
+              <div class="product-info">
+                <img
+                  src="/src/images/shoppingbagimages/m2.webp"
+                  alt="상품 이미지"
+                  class="product-img"
+                />
+                <div class="product-details">
+                  <p class="brand">무브웜</p>
+                  <p class="name">Cozy Sweatpants - 3Colors</p>
+                  <p class="price">68,000원</p>
+                  <p class="option">옵션: [Color] Banana [Size] S</p>
+                </div>
+                <!-- X 버튼 -->
+                <img
+                  src="/src/images/shoppingbagimages/close.svg"
+                  alt="닫기 버튼"
+                  class="close-btn"
+                />
+              </div>
+            </td>
+            <td>
+              <div class="quantity">
+                <span class="minus">-</span>
+                <span>1</span>
+                <span class="plus">+</span>
+              </div>
+            </td>
+            <td>
+              <p class="final-price">68,000원</p>
+              <button class="buy-btn">바로 구매하기</button>
+            </td>
+          </tr>
+
+          <!-- 상품 3 -->
+          <tr>
+            <td>
+              <img src="/src/images/shoppingbagimages/checked.svg" alt="" />
+            </td>
+            <td>
+              <div class="product-info">
+                <img
+                  src="/src/images/shoppingbagimages/s2.webp"
+                  alt="상품 이미지"
+                  class="product-img"
+                />
+                <div class="product-details">
+                  <p class="brand">소일베이커</p>
+                  <p class="name">다츠 타원 접시 (3Colors)</p>
+                  <p class="original-price">36,000원</p>
+                  <p class="discount-price">15% 30,600원</p>
+                  <p class="option">옵션: [Color] 레몬</p>
+                </div>
+                <!-- X 버튼 -->
+                <img
+                  src="/src/images/shoppingbagimages/close.svg"
+                  alt="닫기 버튼"
+                  class="close-btn"
+                />
+              </div>
+            </td>
+            <td>
+              <div class="quantity">
+                <span class="minus">-</span>
+                <span>1</span>
+                <span class="plus">+</span>
+              </div>
+            </td>
+            <td>
+              <p class="final-price">30,600원</p>
+              <button class="buy-btn">바로 구매하기</button>
+            </td>
+            <td>
+              <p class="shipping-info">4000원 업체배송</p>
+              <span class="shipping-company">[소일베이커] </span>
+              <span class="shipping-detail">
+                제품으로만 50,000원 이상 구매 시 무료배송 됩니다.
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-actions">
+        <div class="action-buttons">
+          <button class="shopping-btn">선택상품 삭제</button>
+          <button class="shopping-btn">품절상품 삭제</button>
+        </div>
+        <p class="cart-warning">
+          장바구니는 최대 100개의 상품을 담을 수 있습니다.
+        </p>
+      </div>
+
+      <div class="order-summary-table">
+        <div class="order-summary-container">
+          <table class="summary-table">
+            <thead>
+              <tr>
+                <th>총 주문금액</th>
+                <th>총 배송비</th>
+                <th>총 결제금액</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="summary-cell">
+                  <div class="price-wrapper">
+                    <p class="order-summary-price">98,600원</p>
+                    <p class="subtext">총 3개</p>
+                  </div>
+                </td>
+                <td class="summary-cell">
+                  <p class="order-summary-price">7,300원</p>
+                </td>
+                <td class="summary-cell">
+                  <p class="order-summary-total">105,900원</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- 연산 기호 (세로선 중심) -->
+          <div class="operator-icons">
+            <span class="operator plus">+</span>
+            <span class="operator equal">=</span>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="continue-shopping">CONTINUE SHOPPING</button>
+        <button class="checkout">CHECK OUT</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- 🔥 웹용 푸터 시작-->
+<div class="footer-web">
+  <div class="footer-customer">
+    <p class="footer-title">고객센터 <strong>1660-2929</strong></p>
+    <p class="footer-time">
+      운영시간 : 평일 09:00 - 18:00 (점심시간 12:00 - 13:00 제외)
+    </p>
+    <div class="btn-icons">
+      <div class="footer-buttons">
+        <button class="btn">FAQ</button>
+        <button class="btn">1:1 문의</button>
+      </div>
+      <div class="sns-icons">
+        <img src="/src/images/footerimages/InstargramIcon.svg" alt="" />
+        <img src="/src/images/footerimages/youtubeIcon.svg" alt="" />
+        <img src="/src/images/footerimages/appleIcon.svg" alt="" />
+        <img src="/src/images/footerimages/playstoreIcon.svg" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-links">
+    <div class="footer-notice-column">
+      <div class="footer-column">
+        <p class="footer-link-title">NOTICE</p>
+        <ul class="footer-notice">
+          <li>[공지] 무통장 입금 이용 가능한 은행 제외 안내</li>
+          <li>[공지] 29CM 고객센터 전화번호 변경 안내</li>
+          <li>
+            [공지] 29CM 안전 거래 정책 위반 행위에 대한 조사 및 제재 사항 안내
+          </li>
+          <li>[공지] 2025 설 연휴 고객센터 휴무 및 배송/반품 일정 안내</li>
+          <li>
+            [공지] 개인정보 처리방침 개정 예정 안내 (시행일: 2024년 10월 23일)
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-etc-column">
+      <div class="footer-column">
+        <p class="footer-link-title">ABOUT US</p>
+        <ul>
+          <li>29CM 소개</li>
+          <li>인재채용</li>
+          <li>상시 할인 혜택</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-link-title">MY ORDER</p>
+        <ul>
+          <li>주문배송</li>
+          <li>취소/교환/반품 내역</li>
+          <li>상품 리뷰 내역</li>
+          <li>증빙서류발급</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-link-title">MY ACCOUNT</p>
+        <ul>
+          <li>회원정보수정</li>
+          <li>회원등급</li>
+          <li>마일리지현황</li>
+          <li>쿠폰</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p class="footer-link-title">HELP</p>
+        <ul>
+          <li>1:1 문의</li>
+          <li>마케팅 제휴, 입점, 대량 주문 문의</li>
+          <li>상품 Q&A내역</li>
+          <li>공지사항</li>
+          <li>FAQ</li>
+          <li>고객의 소리</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-web-nav">
+    <nav class="footer-nav">
+      <a href="/">개인정보처리방침</a>
+      <a href="/">이용약관</a>
+      <a href="/">분쟁해결기준</a>
+      <a href="/">안전거래센터</a>
+      <a href="/">결제대행 위탁사</a>
+    </nav>
+    <div class="footer-web-company">
+      <div>
+        상호명: 주식회사 무신사 (MUSINSA Co., Ltd.) 사업장소재지: 서울특별시
+        성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스) 팩스:
+        070-8622-7737 사업자등록번호: 211-88-79575
+      </div>
+      <p>
+        통신판매업신고: 2022-서울성동-01952
+        <a href="/" class="button">사업자정보확인</a>
+      </p>
+      <p>
+        전화번호: 1660-2929 이메일: customer@29cm.co.kr 대표: 조만호, 박준모
+        개인정보 보호책임자: 이재환 호스팅서비스: (주)무신사, 상품정보, 거래에
+        대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인 내용을
+        확인하시기 바랍니다.
+      </p>
+      <p>
+        일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+        상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+        페이지에서 구체적인 내용을 확인하시기 바랍니다.
+      </p>
+    </div>
+  </div>
+</div>
