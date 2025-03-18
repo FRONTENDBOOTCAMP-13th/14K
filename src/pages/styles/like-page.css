@@ -2,6 +2,7 @@
 @import "/src/common/best-reset.css";
 @import "/src/component/style/header-component.css";
 @import "/src/component/style/footer.css";
+@import "/src/component/style/navbar-component.css";
 
 body {
   font-family: "Pretendard Variable", sans-serif;
@@ -13,7 +14,7 @@ ul {
   list-style: none;
 }
 
-nav {
+.like-nav {
   position: sticky;
   width: 100%;
   top: 20px;
