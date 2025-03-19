@@ -216,7 +216,7 @@ section {
 
     .item-wrap {
       display: grid;
-      grid-template-columns: repeat(2, minmax(230px, 1fr));
+      grid-template-columns: repeat(2, minmax(80px, 1fr));
       row-gap: 1.25rem;
 
       @media (min-width: 1280px) {
