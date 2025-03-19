@@ -1,0 +1,143 @@
+@import "./src/common/best-reset.css";
+@import "./src/common/theme.css";
+@import "./public/font/pretendardvariable.css";
+
+/* 모든 글꼴 Pretendard로 변경 */
+body * {
+  font-family: "Pretendard Variable", sans-serif;
+  /* background: pink; */
+  background: ;
+}
+/* 전체 페이지 class 명 */
+.index-page-14team {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  max-width: 700px;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  /* 헤더 */
+  header {
+    border: 1px solid black;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 8px;
+  }
+  /* 팀원 소개 */
+  .team-introduce {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    min-height: 300px;
+
+    gap: 40px;
+    .top-box {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      gap: 40px;
+      .KJH,
+      .KJS {
+        width: 50%;
+        min-height: 150px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+    }
+
+    .bottom-box {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      gap: 40px;
+
+      .MSI,
+      .YJH {
+        width: 50%;
+        min-height: 150px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  /* 각종 링크 사이트들 */
+  .project-links {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    gap: 40px;
+    .top-box {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      gap: 40px;
+      /* 컴포넌트 링크 */
+      .component-link {
+        width: 50%;
+        min-height: 300px;
+        border: 1px solid black;
+        border-radius: 8px;
+        text-align: center;
+        > ul {
+          > li {
+            list-style: none;
+            > a {
+              text-decoration: none;
+              color: green;
+            }
+          }
+        }
+      }
+
+      /* html 링크 */
+      .html-link {
+        width: 50%;
+        min-height: 300px;
+        border: 1px solid black;
+        border-radius: 8px;
+        text-align: center;
+        > ul {
+          > li {
+            list-style: none;
+            > a {
+              text-decoration: none;
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-box {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      gap: 40px;
+      /* github 링크 */
+      .github-link {
+        width: 50%;
+        min-height: 300px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+      /* scrum 링크 */
+      .scrum-link {
+        width: 50%;
+        min-height: 300px;
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+    }
+  }
+  /* 화면 최하단 footer 부분 */
+  footer {
+    width: 100%;
+    min-height: 130px;
+    border: 1px solid black;
+    border-radius: 8px;
+  }
+}
