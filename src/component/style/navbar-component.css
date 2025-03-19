@@ -10,6 +10,7 @@ body {
 }
 
 .bottom-navbar {
+  z-index: 100;
   background: rgb(239 239 239);
   width: 100%;
   position: sticky;
