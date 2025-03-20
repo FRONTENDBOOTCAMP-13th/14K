@@ -23,10 +23,11 @@
     color: rgb(48, 48, 51);
     font-size: 0.875rem;
     line-height: 1.5rem;
+    padding-right: 0.5rem;
   }
 
   .postinfo {
-    margin-top: 0.1875rem;
+    margin-top: 0.75rem;
     .post-btn {
       font-weight: 400;
       color: black;
@@ -47,18 +48,26 @@
       line-height: 0.6875rem;
     }
   }
+  /* text 부분에 margin 20px 추가 */
+  .post-title,
+  .post-text {
+    margin-right: 1.25rem;
+  }
 }
 
 /* 패션 뉴스들 */
 .magazine-fassion-news {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(93, 93, 93, 0.2);
 
   .left-text {
     display: flex;
     flex-flow: column nowrap;
     gap: 0.3125rem;
-    margin-right: 60px;
+    margin-right: 3.75rem;
     /* 타이틀 */
     .news-title {
       font-weight: 600;
@@ -72,6 +81,11 @@
       color: rgb(48, 48, 51);
       font-size: 0.875rem;
       line-height: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     /* 뉴스 버튼 */
     .news-btn {
@@ -97,13 +111,12 @@
       line-height: 0.6875rem;
     }
   }
-  .img-wrap {
+
+  > img {
     width: 7.125rem;
     height: 7.125rem;
-    img {
-      object-fit: cover;
-      aspect-ratio: 1/1;
-    }
+    /* object-fit: cover; */
+    aspect-ratio: 1/1;
   }
 
   .news-number {
