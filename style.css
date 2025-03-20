@@ -6,7 +6,15 @@
 body * {
   font-family: "Pretendard Variable", sans-serif;
   /* background: pink; */
-  background: ;
+
+  h3 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  li {
+    margin-block: 5px;
+  }
 }
 /* 전체 페이지 class 명 */
 .index-page-14team {
@@ -74,19 +82,30 @@ body * {
       flex-flow: row nowrap;
       width: 100%;
       gap: 40px;
+
       /* 컴포넌트 링크 */
       .component-link {
         width: 50%;
         min-height: 300px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         border-radius: 8px;
-        text-align: center;
+
+        h3 {
+          background-color: #defdfc;
+          font-weight: 500;
+        }
+
         > ul {
           > li {
             list-style: none;
             > a {
               text-decoration: none;
-              color: green;
+              color: rgb(100, 100, 100);
+            }
+
+            a:hover {
+              color: black;
+              font-weight: 500;
             }
           }
         }
@@ -96,15 +115,23 @@ body * {
       .html-link {
         width: 50%;
         min-height: 300px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         border-radius: 8px;
-        text-align: center;
+
+        h3 {
+          background-color: #defdfc;
+        }
         > ul {
           > li {
             list-style: none;
             > a {
               text-decoration: none;
-              color: blue;
+              color: rgb(100, 100, 100);
+            }
+
+            a:hover {
+              color: black;
+              font-weight: 500;
             }
           }
         }
@@ -122,6 +149,10 @@ body * {
         min-height: 300px;
         border: 1px solid black;
         border-radius: 8px;
+
+        h3 {
+          background-color: #f8f6f4;
+        }
       }
 
       /* scrum 링크 */
@@ -130,6 +161,10 @@ body * {
         min-height: 300px;
         border: 1px solid black;
         border-radius: 8px;
+
+        h3 {
+          background-color: #f8f6f4;
+        }
       }
     }
   }
