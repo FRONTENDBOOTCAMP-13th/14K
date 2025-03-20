@@ -106,6 +106,9 @@ header {
   gap: 15px;
 }
 
+.text a:hover {
+  color: #f24802;
+}
 .profile-info:hover {
   cursor: pointer;
 
