@@ -160,7 +160,7 @@
       </div>
     </header>
 
-    <!-- 사이드바 컴포넌트 -->
+    <!-- 메인 컴포넌트 -->
     <main class="best-page-container">
       <aside class="sidebar-component">
         <h3>BEST</h3>
@@ -190,7 +190,8 @@
         <!-- 메뉴 컴포넌트 -->
         <nav>
           <h1>여성의류</h1>
-          <div class="best-nav">
+          <fieldset class="best-nav">
+            <legend hidden>BEST 여성의류 카테고리 선택</legend>
             <input type="radio" id="all" name="category" />
             <label for="all">전체</label>
             <input type="radio" id="top" name="category" />
@@ -219,10 +220,11 @@
             <label for="jumpsuit">점프수트</label>
             <input type="radio" id="foreign" name="category" />
             <label for="foreign">해외브랜드</label>
-          </div>
+          </fieldset>
         </nav>
         <!-- 버튼 컴포넌트 -->
-        <div class="best-button-component">
+        <fieldset class="best-button-component">
+          <legend hidden>상품 정렬 기준</legend>
           <input type="radio" id="realtime" name="time" />
           <label for="realtime">실시간</label>
           <input type="radio" id="daily" name="time" />
@@ -231,28 +233,26 @@
           <label for="weekly">주간</label>
           <input type="radio" id="monthly" name="time" />
           <label for="monthly">월간</label>
-        </div>
+        </fieldset>
         <!-- 카드 리스트 -->
-        <div class="card-list">
-          <div class="best-card card1 special">
+        <section class="card-list">
+          <article class="best-card card1 special">
             <a href="">
               <div class="wrap">
                 <span class="rank">1</span>
                 <img
                   class="main-img special-image"
                   src="/src/images/bestpageimages/image1.webp"
-                  alt="의류 상품 광고"
+                  alt="Faux leather over-fit blazer"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>르</h3>
                 <h3 class="context">
                   [스페셜오더] Faux leather over-fit blazer 2colors
                 </h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">315,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">69%</span
                   ><span class="price">93,860</span>
@@ -269,24 +269,22 @@
               </div>
               <hr hidden />
             </a>
-          </div>
-          <div class="best-card card2 special">
+          </article>
+          <article class="best-card card2 special">
             <a href="">
               <div class="wrap">
                 <span class="rank">2</span>
                 <img
                   class="main-img special-image"
                   src="/src/images/bestpageimages/image2.webp"
-                  alt="의류 상품 광고"
+                  alt="스웨이드 자켓"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>온앤온</h3>
                 <h3 class="context">스웨이드 자켓 NEL5XJ809_97</h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">359,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">15%</span
                   ><span class="price">306,945</span>
@@ -303,26 +301,24 @@
               </div>
               <hr hidden />
             </a>
-          </div>
-          <div class="best-card card3 special">
+          </article>
+          <article class="best-card card3 special">
             <a href="">
               <div class="wrap">
                 <span class="rank">3</span>
                 <img
                   class="main-img special-image"
                   src="/src/images/bestpageimages/image3.webp"
-                  alt="의류 상품 광고"
+                  alt="Mac half trench coat"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>유라고</h3>
                 <h3 class="context">
                   [40차 리오더][유이수착용] Mac half trench coat_4colors
                 </h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">183,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">10%</span
                   ><span class="price">164,700</span>
@@ -339,26 +335,24 @@
               </div>
               <hr hidden />
             </a>
-          </div>
-          <div class="best-card card4 other">
+          </article>
+          <article class="best-card card4 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">4</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image4.webp"
-                  alt="의류 상품 광고"
+                  alt="LOW SOFT SWEAT ZIPUP"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>로우클래식</h3>
                 <h3 class="context">
                   [4차 4/18 예약배송]_LOW SOFT SWEAT ZIP_UP
                 </h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">119,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">5%</span
                   ><span class="price">113,050</span>
@@ -374,26 +368,24 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card5 other">
+          </article>
+          <article class="best-card card5 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">5</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image5.webp"
-                  alt="의류 상품 광고"
+                  alt="Nonfade pintuck denim (raw denim)"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>코어드</h3>
                 <h3 class="context">
                   [17차/예약배송][기장선택] Nonfade pintuck denim (raw denim)
                 </h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">118,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">5%</span
                   ><span class="price">112,100</span>
@@ -409,24 +401,22 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card6 other">
+          </article>
+          <article class="best-card card6 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">6</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image6.webp"
-                  alt="의류 상품 광고"
+                  alt="스웨이드 자켓"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>온앤온</h3>
                 <h3 class="context">스웨이드 자켓 NEL5XJ809_93</h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">359,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">15%</span
                   ><span class="price">306, 945</span>
@@ -442,26 +432,24 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card7 other">
+          </article>
+          <article class="best-card card7 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">7</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image7.webp"
-                  alt="의류 상품 광고"
+                  alt="boucle wool jacket_blk"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>녹섭</h3>
                 <h3 class="context">
                   [29CM 단독] (9차 리오더) boucle wool jacket_blk
                 </h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">289,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">31%</span
                   ><span class="price">198,254</span>
@@ -477,24 +465,22 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card8 other">
+          </article>
+          <article class="best-card card8 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">8</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image8.webp"
-                  alt="의류 상품 광고"
+                  alt="셀비 포켓 데님 팬츠"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>아티드</h3>
                 <h3 class="context">셀비 포켓 데님 팬츠_2COLORS</h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">109,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">5%</span
                   ><span class="price">103,550</span>
@@ -510,26 +496,24 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card9 other">
+          </article>
+          <article class="best-card card9 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">9</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image9.webp"
-                  alt="의류 상품 광고"
+                  alt="오버핏 레더 블루종 black"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>파사드패턴</h3>
                 <h3 class="context">
                   [일부옵션 9차 4/2예약배송] 오버핏 레더 블루종_black
                 </h3>
                 <!-- 12px 130% 400 inherit -->
                 <p class="original-price">346,000</p>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="discount">5%</span
                   ><span class="price">330,600</span>
@@ -545,22 +529,20 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card10 other">
+          </article>
+          <article class="best-card card10 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">10</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image10.webp"
-                  alt="의류 상품 광고"
+                  alt="Clea Capri Pant (Black)"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>포 유어 아이즈 온리</h3>
                 <h3 class="context">[2차] Clea Capri Pant (Black)</h3>
-                <!-- 14px 140% 700  -->
                 <p>
                   <span class="price">128,000</span>
                 </p>
@@ -575,25 +557,24 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card11 other">
+          </article>
+          <article class="best-card card11 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">11</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image11.webp"
-                  alt="의류 상품 광고"
+                  alt="String belt natural leather
+                  jacket Black"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>틸아이다이</h3>
                 <h3 class="context">
                   [스페셜오더 ~3/19]_[예약배송]String belt natural leather
                   jacket_Black
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">205,000</p>
                 <p>
                   <span class="discount">36%</span>
@@ -610,22 +591,20 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card12 other">
+          </article>
+          <article class="best-card card12 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">12</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image12.webp"
-                  alt="의류 상품 광고"
+                  alt="boucle wool jacket-cream"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>녹섭</h3>
                 <h3 class="context">(10차 리오더) boucle wool jacket-cream</h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">289,000</p>
                 <p>
                   <span class="discount">19%</span>
@@ -642,24 +621,22 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card13 other">
+          </article>
+          <article class="best-card card13 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">13</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image13.webp"
-                  alt="의류 상품 광고"
+                  alt="미니멀 레더 블루종"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>파사드패턴</h3>
                 <h3 class="context">
                   [5차 4/23예약배송] 미니멀 레더 블루종_black
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">328,000</p>
                 <p>
                   <span class="discount">5%</span>
@@ -676,22 +653,20 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card14 other">
+          </article>
+          <article class="best-card card14 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">14</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image14.webp"
-                  alt="의류 상품 광고"
+                  alt="Eco leather pocket jacket"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>틸아이다이</h3>
                 <h3 class="context">Eco leather pocket jacket_Black</h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">199,000</p>
                 <p>
                   <span class="discount">36%</span>
@@ -708,24 +683,22 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card15 other">
+          </article>
+          <article class="best-card card15 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">15</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image15.webp"
-                  alt="의류 상품 광고"
+                  alt="Bon Bon Petit"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>세인트제임스</h3>
                 <h3 class="context">
                   [25SS 뉴컬러] Bon Bon Petit (001) ASJF251KR20-001
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">168,000</p>
                 <p>
                   <span class="discount">10%</span>
@@ -742,24 +715,22 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card16 other">
+          </article>
+          <article class="best-card card16 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">16</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image16.webp"
-                  alt="의류 상품 광고"
+                  alt="Classic cotton slacks"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>코어드</h3>
                 <h3 class="context">
                   [6차/예약배송][기장선택] Classic cotton slacks (beige)
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">104,000</p>
                 <p>
                   <span class="discount">5%</span>
@@ -776,25 +747,23 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card17 other">
+          </article>
+          <article class="best-card card17 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">17</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image17.webp"
-                  alt="의류 상품 광고"
+                  alt="leather blouson jacket"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>링서울</h3>
                 <h3 class="context">
                   leather blouson jacket (3color) [black S 3/26, cream 4/7 부터
                   순차 발송]
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">183,100</p>
                 <p>
                   <span class="discount">10%</span>
@@ -811,25 +780,24 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card18 other">
+          </article>
+          <article class="best-card card18 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">18</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image18.webp"
-                  alt="의류 상품 광고"
+                  alt="데일리 소프트 가디건&풀오버
+                  4종"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>니주르</h3>
                 <h3 class="context">
                   [스페셜오더_9th][SET]2PACK 데일리 소프트 가디건&풀오버
                   4종(택2)
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">118,000</p>
                 <p>
                   <span class="discount">60%</span>
@@ -846,25 +814,23 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card19 other">
+          </article>
+          <article class="best-card card19 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">19</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image19.webp"
-                  alt="의류 상품 광고"
+                  alt="Modern black tweed jacket"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>녹섭</h3>
                 <h3 class="context">
                   [스페셜오더_29CM 단독](13차 리오더) Modern black tweed jacket
                   (2 SIZE)
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">239,000</p>
                 <p>
                   <span class="discount">24%</span>
@@ -881,25 +847,24 @@
                 </p>
               </div>
             </a>
-          </div>
-          <div class="best-card card20 other">
+          </article>
+          <article class="best-card card20 other">
             <a href="">
               <div class="wrap">
                 <span class="rank">20</span>
                 <img
                   class="main-img"
                   src="/src/images/bestpageimages/image20.webp"
-                  alt="의류 상품 광고"
+                  alt="미드나잇인파리 스트라이프 파자마
+                  블루아워"
                 />
               </div>
               <div class="image-text">
-                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
                 <h3>비비홈</h3>
                 <h3 class="context">
                   [13차 리오더][29CM 단독] (uni)미드나잇인파리 스트라이프 파자마
                   블루아워
                 </h3>
-                <!-- 14px 140% 700  -->
                 <p class="original-price">71,000</p>
                 <p>
                   <span class="discount">9%</span>
@@ -916,13 +881,12 @@
                 </p>
               </div>
             </a>
-          </div>
-        </div>
+          </article>
+        </section>
       </div>
     </main>
 
     <!-- 푸터 -->
-    <!-- 🔥 웹용 시작-->
     <footer>
       <div class="footer-web">
         <div class="footer-customer">
