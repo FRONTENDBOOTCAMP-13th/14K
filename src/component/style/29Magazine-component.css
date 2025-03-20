@@ -1,0 +1,138 @@
+@import "../../common/best-reset.css";
+@import "../../common/theme.css";
+
+/* 29magazine-latest-post  */
+.magazine-latest-post {
+  display: flex;
+  flex-flow: column nowrap;
+
+  > a {
+    text-decoration: none;
+  }
+  .post-title {
+    font-weight: 600;
+    color: black;
+    font-size: 1.4375rem;
+    line-height: 1.875rem;
+    margin-top: 0.3125rem;
+  }
+
+  .post-text {
+    font-weight: 400;
+    margin-top: 0.3125rem;
+    color: rgb(48, 48, 51);
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .postinfo {
+    margin-top: 0.1875rem;
+    .post-btn {
+      font-weight: 400;
+      color: black;
+      font-size: 0.6875rem;
+      line-height: normal;
+      background: transparent;
+      outline: none;
+      border: 1px solid rgb(212, 212, 212);
+      border-radius: 0.125rem;
+      padding: 0.25rem;
+      margin-right: 0.1875rem;
+      cursor: pointer;
+    }
+    .date {
+      font-weight: 400;
+      color: black;
+      font-size: 0.6875rem;
+      line-height: 0.6875rem;
+    }
+  }
+}
+
+/* 패션 뉴스들 */
+.magazine-fassion-news {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .left-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.3125rem;
+    margin-right: 60px;
+    /* 타이틀 */
+    .news-title {
+      font-weight: 600;
+      color: black;
+      font-size: 1.4375rem;
+      line-height: 1.875rem;
+    }
+    /* 서브텍스트 */
+    .news-text {
+      font-weight: 400;
+      color: rgb(48, 48, 51);
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+    /* 뉴스 버튼 */
+    .news-btn {
+      font-weight: 400;
+      color: black;
+      font-size: 0.6875rem;
+      line-height: normal;
+      background: transparent;
+      outline: none;
+      border: 1px solid rgb(212, 212, 212);
+      border-radius: 0.125rem;
+      padding: 0.25rem;
+      margin-right: 0.1875rem;
+      cursor: pointer;
+      margin-top: 0.1875rem;
+      margin-right: 0.1875rem;
+      padding: 0.25rem;
+    }
+    .date {
+      font-weight: 400;
+      color: black;
+      font-size: 0.6875rem;
+      line-height: 0.6875rem;
+    }
+  }
+  .img-wrap {
+    width: 7.125rem;
+    height: 7.125rem;
+    img {
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  .news-number {
+    display: none;
+  }
+  @media (min-width: 540px) {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 5px;
+
+    > img {
+      width: 100%;
+      order: -1;
+      aspect-ratio: 2/1;
+    }
+    .left-text {
+      margin-right: 0;
+    }
+    .news-number {
+      margin-top: 1.25rem;
+      display: block;
+      font-weight: 100;
+      color: black;
+      font-size: 3.75rem;
+      line-height: 3.75rem;
+    }
+    .date {
+      display: none;
+    }
+  }
+}
