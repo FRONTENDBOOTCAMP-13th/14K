@@ -1,0 +1,25 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+
+body {
+  font-family: "Pretendard Variable", sans-serif;
+  margin: 80px;
+  border: 4px solid yellow;
+}
+
+.table {
+  table {
+    border-collapse: collapse; /* 셀 경계 합침 */
+    border-spacing: 0; /* 셀 간격 제거 */
+  }
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  td {
+    width: 90%;
+  }
+
+  border-spacing: 0;
+}
