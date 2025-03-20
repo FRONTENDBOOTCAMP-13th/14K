@@ -1,0 +1,110 @@
+@import "../../common/best-reset.css";
+@import "../../common/theme.css";
+@import "../../component/style/header-component.css";
+@import "../../component/style/footer.css";
+@import "../../component/style/29Magazine-component.css";
+@import "../../../public/font/pretendardvariable.css";
+@import "../../component/style/button-component.css";
+body * {
+  font-family: "Pretendard Variable", sans-serif;
+}
+/* latest post */
+.magazine-latest-post-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+
+  @media (min-width: 33.75rem) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.875rem;
+  }
+}
+
+/* 최상단 Latest Post 부분 */
+.magazine-post-title {
+  font-weight: 600;
+  color: black;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-top: 3.125rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.25rem solid black;
+  /* 540px 일때 font-size 변경 */
+  @media (min-width: 33.75rem) {
+    font-size: 1.625rem;
+  }
+}
+/* Mar 2025 */
+.magazine-mar-2025 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 1.25rem 0 1.25rem;
+
+  @media (min-width: 33.75rem) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+    .magazine-fassion-news {
+      border-bottom: 0;
+    }
+  }
+}
+/* 최상단 mar 2025 부분 */
+.magazine-post-title {
+  display: block;
+  font-weight: 600;
+  color: black;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  padding-bottom: 0.3125rem;
+  border-bottom: 0.25rem solid black;
+}
+/* Feb 2025 */
+.magazine-feb-2025 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 1.25rem 0 1.25rem;
+
+  /* web view 일때 레이아웃 변경 */
+  @media (min-width: 33.75rem) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 40px;
+
+    .magazine-fassion-news {
+      border-bottom: 0;
+    }
+  }
+}
+
+/* 최상단 Feb 2025 부분 */
+.magazine-post-title {
+  font-weight: 600;
+  color: black;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  padding-bottom: 0.3125rem;
+  border-bottom: 0.25rem solid black;
+}
+/* news들 마지막 자식들만 아래 선 삭제 */
+.last-news {
+  border: 0;
+}
+
+/* web view 일때 Mar 2025, Feb 2025 타이틀 border 선, font size 변경 */
+@media (min-width: 33.75rem) {
+  .magazine-news-title {
+    display: block;
+    border-bottom: 0;
+    border-top: 0.25rem solid black;
+    padding-top: 0.5rem;
+  }
+}
