@@ -4,6 +4,7 @@
 @import "/src/component/style/header-component.css";
 @import "/src/component/style/footer.css";
 @import "/src/component/style/women-component.css";
+@import "/src/component/style/navbar-component.css";
 
 body * {
   font-family: "Pretendard Variable", sans-serif;
