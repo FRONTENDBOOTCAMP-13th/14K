@@ -14,7 +14,7 @@ export default defineConfig({
         magazinePage: "src/pages/29Magazine.html",
         bestPage: "src/pages/best-page.html",
         specialPage: "src/pages/specialorder-page.html",
-        womanPage: "src/pages/womem-page.html",
+        womenPage: "src/pages/women-page.html",
         itemdetailPage: "src/pages/itemdetail-page.html",
 
         bestComponent: "src/component/best-component.html",
@@ -35,7 +35,7 @@ export default defineConfig({
         reviewComponent: "src/component/review-component.html",
         specialorderComponent: "src/component/specialorder-component.html",
         tableComponent: "src/component/table-component.html",
-        womemComponent: "src/component/women-component.html",
+        womenComponent: "src/component/women-component.html",
       },
     },
   },
