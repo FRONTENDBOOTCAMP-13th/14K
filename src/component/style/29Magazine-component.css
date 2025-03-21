@@ -129,8 +129,9 @@
     margin-top: 2.5rem;
     > img {
       width: 100%;
+      height: auto;
       order: -1;
-      /* aspect-ratio: 16/9; */
+      aspect-ratio: 16/9;
     }
     .left-text {
       margin-right: 0;

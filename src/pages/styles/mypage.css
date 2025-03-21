@@ -4,7 +4,7 @@
 @import "../../component/style/footer.css";
 @import "../../../public/font/pretendardvariable.css";
 @import "../../component/style/mypage-component.css";
-
+@import "../../component/style/navbar-component.css";
 body * {
   font-family: "Pretendard Variable", sans-serif;
 }

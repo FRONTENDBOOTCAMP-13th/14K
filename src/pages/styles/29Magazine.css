@@ -5,6 +5,9 @@
 @import "../../component/style/29Magazine-component.css";
 @import "../../../public/font/pretendardvariable.css";
 @import "../../component/style/button-component.css";
+@import "../../component/style/custom-footer-component.css";
+@import "../../component/style/navbar-component.css";
+
 body * {
   font-family: "Pretendard Variable", sans-serif;
 }
