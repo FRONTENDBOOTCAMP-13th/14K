@@ -322,6 +322,18 @@ header {
   font-weight: 400;
 }
 
+/* component-link만 두 줄로 배치 */
+.component-link ul {
+  display: flex;
+  flex-wrap: wrap; /* 두 줄 정렬 */
+  padding: 0;
+}
+
+.component-link ul li {
+  width: 50%; /* 두 줄 정렬 */
+  list-style: none;
+}
+
 footer {
   border-bottom: none;
   border-top: 1px solid #eee;
