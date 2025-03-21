@@ -6,17 +6,20 @@ body {
   font-family: "Pretendard Variable", sans-serif;
 }
 
-/* dialog 스타일 */
 dialog {
   padding: 20px;
   border: 1px solid var(--color-gray-2);
   max-width: 500px;
-  background-color: #fefefe;
   border-radius: 8px;
   margin: auto;
+  z-index: 100;
 }
 
-/* 닫기 버튼 스타일 */
+dialog.panel-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
 button {
   display: block;
   margin: 20px auto 0;
@@ -27,8 +30,4 @@ button {
   border: none;
   cursor: pointer;
   font-size: 16px;
-}
-
-.panel-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.3);
 }

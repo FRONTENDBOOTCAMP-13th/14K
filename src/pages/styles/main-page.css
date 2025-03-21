@@ -5,6 +5,7 @@
 @import "/src/component/style/footer.css";
 @import "/src/component/style/button-component.css";
 @import "/src/component/style/navbar-component.css";
+@import "/src/component/style/modal-component.css";
 
 /* body {
   background: yellow;

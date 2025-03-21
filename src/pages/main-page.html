@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>감도 깊은 취향 셀렉트샵 29CM</title>
+    <script type="module">
+      // DOM 선택 부분
+      const closeDialogButton = document.querySelector(".close-dialog");
+      const panelDialog = document.querySelector(".panel-dialog");
+      // 함수 구현 부분
+      const openDialog = () => panelDialog.showModal();
+      const closeDialog = () => panelDialog.close();
+      // 이벤트 바인딩 부분
+      closeDialogButton.addEventListener("click", closeDialog);
+    </script>
+    <style>
+      dialog.panel-dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 100;
+      }
+    </style>
     <link rel="icon" href="/src/images/farvicon/29cm.ico" />
     <link
       rel="preload"
@@ -171,6 +187,17 @@
         </ul>
       </div>
     </header>
+
+    <!-- 모달창 -->
+    <div class="dialog-area">
+      <dialog class="panel-dialog" aria-labelledby="event" open>
+        <p>
+          이 사이트는 멋쟁이사자처럼 프론트엔드 부트캠프의 UI 프로젝트로
+          제작되었습니다. 상업적인 목적이 아닌 학습용 프로젝트입니다.
+        </p>
+        <button type="button" class="close-dialog">닫기</button>
+      </dialog>
+    </div>
 
     <!-- 메인 part -->
     <main class="card-container">
