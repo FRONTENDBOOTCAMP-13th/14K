@@ -5,6 +5,7 @@
 @import "/src/component/style/footer.css";
 @import "/src/component/style/best-component.css";
 @import "/src/component/style/custom-footer-component.css";
+@import "/src/component/style/navbar-component.css";
 
 * {
   font-family: "Pretendard Variable", sans-serif;

@@ -33,7 +33,7 @@
   display: none;
   font-weight: 300;
   font-size: var(--text-md);
-  z-index: 100;
+  z-index: 99;
   margin: 38px 0 14px 0;
 
   label {
