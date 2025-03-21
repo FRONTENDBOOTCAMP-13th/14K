@@ -1,0 +1,57 @@
+@import "../../common/best-reset.css";
+@import "../../../public/font/pretendardvariable.css";
+
+body * {
+  font-family: "pretendard variable", sans-serif;
+}
+
+.custom-footer-wrap {
+  background: black;
+  color: white;
+}
+
+.custom-footer-title-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+
+.toggle {
+  position: relative;
+}
+
+/* 특수문자 기본 이미지 90도 회전 */
+.custom-footer-details {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+/* 특수문자 위 체크박스 숨기기 */
+.toggle > input {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+
+input[type="checkbox"]:checked ~ .custom-footer-details {
+  transform: rotate(270deg);
+}
+
+/* 체크박스가 체크된 상태일 때 */
+input[type="checkbox"]:checked ~ .hidden-text {
+  display: block;
+}
+
+/* 기본적으로 hidden-text는 숨김 처리 */
+.hidden-text {
+  display: none;
+}
+
+.text-wrap {
+  p {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
