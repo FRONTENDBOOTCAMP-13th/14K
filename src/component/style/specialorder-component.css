@@ -1,0 +1,115 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+
+.promo-card {
+  width: 485px;
+  margin-bottom: 40px;
+}
+
+.promo-image {
+  position: relative;
+  width: 100%;
+}
+
+.promo-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-content {
+  padding: 15px;
+}
+
+.promo-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.promo-description {
+  font-size: 16px;
+  color: #555;
+}
+
+.promo-footer {
+  padding: 6px 15px;
+  text-align: left;
+}
+
+.promo-line {
+  width: 40px;
+  height: 3px;
+  background: #f24802;
+  margin-bottom: 10px;
+}
+
+.promo-date {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* d-day 라인 */
+.promo-timeline {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: "Pretendard", sans-serif;
+}
+
+.timeline-bar {
+  position: relative;
+  height: 3px;
+  background: #ddd; /* 전체 바 */
+}
+
+.progress {
+  width: 80%; /* 진행률 (예제) */
+  height: 3px;
+  background: #f24802; /* 진행된 부분 */
+}
+
+.d-day-marker {
+  position: absolute;
+  top: -25px;
+  right: 20%;
+  background: #f24802;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.d-day-marker::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #f24802;
+}
+
+.timeline-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.d-day-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f24802;
+}
+
+.date-range {
+  font-size: 16px;
+  font-weight: bold;
+}
