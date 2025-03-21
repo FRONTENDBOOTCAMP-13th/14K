@@ -97,8 +97,6 @@
       outline: none;
       border: 1px solid rgb(212, 212, 212);
       border-radius: 0.125rem;
-      padding: 0.25rem;
-      margin-right: 0.1875rem;
       cursor: pointer;
       margin-top: 0.1875rem;
       margin-right: 0.1875rem;
@@ -127,17 +125,18 @@
     flex-flow: column nowrap;
     justify-content: center;
     gap: 5px;
-
+    padding: 0;
+    margin-top: 2.5rem;
     > img {
       width: 100%;
       order: -1;
-      aspect-ratio: 2/1;
+      /* aspect-ratio: 16/9; */
     }
     .left-text {
       margin-right: 0;
     }
     .news-number {
-      margin-top: 1.25rem;
+      margin-top: auto;
       display: block;
       font-weight: 100;
       color: black;
