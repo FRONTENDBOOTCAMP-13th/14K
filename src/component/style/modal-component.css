@@ -9,25 +9,27 @@ body {
 dialog {
   padding: 20px;
   border: 1px solid var(--color-gray-2);
-  max-width: 500px;
+  max-width: 430px;
   border-radius: 8px;
   margin: auto;
+  line-height: 150%;
   z-index: 100;
+
+  button {
+    display: block;
+    margin: 20px auto 0;
+    width: 30%;
+    padding: 7px;
+    background-color: var(--color-gray-3);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
 }
 
 dialog.panel-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: 100;
-}
-
-button {
-  display: block;
-  margin: 20px auto 0;
-  width: 30%;
-  padding: 7px;
-  background-color: var(--color-gray-3);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
 }

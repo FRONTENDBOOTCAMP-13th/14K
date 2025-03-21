@@ -6,20 +6,26 @@
     <title>dialog 요소</title>
     <script type="module">
       // DOM 선택 부분
+      // 모달 열기 버튼 클릭 시 모달창이 열리도록 버튼 객체 참조
+      const openDialogButton = document.querySelector(".open-dialog");
       const closeDialogButton = document.querySelector(".close-dialog");
       const panelDialog = document.querySelector(".panel-dialog");
+
       // 함수 구현 부분
       const openDialog = () => panelDialog.showModal();
       const closeDialog = () => panelDialog.close();
+
+      // 페이지 로드 완료 시 모달 자동 열기
+      // 페이지가 로딩되었을 때도 모달창에 open 속성이 적용되도록 자바스크립트 추가
+      document.addEventListener("DOMContentLoaded", () => {
+        openDialog();
+      });
+
       // 이벤트 바인딩 부분
+      // 모달 열기 버튼 클릭 시 모달창이 열리도록 이벤트 바인딩 추가
+      openDialogButton.addEventListener("click", openDialog);
       closeDialogButton.addEventListener("click", closeDialog);
     </script>
-    <style>
-      dialog.panel-dialog::backdrop {
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: 100;
-      }
-    </style>
     <link rel="icon" href="/src/images/farvicon/29cm.ico" />
     <link
       rel="preload"
@@ -32,14 +38,15 @@
     <link rel="stylesheet" href="/src/component/style/modal-component.css" />
   </head>
   <body>
-    <!-- <div class="dialog-area"> -->
-    <dialog class="panel-dialog" aria-labelledby="event" open>
-      <p>
-        이 사이트는 멋쟁이사자처럼 프론트엔드 부트캠프의 UI 프로젝트로
-        제작되었습니다. 상업적인 목적이 아닌 학습용 프로젝트입니다.
-      </p>
-      <button type="button" class="close-dialog">닫기</button>
-    </dialog>
-    <!-- </div> -->
+    <button type="button" class="open-dialog" hidden>모달 열기</button>
+    <div class="dialog-area">
+      <dialog class="panel-dialog" aria-labelledby="event">
+        <p>
+          이 사이트는 멋쟁이사자처럼 프론트엔드 부트캠프의 UI 프로젝트로
+          제작되었습니다. 상업적인 목적이 아닌 학습용 프로젝트입니다.
+        </p>
+        <button type="button" class="close-dialog">닫기</button>
+      </dialog>
+    </div>
   </body>
 </html>
