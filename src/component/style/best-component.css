@@ -4,10 +4,16 @@
 
 /* 메뉴 컴포넌트 */
 nav {
+  h1 {
+    margin-block: 30px;
+    font-size: 34px;
+  }
   .best-nav {
     display: flex;
     flex-flow: row wrap;
     border: 1px solid var(--color-gray-3);
+    align-items: center;
+    padding: 5px;
   }
 
   input {
@@ -34,6 +40,9 @@ nav {
 
 /* 버튼 컴포넌트 */
 .best-button-component {
+  margin-block: 30px;
+  border: 0;
+
   input {
     display: none;
   }
@@ -43,7 +52,7 @@ nav {
     border-radius: 20px;
     color: var(--color-black);
     background: var(--color-white);
-    font-size: 13px;
+    font-size: var(--text-md);
 
     padding: 8px 14px 8px 14px;
   }
@@ -58,6 +67,8 @@ nav {
 
 /* 사이드바 컴포넌트 */
 .sidebar-component {
+  display: none;
+
   h3 {
     font-size: 23px;
     margin-bottom: 10px;
@@ -68,91 +79,81 @@ nav {
     margin-bottom: 25px;
   }
 
-  a {
-    font-size: 16px;
-    font-weight: 200;
-    text-decoration: none;
-    color: var(--color-black);
-    display: block;
-    margin-block: 15px;
-  }
+  li {
+    list-style-type: none;
 
-  a:hover {
-    color: #000;
-    font-weight: 600;
+    a {
+      font-size: var(--text-2xl);
+      font-weight: 200;
+      text-decoration: none;
+      color: var(--color-black);
+      display: block;
+      margin-block: 15px;
+    }
+
+    a:hover {
+      color: #000;
+      font-weight: 600;
+    }
   }
 }
 
 /* 카드 컴포넌트 */
 .best-card {
   a {
-    display: flex;
-    flex-flow: column nowrap;
-    row-gap: 0.5rem;
-    padding: 20px;
-
-    font-size: 12px;
+    font-size: var(--text-base);
     line-height: 130%;
-    font-family: "Pretendard Variable", sans-serif;
-    color: #000;
+    width: 242px;
+    color: var(--color-black);
     text-decoration: none;
 
     .wrap {
       position: relative;
 
-      .main-img {
-        position: relative;
-        width: 250px;
-        z-index: 1;
-      }
-
-      &::before {
-        content: "1";
+      span {
         position: absolute;
         background-color: var(--color-black);
         color: var(--color-white);
         font-size: 20px;
-        font-weight: 300;
+        font-weight: 400;
         padding-inline: 17px;
         padding-block: 15px;
-        z-index: 10;
       }
     }
 
-    h3 {
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
+    .image-text {
+      h3 {
+        font-weight: 600;
+        margin-block: 15px;
+      }
 
-    .context {
-      margin-top: -6px;
-    }
+      .original-price {
+        font-weight: 400;
+        text-decoration: line-through;
+        color: var(--color-gray-3);
+      }
 
-    .original-price {
-      font-weight: 400;
-      text-decoration: line-through;
-      color: var(--color-gray-3);
-    }
+      .discount {
+        font-size: var(--text-lg);
+        color: var(--color-red);
+        margin-right: 5px;
+      }
 
-    .discount {
-      font-size: 14px;
-      color: var(--color-red);
-      margin-right: 5px;
-    }
+      .price {
+        font-size: var(--text-lg);
+      }
 
-    .price {
-      font-size: 14px;
-    }
-
-    .icon-wrap {
-      display: flex;
-      flex-flow: row nowrap;
-      column-gap: 5px;
-      align-items: center;
-      font-size: 10px;
-      line-height: 120%;
-      font-weight: 500;
-      color: var(--color-black);
+      .icon-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 5px;
+        margin-top: 10px;
+        align-items: center;
+        font-size: var(--text-sm);
+        line-height: 120%;
+        font-weight: 300;
+        color: var(--color-black);
+      }
     }
   }
 }

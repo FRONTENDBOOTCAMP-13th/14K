@@ -1,0 +1,51 @@
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+@import "/src/component/style/footer.css";
+@import "/src/component/style/header-component.css";
+@import "/src/component/style/specialorder-component.css";
+
+.promo-container {
+  display: flex;
+  flex-direction: column; /* 기본적으로 세로 정렬 */
+  gap: 20px; /* 카드 간 간격 */
+}
+
+@media (min-width: 900px) {
+  .promo-container {
+    flex-direction: row; /* 900px 이상일 때 가로 정렬 */
+    flex-wrap: wrap; /* 요소가 넘칠 경우 다음 줄로 */
+    justify-content: space-between;
+  }
+
+  .promo-card {
+    width: calc(50% - 10px); /* 두 개씩 배치 */
+  }
+
+  .special-order-title {
+    display: none;
+  }
+
+  .special-order-desc {
+    font-size: 24px;
+    display: flex;
+  }
+}
+
+.special-order-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.special-order-title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.special-order-desc {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+}
