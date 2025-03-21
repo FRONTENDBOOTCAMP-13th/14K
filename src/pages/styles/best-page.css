@@ -4,6 +4,7 @@
 @import "/src/component/style/header-component.css";
 @import "/src/component/style/footer.css";
 @import "/src/component/style/best-component.css";
+@import "/src/component/style/custom-footer-component.css";
 
 * {
   font-family: "Pretendard Variable", sans-serif;
@@ -12,6 +13,18 @@
 .card-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+
+  .image-text {
+    margin: 8px;
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .context {
+    line-height: 16.8px;
+  }
 }
 
 @media (min-width: 540px) {
