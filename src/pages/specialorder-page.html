@@ -16,12 +16,169 @@
     <link rel="stylesheet" href="/src/pages/styles/specialorder-page.css" />
   </head>
   <body>
-    <div>헤더</div>
+    <!-- 모바일 헤더 -->
+    <div class="mobile">
+      <div class="headercontext">
+        <div class="apptextwrap">
+          <span class="logotext">29</span>
+          <span class="apptext"
+            >29CM 앱 설치하고 <span class="redtext">15% </span>할인 받기</span
+          >
+        </div>
+        <button class="showappbtn">앱으로 보기</button>
+      </div>
+    </div>
+
+    <!-- 모바일 버전 sticky에 해당하는 부분 -->
+    <div class="icon">
+      <a href="../pages/main-page.html"
+        ><img
+          src="../images/logoimage/29Cm logo.svg"
+          class="logoimage"
+          alt="로고 이미지"
+      /></a>
+      <div class="mobileIcon">
+        <a href="../pages/shoppingbag-page.html">
+          <img
+            width="13.5px"
+            height="15.75px"
+            src="../images/Iconimages/shopping-bag-Icon.svg"
+            alt="ShoppingbagIcon"
+            class="ShoppingbagIcon"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            width="14.03px"
+            height="14.03px"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="SearchIcon"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- 웹 헤더 -->
+    <header class="webheader">
+      <div class="logo">
+        <a href="../pages/main-page.html"
+          ><img
+            src="../images/logoimage/29Cm logo.svg"
+            width="60"
+            height="16"
+            alt="29cm 로고 이미지"
+        /></a>
+        <ul class="Icons">
+          <li class="MypageIcon" tabindex="0">
+            <a href="../pages/mypage.html" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="14.63px"
+                src="../../src/images/Iconimages/mypageIcon.svg"
+                alt="My Page Icon"
+            /></a>
+            <a href="../pages/mypage.html" class="Icontext" tabindex="-1"
+              >MY PAGE</a
+            >
+          </li>
+          <li class="MylikeIcon" tabindex="0">
+            <a href="../pages/like-page.html" tabindex="-1"
+              ><img
+                width="14.25px"
+                height="12.92px"
+                src="../../src/images/Iconimages/blackheartIcon.svg"
+                alt="My Like Icon"
+            /></a>
+            <a href="../pages/like-page.html" class="Icontext" tabindex="-1"
+              >MY LIKE</a
+            >
+          </li>
+          <li class="ShoppingBagIcon" tabindex="0">
+            <a href="../pages/shoppingbag-page.html" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="15.75px"
+                src="../../src/images/Iconimages/shopping-bag-Icon.svg"
+                alt="Shopping Bag Icon"
+            /></a>
+            <a
+              href="../pages/shoppingbag-page.html"
+              class="Icontext"
+              tabindex="-1"
+              >SHOPPING BAG</a
+            >
+          </li>
+          <li class="loginIcon" tabindex="-1">
+            <a href="../pages/login-page.html" tabindex="-1"
+              ><img
+                width="12px"
+                height="15px"
+                src="../../src/images/Iconimages/loginIcon.svg"
+                alt="LoginIcon"
+            /></a>
+            <a href="../pages/login-page.html" class="Icontext" tabindex="-1"
+              >LOGIN</a
+            >
+          </li>
+          <li class="SearchIcon">
+            <a href="#"
+              ><img
+                width="14.03px"
+                height="14.03px"
+                src="../../src/images/Iconimages/reading-glasses.svg"
+                alt="Search Icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="headline">
+        <ul>
+          <li><a href="#">Special-Order</a></li>
+          <li><a href="#">Showcase</a></li>
+          <li><a href="#">PT</a></li>
+          <li><a href="../pages/29Magazine.html">29Magazine</a></li>
+        </ul>
+
+        <a href="#" class="searchIcon"
+          ><img
+            width="34.29"
+            height="34.3"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="검색 아이콘"
+        /></a>
+      </div>
+
+      <div class="categorywrap">
+        <ul class="category">
+          <li><a href="../pages/best-page.html">BEST</a></li>
+          <li><a href="../pages/women-page.html" tabindex="-1">WOMEN</a></li>
+          <li><a href="#" tabindex="-1">MEN</a></li>
+          <li><a href="#" tabindex="-1">INTERIOR</a></li>
+          <li><a href="#" tabindex="-1">KITCHEN</a></li>
+          <li><a href="#" tabindex="-1">ELECTRONICS</a></li>
+          <li><a href="#" tabindex="-1">DIGITAL</a></li>
+          <li><a href="#" tabindex="-1">BEAUTY</a></li>
+          <li><a href="#" tabindex="-1">FOOD</a></li>
+          <li><a href="#" tabindex="-1">LEISURE</a></li>
+          <li><a href="#" tabindex="-1">KIDS</a></li>
+          <li><a href="#" tabindex="-1">CULTURE</a></li>
+          <li class="bar"></li>
+          <li><a href="#" class="italic">Event</a></li>
+          <li><a href="#" class="italic">Lookbook</a></li>
+        </ul>
+      </div>
+    </header>
 
     <div class="special-order-title-wrapper">
       <p class="special-order-title">SPECIAL ORDER</p>
       <p class="special-order-desc">29CM에서만 만나볼 수 있는 제품을</p>
       <p class="special-order-desc">합리적인 가격으로 소개합니다</p>
+
+      <p class="special-order-web-desc">
+        29CM에서만 만나볼 수 있는 제품을 합리적인 가격으로 소개합니다
+      </p>
     </div>
 
     <div class="promo-container">
@@ -40,7 +197,9 @@
           </p>
         </div>
         <div class="promo-footer">
-          <div class="promo-line"></div>
+          <div class="promo-line-bar">
+            <div class="progress-20"></div>
+          </div>
           <p class="promo-date"><strong>2025.03.19. ~ 04.01.</strong></p>
         </div>
       </div>
@@ -59,7 +218,9 @@
           </p>
         </div>
         <div class="promo-footer">
-          <div class="promo-line"></div>
+          <div class="promo-line-bar">
+            <div class="progress-20"></div>
+          </div>
           <p class="promo-date"><strong>2025.03.19. ~ 04.01.</strong></p>
         </div>
       </div>
@@ -78,7 +239,9 @@
           </p>
         </div>
         <div class="promo-footer">
-          <div class="promo-line"></div>
+          <div class="promo-line-bar">
+            <div class="progress-40"></div>
+          </div>
           <p class="promo-date"><strong>2025.03.19. ~ 04.01.</strong></p>
         </div>
       </div>
@@ -98,8 +261,10 @@
           </p>
         </div>
         <div class="promo-footer">
-          <div class="promo-line"></div>
-          <p class="promo-date"><strong>2025.03.19. ~ 03.25.</strong></p>
+          <div class="promo-line-bar">
+            <div class="progress-20"></div>
+          </div>
+          <p class="promo-date"><strong>2025.03.19. ~ 04.01.</strong></p>
         </div>
       </div>
       <!-- 샹품카드 5 -->
@@ -117,7 +282,9 @@
           </p>
         </div>
         <div class="promo-footer">
-          <div class="promo-line"></div>
+          <div class="promo-line-bar">
+            <div class="progress-20"></div>
+          </div>
           <p class="promo-date"><strong>2025.03.19. ~ 04.01.</strong></p>
         </div>
       </div>
@@ -137,7 +304,31 @@
           </p>
         </div>
         <div class="promo-footer">
-          <div class="promo-line"></div>
+          <div class="promo-line-bar">
+            <div class="progress-20"></div>
+          </div>
+          <p class="promo-date"><strong>2025.03.19. ~ 04.01.</strong></p>
+        </div>
+      </div>
+
+      <!-- 상품카드 9 -->
+      <div class="promo-card">
+        <div class="promo-image">
+          <img
+            src="/src/images/specialorderimages/s9.jpg"
+            alt="도트 패턴 포인트 카디건"
+          />
+        </div>
+        <div class="promo-content">
+          <h2 class="promo-title">도트 패턴 포인트 카디건</h2>
+          <p class="promo-description">
+            시그니처인 레귤러 핏 엔조블루스 카디건 단독 15% 할인
+          </p>
+        </div>
+        <div class="promo-footer">
+          <div class="promo-line-bar">
+            <div class="progress-20"></div>
+          </div>
           <p class="promo-date"><strong>2025.03.19. ~ 04.01.</strong></p>
         </div>
       </div>
@@ -158,7 +349,7 @@
         <div class="promo-footer">
           <div class="promo-timeline">
             <div class="timeline-bar">
-              <div class="progress"></div>
+              <div class="progress-80"></div>
               <div class="d-day-marker">D-2</div>
             </div>
             <div class="timeline-text">
@@ -184,8 +375,334 @@
           </p>
         </div>
         <div class="promo-footer">
-          <div class="promo-line"></div>
-          <p class="promo-date"><strong>2025.03.21. ~ 04.03.</strong></p>
+          <div class="promo-timeline">
+            <div class="timeline-bar">
+              <div class="progress-80"></div>
+              <div class="d-day-marker">D-2</div>
+            </div>
+            <div class="timeline-text">
+              <span class="d-day-text">D-2</span>
+              <span class="date-range">2025.03.10. ~ 03.23.</span>
+            </div>
+          </div>
+          <p class="promo-date"><strong>2025.03.18. ~ 03.31.</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모바일용 푸터 -->
+    <div class="custom-footer-wrap">
+      <div class="custom-footer-title-wrap">
+        <div class="toggle">
+          <input type="checkbox" />
+          <span class="toggle-title">(주)무신사 사업자 정보&nbsp;&nbsp;</span
+          ><span class="custom-footer-details"> ></span>
+          <div class="hidden-text">
+            <p>
+              <span class="main-title">대표이사&nbsp;&nbsp;</span>
+              <span class="sub-title">조만호, 박준모</span>
+            </p>
+            <p>
+              <span class="main-title">사업자등록번호&nbsp;&nbsp;</span>
+              <span class="sub-title">211-88-79575</span>
+            </p>
+            <p>
+              <span class="main-title">주소&nbsp;&nbsp;</span>
+              <span class="sub-title"
+                >서울특별시 성동구 아차산로 13길 11, 1층 (성수동 2가,
+                무신사캠퍼스 엔1)</span
+              >
+            </p>
+            <p>
+              <span class="main-title">전화번호&nbsp;&nbsp;</span>
+              <span class="sub-title">1660-2929</span>
+            </p>
+            <p>
+              <span class="main-title">이메일&nbsp;&nbsp;</span>
+              <span class="sub-title">customer@29cm.co.kr</span>
+            </p>
+            <p>
+              <span class="main-title">통신판매업신고&nbsp;&nbsp;</span>
+              <span class="sub-title">2022-서울성동-01952</span>
+            </p>
+            <p>
+              <span class="main-title">개인정보 보호책임자&nbsp;&nbsp;</span>
+              <span class="sub-title">이재환</span>
+            </p>
+            <p>
+              <span class="main-title">호스팅서비스&nbsp;&nbsp;</span>
+              <span class="sub-title">(주)무신사</span>
+            </p>
+            <p class="explain-text">
+              일부 상품의 경우 29CM는 통신판매의 당사자가 아닌
+              통신판매중개자로서 상품, 상품정보, 거래에 대한 책임이 제한될 수
+              있으므로, 각 상품 페이지에서 구체적인 내용을 확인하시기 바랍니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 하단 텍스트 -->
+      <div class="custom-footer-text-wrap">
+        <p>
+          <a href="#">사업자정보확인</a><a href="#">개인정보처리방침</a
+          ><a href="#">이용약관</a><a href="#">분쟁해결기준</a>
+        </p>
+        <p>
+          <a href="#">FAQ</a><a href="#">인재채용</a
+          ><a href="#">상시 할인 혜택</a><a href="#">결제대행 위탁사</a>
+        </p>
+        <p><a href="#">마케팅, 입점, 대량 주문 문의</a></p>
+      </div>
+      <!-- 하단 로고 -->
+      <div class="custom-footer-logo-wrap">
+        <img
+          src="../images/footerimages/InstargramIcon.svg"
+          alt="instargram 로고"
+          width="40px"
+          height="40px"
+        />
+        <img
+          src="../images/footerimages/youtubeIcon.svg"
+          width="40px"
+          height="40px"
+          alt="youtube 로고"
+        />
+        <img
+          src="../images/footerimages/appleIcon.svg"
+          width="40px"
+          height="40px"
+          alt="apple 로고"
+        />
+        <img
+          src="../images/footerimages/playstoreIcon.svg"
+          alt="playstore로고"
+          width="40px"
+          height="40px"
+        />
+      </div>
+    </div>
+
+    <nav class="bottom-navbar">
+      <ul>
+        <li>
+          <a class="first" href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.59375 5.23438C3.59375 4.54401 4.15339 3.98438 4.84375 3.98438H11.5938V11.9844H3.59375V5.23438ZM12.5938 3.98438H19.3438C20.0341 3.98438 20.5938 4.54401 20.5938 5.23438V11.9844H12.5938V3.98438ZM3.59375 12.9844H11.5938V20.9844H4.84375C4.15339 20.9844 3.59375 20.4248 3.59375 19.7344V12.9844ZM12.5938 12.9844H20.5938V19.7344C20.5938 20.4248 20.0341 20.9844 19.3438 20.9844H12.5938V12.9844Z"
+                fill="black"
+              />
+            </svg>
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 19 19"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_177_441)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.28125 0.984375H0.78125V3.48438H1.78125V1.98438H16.7812V3.48438H17.7812V0.984375H1.28125ZM1.28125 4.98438H0.78125V17.9844H17.7812V4.98438H1.28125ZM1.78125 16.9844V5.98438H16.7812V16.9844H9.78125V10.9844H8.78125V16.9844H1.78125Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_177_441">
+                  <rect
+                    width="24"
+                    height="24"
+                    fill="white"
+                    transform="translate(0.28125 0.484375)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            SHOP
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M11.3687 4.48438C7.55799 4.48438 4.46875 7.57361 4.46875 11.3844C4.46875 15.1952 7.55799 18.2844 11.3687 18.2844C13.2699 18.2844 14.9907 17.5162 16.2393 16.272C17.4935 15.0221 18.2687 13.2943 18.2687 11.3844C18.2687 7.57361 15.1796 4.48438 11.3687 4.48438ZM3.46875 11.3844C3.46875 7.02132 7.0057 3.48438 11.3687 3.48438C15.7318 3.48438 19.2687 7.02132 19.2687 11.3844C19.2687 13.3901 18.5208 15.2219 17.2894 16.6149L21.3216 20.6301L20.6159 21.3387L16.5812 17.3209C15.1905 18.5428 13.3658 19.2844 11.3687 19.2844C7.0057 19.2844 3.46875 15.7475 3.46875 11.3844Z"
+                fill="black"
+              />
+            </svg>
+            SEARCH
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.15625 4.98438V19.9844H20.1562V4.98438H15.6562V12.4844H14.6562V4.98438H10.6562V12.4844H9.65625V4.98438H5.15625ZM4.15625 4.73438C4.15625 4.32017 4.49204 3.98438 4.90625 3.98438H20.4062C20.8204 3.98438 21.1562 4.32017 21.1562 4.73438V20.2344C21.1562 20.6486 20.8204 20.9844 20.4062 20.9844H4.90625C4.49204 20.9844 4.15625 20.6486 4.15625 20.2344V4.73438Z"
+                fill="black"
+              />
+            </svg>
+            29MAGAZINE
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.3438 3.48438V2.98438H12.3438V3.48438V8.48438V8.98438H13.3438V8.48438V3.48438ZM5.34375 17.6069V12.4844H20.3438V20.9844V21.4844H21.3438V20.9844V12.2344C21.3438 11.8202 21.0079 11.4844 20.5938 11.4844H5.09375C4.68171 11.4844 4.34375 11.8172 4.34375 12.2336V20.9844V21.4844H5.34375V20.9844V17.6069Z"
+                fill="black"
+              />
+            </svg>
+            MY
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 웹용 푸터 -->
+    <div class="footer-web">
+      <div class="footer-customer">
+        <p class="footer-title">고객센터 <strong>1660-2929</strong></p>
+        <p class="footer-time">
+          운영시간 : 평일 09:00 - 18:00 (점심시간 12:00 - 13:00 제외)
+        </p>
+        <div class="btn-icons">
+          <div class="footer-buttons">
+            <button class="btn">FAQ</button>
+            <button class="btn">1:1 문의</button>
+          </div>
+          <div class="sns-icons">
+            <img src="/src/images/footerimages/InstargramIcon.svg" alt="" />
+            <img src="/src/images/footerimages/youtubeIcon.svg" alt="" />
+            <img src="/src/images/footerimages/appleIcon.svg" alt="" />
+            <img src="/src/images/footerimages/playstoreIcon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-notice-column">
+          <div class="footer-column">
+            <p class="footer-link-title">NOTICE</p>
+            <ul class="footer-notice">
+              <li>[공지] 무통장 입금 이용 가능한 은행 제외 안내</li>
+              <li>[공지] 29CM 고객센터 전화번호 변경 안내</li>
+              <li>
+                [공지] 29CM 안전 거래 정책 위반 행위에 대한 조사 및 제재 사항
+                안내
+              </li>
+              <li>[공지] 2025 설 연휴 고객센터 휴무 및 배송/반품 일정 안내</li>
+              <li>
+                [공지] 개인정보 처리방침 개정 예정 안내 (시행일: 2024년 10월
+                23일)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-etc-column">
+          <div class="footer-column">
+            <p class="footer-link-title">ABOUT US</p>
+            <ul>
+              <li>29CM 소개</li>
+              <li>인재채용</li>
+              <li>상시 할인 혜택</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ORDER</p>
+            <ul>
+              <li>주문배송</li>
+              <li>취소/교환/반품 내역</li>
+              <li>상품 리뷰 내역</li>
+              <li>증빙서류발급</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ACCOUNT</p>
+            <ul>
+              <li>회원정보수정</li>
+              <li>회원등급</li>
+              <li>마일리지현황</li>
+              <li>쿠폰</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">HELP</p>
+            <ul>
+              <li>1:1 문의</li>
+              <li>마케팅 제휴, 입점, 대량 주문 문의</li>
+              <li>상품 Q&A내역</li>
+              <li>공지사항</li>
+              <li>FAQ</li>
+              <li>고객의 소리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-web-nav">
+        <nav class="footer-nav">
+          <a href="/">개인정보처리방침</a>
+          <a href="/">이용약관</a>
+          <a href="/">분쟁해결기준</a>
+          <a href="/">안전거래센터</a>
+          <a href="/">결제대행 위탁사</a>
+        </nav>
+        <div class="footer-web-company">
+          <div>
+            상호명: 주식회사 무신사 (MUSINSA Co., Ltd.) 사업장소재지: 서울특별시
+            성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스) 팩스:
+            070-8622-7737 사업자등록번호: 211-88-79575
+          </div>
+          <p>
+            통신판매업신고: 2022-서울성동-01952
+            <a href="/" class="button">사업자정보확인</a>
+          </p>
+          <p>
+            전화번호: 1660-2929 이메일: customer@29cm.co.kr 대표: 조만호, 박준모
+            개인정보 보호책임자: 이재환 호스팅서비스: (주)무신사, 상품정보,
+            거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인
+            내용을 확인하시기 바랍니다.
+          </p>
+          <p>
+            일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+            상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+            페이지에서 구체적인 내용을 확인하시기 바랍니다.
+          </p>
         </div>
       </div>
     </div>

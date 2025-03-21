@@ -3,6 +3,8 @@
 @import "/src/component/style/footer.css";
 @import "/src/component/style/header-component.css";
 @import "/src/component/style/specialorder-component.css";
+@import "/src/component/style/custom-footer-component.css";
+@import "/src/component/style/navbar-component.css";
 
 .promo-container {
   display: flex;
@@ -10,24 +12,54 @@
   gap: 20px; /* 카드 간 간격 */
 }
 
+@media (max-width: 540px) {
+  .promo-line-bar,
+  .timeline-bar,
+  .special-order-web-desc {
+    display: none;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 899px) {
+  .bottom-navbar {
+    display: hidden;
+  }
+  .promo-container {
+    flex-direction: row;
+    flex-wrap: nowrap; /* 줄바꿈 없이 한 줄로 */
+    overflow-x: auto; /* 넘치면 좌우 스크롤 */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 100px;
+  }
+
+  .promo-card {
+    flex: 0 0 auto; /* 고정 너비 */
+    width: 80%; /* 필요시 조정 */
+    margin-right: 20px;
+  }
+}
+
 @media (min-width: 900px) {
+  .bottom-navbar {
+    display: hidden;
+  }
   .promo-container {
     flex-direction: row; /* 900px 이상일 때 가로 정렬 */
     flex-wrap: wrap; /* 요소가 넘칠 경우 다음 줄로 */
     justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 100px;
   }
 
   .promo-card {
     width: calc(50% - 10px); /* 두 개씩 배치 */
   }
 
-  .special-order-title {
-    display: none;
-  }
-
+  .special-order-title,
   .special-order-desc {
-    font-size: 24px;
-    display: flex;
+    display: none;
   }
 }
 
@@ -48,4 +80,12 @@
   font-size: 16px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.special-order-web-desc {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
