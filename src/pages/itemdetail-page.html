@@ -213,8 +213,6 @@
           src="/src/images/cardimages/detail-1.webp"
           alt=""
         />
-        <button class="circle">.</button>
-        <button class="circle gray">.</button>
       </div>
       <div class="product-wrap">
         <div class="product-info">
@@ -474,24 +472,26 @@
             </a>
           </div>
           <div class="button-wrap" hidden>
-            <button class="select-button">
-              <span>Color</span>
-              <img
-                width="14px"
-                height="14px"
-                src="/src/images/Iconimages/down.png"
-                alt=""
-              />
-            </button>
-            <button class="select-button">
-              <span>Size</span>
-              <img
-                width="14px"
-                height="14px"
-                src="/src/images/Iconimages/down.png"
-                alt=""
-              />
-            </button>
+            <div class="option">
+              <label for="color" class="sr-only">색상 선택</label>
+              <select name="color" id="color">
+                <option value="color" selected>COLOR</option>
+                <option value="color">Ecru(3월 30일이내 순차발송)</option>
+                <option value="color">Gray</option>
+                <option value="color">Butter (3월 28일이내 순차발송)</option>
+                <option value="color">Black [품절]</option>
+              </select>
+            </div>
+            <div class="option">
+              <label for="size" class="sr-only">사이즈 선택</label>
+              <select name="size" id="size">
+                <option value="size" selected>SIZE</option>
+                <option value="size">S</option>
+                <option value="size">M</option>
+                <option value="size">L</option>
+                <option value="size">XL</option>
+              </select>
+            </div>
             <div class="option-button-wrap">
               <button class="option-button">장바구니 담기</button>
               <button class="option-button black">바로 구매하기</button>
