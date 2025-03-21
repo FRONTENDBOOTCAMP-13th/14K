@@ -5,6 +5,9 @@
 @import "../../component/style/29Magazine-component.css";
 @import "../../../public/font/pretendardvariable.css";
 @import "../../component/style/button-component.css";
+@import "../../component/style/custom-footer-component.css";
+@import "../../component/style/navbar-component.css";
+
 body * {
   font-family: "Pretendard Variable", sans-serif;
 }
@@ -133,7 +136,8 @@ body {
 
 @media (min-width: 33.75rem) {
   .more-button {
-    margin-top: 4.375rem;
+    margin-top: 6.25rem;
+    margin-bottom: 7.5rem;
   }
 }
 .magazine-web-image {
