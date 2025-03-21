@@ -300,17 +300,17 @@ header {
   animation: wiggle 0.3s ease-in-out;
 }
 
+.footer-time {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .footer-customer {
   border: none;
   padding-left: 20px;
   padding-top: 0%;
   margin-bottom: 30px;
-}
-
-.footer-time {
-  color: black;
-  font-size: 20px;
-  margin-bottom: 10px;
 }
 .custom-footer {
   font-size: 12px;
@@ -320,6 +320,18 @@ header {
 
   letter-spacing: 0.5px;
   font-weight: 400;
+}
+
+/* component-link만 두 줄로 배치 */
+.component-link ul {
+  display: flex;
+  flex-wrap: wrap; /* 두 줄 정렬 */
+  padding: 0;
+}
+
+.component-link ul li {
+  width: 50%; /* 두 줄 정렬 */
+  list-style: none;
 }
 
 footer {
