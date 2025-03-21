@@ -347,21 +347,26 @@ body {
         row-gap: 16px;
         margin-top: 40px;
 
-        .select-button {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: space-between;
-          align-items: center;
-
+        .option {
           width: 100%;
-          border: 1px solid rgb(212 212 212);
-          height: 36px;
-          padding: 0px 14px 0px 14px;
-          font-size: 13px;
-          font-weight: 400;
-          color: rgb(38 38 51);
-          background: transparent;
+          select {
+            width: 100%;
+            border: 1px solid rgb(212 212 212);
+            height: 36px;
+            padding: 0px 14px 0px 14px;
+            font-size: 13px;
+            font-weight: 400;
+            color: rgb(38 38 51);
+            background: transparent;
+            appearance: none; /* 기본 스타일 제거 */
+            -webkit-appearance: none; /* 크롬, 사파리 */
+
+            background: url("/src/images/Iconimages/down.png") no-repeat right
+              10px center;
+            background-size: 16px;
+          }
         }
+
         .option-button-wrap {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
