@@ -9,6 +9,7 @@ body {
   padding-inline: 20px;
   padding-bottom: 50px;
   border-bottom: 1px solid rgb(228, 228, 228);
+
   .review-num {
     display: flex;
     flex-flow: row nowrap;
@@ -97,7 +98,8 @@ body {
       font-weight: 400;
       line-height: 15px;
       color: rgb(160 160 160);
-      width: 400px;
+      /* width: 400px; */
+      flex-grow: 1;
 
       .init {
         font-size: 11px;
@@ -129,6 +131,19 @@ body {
       }
     }
   }
+
+  @media (min-width: 540px) {
+    .review-num {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
+      padding-bottom: 16px;
+      border-bottom: 4px solid black;
+    }
+    .review-filter {
+      display: none;
+    }
+  }
 }
 
 /* .blank {
@@ -148,6 +163,10 @@ body {
   padding-inline: 10px;
   text-align: start;
   margin-block: 20px;
+
+  @media (min-width: 540px) {
+    display: none;
+  }
 }
 
 .qustion {
@@ -159,6 +178,7 @@ body {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     p {
       display: contents;
@@ -236,5 +256,90 @@ body {
       right: 0px;
       top: 70%;
     }
+  }
+
+  @media (min-width: 540px) {
+    .q-title {
+      span {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #000;
+      }
+
+      padding-bottom: 8px;
+      border-bottom: 4px solid black;
+    }
+  }
+}
+
+.num-select {
+  width: 100%;
+  padding-block: 16px;
+
+  ul {
+    list-style: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    li:nth-child(1) {
+      font-weight: bold;
+      border-bottom: 1px solid black;
+    }
+
+    li:nth-child(11) {
+      margin-left: 8px;
+    }
+  }
+
+  @media (min-width: 540px) {
+    display: block;
+  }
+}
+
+.qustion-option {
+  position: absolute;
+  right: 80px;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 16px;
+    justify-content: center;
+  }
+
+  li {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: normal;
+    color: rgb(93 93 93);
+  }
+
+  li:nth-child(1) {
+    font-weight: 700;
+
+    color: #000;
+  }
+
+  li::before {
+    content: "|";
+    padding-right: 16px;
+
+    &:nth-child(1)::before {
+      content: "";
+    }
+  }
+
+  li:nth-child(1)::before {
+    content: "";
+  }
+
+  @media (min-width: 540px) {
+    display: block;
   }
 }

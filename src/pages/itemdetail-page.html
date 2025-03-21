@@ -16,9 +16,163 @@
     <link rel="stylesheet" href="/src/pages/styles/itemdetail-page.css" />
   </head>
   <body>
-    <h1>디테일 페이지</h1>
+    <h1 hidden>디테일 페이지</h1>
 
-    <header>헤더 부분</header>
+    <!-- 헤더 part -->
+    <!-- 모바일 헤더 -->
+    <div class="mobile">
+      <div class="headercontext">
+        <div class="apptextwrap">
+          <span class="logotext">29</span>
+          <span class="apptext"
+            >29CM 앱 설치하고 <span class="redtext">15% </span>할인 받기</span
+          >
+        </div>
+        <button class="showappbtn">앱으로 보기</button>
+      </div>
+    </div>
+
+    <!-- 모바일 버전 sticky에 해당하는 부분 -->
+    <div class="icon">
+      <a href="../pages/main-page.html"
+        ><img
+          src="../images/logoimage/29Cm logo.svg"
+          class="logoimage"
+          alt="로고 이미지"
+      /></a>
+      <div class="mobileIcon">
+        <a href="../pages/shoppingbag-page.html">
+          <img
+            width="13.5px"
+            height="15.75px"
+            src="../images/Iconimages/shopping-bag-Icon.svg"
+            alt="ShoppingbagIcon"
+            class="ShoppingbagIcon"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            width="14.03px"
+            height="14.03px"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="SearchIcon"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- 웹 헤더 -->
+    <header class="webheader">
+      <div class="logo">
+        <a href="../pages/main-page.html"
+          ><img
+            src="../images/logoimage/29Cm logo.svg"
+            width="60"
+            height="16"
+            alt="29cm 로고 이미지"
+        /></a>
+        <ul class="Icons">
+          <li class="MypageIcon" tabindex="0">
+            <a href="../pages/mypage.html" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="14.63px"
+                src="../../src/images/Iconimages/mypageIcon.svg"
+                alt="My Page Icon"
+            /></a>
+            <a href="../pages/mypage.html" class="Icontext" tabindex="-1"
+              >MY PAGE</a
+            >
+          </li>
+          <li class="MylikeIcon" tabindex="0">
+            <a href="../pages/like-page.html" tabindex="-1"
+              ><img
+                width="14.25px"
+                height="12.92px"
+                src="../../src/images/Iconimages/blackheartIcon.svg"
+                alt="My Like Icon"
+            /></a>
+            <a href="../pages/like-page.html" class="Icontext" tabindex="-1"
+              >MY LIKE</a
+            >
+          </li>
+          <li class="ShoppingBagIcon" tabindex="0">
+            <a href="../pages/shoppingbag-page.html" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="15.75px"
+                src="../../src/images/Iconimages/shopping-bag-Icon.svg"
+                alt="Shopping Bag Icon"
+            /></a>
+            <a
+              href="../pages/shoppingbag-page.html"
+              class="Icontext"
+              tabindex="-1"
+              >SHOPPING BAG</a
+            >
+          </li>
+          <li class="loginIcon" tabindex="-1">
+            <a href="../pages/login-page.html" tabindex="-1"
+              ><img
+                width="12px"
+                height="15px"
+                src="../../src/images/Iconimages/loginIcon.svg"
+                alt="LoginIcon"
+            /></a>
+            <a href="../pages/login-page.html" class="Icontext" tabindex="-1"
+              >LOGIN</a
+            >
+          </li>
+          <li class="SearchIcon">
+            <a href="#"
+              ><img
+                width="14.03px"
+                height="14.03px"
+                src="../../src/images/Iconimages/reading-glasses.svg"
+                alt="Search Icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="headline">
+        <ul>
+          <li><a href="#">Special-Order</a></li>
+          <li><a href="#">Showcase</a></li>
+          <li><a href="#">PT</a></li>
+          <li><a href="../pages/29Magazine.html">29Magazine</a></li>
+        </ul>
+
+        <a href="#" class="searchIcon"
+          ><img
+            width="34.29"
+            height="34.3"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="검색 아이콘"
+        /></a>
+      </div>
+
+      <div class="categorywrap">
+        <ul class="category">
+          <li><a href="../pages/best-page.html">BEST</a></li>
+          <li><a href="../pages/women-page.html" tabindex="-1">WOMEN</a></li>
+          <li><a href="#" tabindex="-1">MEN</a></li>
+          <li><a href="#" tabindex="-1">INTERIOR</a></li>
+          <li><a href="#" tabindex="-1">KITCHEN</a></li>
+          <li><a href="#" tabindex="-1">ELECTRONICS</a></li>
+          <li><a href="#" tabindex="-1">DIGITAL</a></li>
+          <li><a href="#" tabindex="-1">BEAUTY</a></li>
+          <li><a href="#" tabindex="-1">FOOD</a></li>
+          <li><a href="#" tabindex="-1">LEISURE</a></li>
+          <li><a href="#" tabindex="-1">KIDS</a></li>
+          <li><a href="#" tabindex="-1">CULTURE</a></li>
+          <li class="bar"></li>
+          <li><a href="#" class="italic">Event</a></li>
+          <li><a href="#" class="italic">Lookbook</a></li>
+        </ul>
+      </div>
+    </header>
 
     <aside class="top-info" hidden>
       <div class="option">
@@ -381,10 +535,82 @@
       </button>
     </section>
 
+    <div class="table" hidden>
+      <div class="table-item">
+        <h3>상품정보 보기</h3>
+        <table class="product-info">
+          <tr>
+            <th>제품 소재</th>
+            <td>상세 페이지 참고</td>
+          </tr>
+          <tr>
+            <th>색상</th>
+            <td>상세 페이지 참고</td>
+          </tr>
+          <tr>
+            <th>치수</th>
+            <td>상세 페이지 참고</td>
+          </tr>
+          <tr>
+            <th>제조자</th>
+            <td>(주) 하고하우스</td>
+          </tr>
+          <tr>
+            <th>제조국</th>
+            <td>대한민국</td>
+          </tr>
+          <tr>
+            <th>세탁방법 및 취급시 주의사항</th>
+            <td>상세 페이지 참고</td>
+          </tr>
+          <tr>
+            <th>제조연월</th>
+            <td>23.08.01</td>
+          </tr>
+          <tr>
+            <th>품질보증기준</th>
+            <td>상세 페이지 참고</td>
+          </tr>
+          <tr>
+            <th>A/S 책임자와 전화번호</th>
+            <td>상세 페이지 참고</td>
+          </tr>
+        </table>
+      </div>
+      <div class="table-item">
+        <h3>판매자정보</h3>
+        <table class="product-info">
+          <tr>
+            <th>상호명</th>
+            <td>주식회사 하고하우스(HAGOHAUS Inc)</td>
+          </tr>
+          <tr>
+            <th>사업자등록번호</th>
+            <td>8208800547</td>
+          </tr>
+          <tr>
+            <th>통신판매업번호</th>
+            <td>2023-성남분당A-0276</td>
+          </tr>
+          <tr>
+            <th>대표자</th>
+            <td>홍*우,이*훈</td>
+          </tr>
+          <tr>
+            <th>사업자 소재지</th>
+            <td>
+              (12345) 경기도 성남시 분당구 판교로 123 에이동 101호(상평동,
+              판교디지털센터)
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
     <section class="recommand">
       <div class="list-type">
         <div class="list-name">
-          <p>추천상품</p>
+          <p>슬리브리스 BEST</p>
           <p>더보기</p>
         </div>
         <div class="list-item">
@@ -560,6 +786,283 @@
               </p>
             </a>
           </div>
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="list-num">
+          <img src="/src/images/Iconimages/left1.svg" alt="왼쪽 아이콘" />
+          <div class="num"><span>1</span><span>/</span><span>4</span></div>
+          <img src="/src/images/Iconimages/right1.svg" alt="오른쪽 아이콘" />
+        </div>
+      </div>
+      <div class="list-type">
+        <div class="list-name">
+          <p>다른 고객이 함께 구매한 상품</p>
+          <p>더보기</p>
+        </div>
+        <div class="list-item">
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="list-num">
+          <img src="/src/images/Iconimages/left1.svg" alt="왼쪽 아이콘" />
+          <div class="num"><span>1</span><span>/</span><span>4</span></div>
+          <img src="/src/images/Iconimages/right1.svg" alt="오른쪽 아이콘" />
         </div>
       </div>
       <div class="list-type">
@@ -740,11 +1243,59 @@
               </p>
             </a>
           </div>
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="list-num">
+          <img src="/src/images/Iconimages/left1.svg" alt="왼쪽 아이콘" />
+          <div class="num"><span>1</span><span>/</span><span>4</span></div>
+          <img src="/src/images/Iconimages/right1.svg" alt="오른쪽 아이콘" />
         </div>
       </div>
       <div class="list-type">
         <div class="list-name">
-          <p>추천상품</p>
+          <p>함께 찾는 리빙 상품</p>
           <p>더보기</p>
         </div>
         <div class="list-item">
@@ -920,734 +1471,926 @@
               </p>
             </a>
           </div>
+          <div class="card3">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
+                  alt="의류 상품 광고"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+              <h3>헤르만의 정원</h3>
+              <!-- 12px 130% 400 inherit -->
+              <p class="context">정원 밀크티 베이스</p>
+              <!-- 14px 140% 700  -->
+              <p>
+                <span class="discount">29%</span
+                ><span class="price">14,200</span>
+              </p>
+              <p class="icon-wrap">
+                <img
+                  src="/src/images/Iconimages/grayheart.svg"
+                  alt="찜하기 해제"
+                />
+                <span>3</span>
+                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
+                <span>0</span>
+                <span>(0)</span>
+              </p>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="list-type">
-        <div class="list-name">
-          <p>추천상품</p>
-          <p>더보기</p>
-        </div>
-        <div class="list-item">
-          <div class="card3">
-            <a href="">
-              <div class="wrap">
-                <img
-                  class="main-img"
-                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
-                  alt="의류 상품 광고"
-                />
-                <input type="checkbox" class="like-icon" id="like-1" />
-                <label for="like-1">
-                  <img
-                    class="check default"
-                    src="/src/images/Iconimages/whiteheart.svg"
-                    alt="찜하기 해제"
-                  />
-                  <img
-                    class="check check-on"
-                    src="/src/images/Iconimages/redheart.svg"
-                    alt="찜하기 설정"
-                  />
-                </label>
-              </div>
-              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
-              <h3>헤르만의 정원</h3>
-              <!-- 12px 130% 400 inherit -->
-              <p class="context">정원 밀크티 베이스</p>
-              <!-- 14px 140% 700  -->
-              <p>
-                <span class="discount">29%</span
-                ><span class="price">14,200</span>
-              </p>
-              <p class="icon-wrap">
-                <img
-                  src="/src/images/Iconimages/grayheart.svg"
-                  alt="찜하기 해제"
-                />
-                <span>3</span>
-                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
-                <span>0</span>
-                <span>(0)</span>
-              </p>
-            </a>
-          </div>
-          <div class="card3">
-            <a href="">
-              <div class="wrap">
-                <img
-                  class="main-img"
-                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
-                  alt="의류 상품 광고"
-                />
-                <input type="checkbox" class="like-icon" id="like-1" />
-                <label for="like-1">
-                  <img
-                    class="check default"
-                    src="/src/images/Iconimages/whiteheart.svg"
-                    alt="찜하기 해제"
-                  />
-                  <img
-                    class="check check-on"
-                    src="/src/images/Iconimages/redheart.svg"
-                    alt="찜하기 설정"
-                  />
-                </label>
-              </div>
-              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
-              <h3>헤르만의 정원</h3>
-              <!-- 12px 130% 400 inherit -->
-              <p class="context">정원 밀크티 베이스</p>
-              <!-- 14px 140% 700  -->
-              <p>
-                <span class="discount">29%</span
-                ><span class="price">14,200</span>
-              </p>
-              <p class="icon-wrap">
-                <img
-                  src="/src/images/Iconimages/grayheart.svg"
-                  alt="찜하기 해제"
-                />
-                <span>3</span>
-                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
-                <span>0</span>
-                <span>(0)</span>
-              </p>
-            </a>
-          </div>
-          <div class="card3">
-            <a href="">
-              <div class="wrap">
-                <img
-                  class="main-img"
-                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
-                  alt="의류 상품 광고"
-                />
-                <input type="checkbox" class="like-icon" id="like-1" />
-                <label for="like-1">
-                  <img
-                    class="check default"
-                    src="/src/images/Iconimages/whiteheart.svg"
-                    alt="찜하기 해제"
-                  />
-                  <img
-                    class="check check-on"
-                    src="/src/images/Iconimages/redheart.svg"
-                    alt="찜하기 설정"
-                  />
-                </label>
-              </div>
-              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
-              <h3>헤르만의 정원</h3>
-              <!-- 12px 130% 400 inherit -->
-              <p class="context">정원 밀크티 베이스</p>
-              <!-- 14px 140% 700  -->
-              <p>
-                <span class="discount">29%</span
-                ><span class="price">14,200</span>
-              </p>
-              <p class="icon-wrap">
-                <img
-                  src="/src/images/Iconimages/grayheart.svg"
-                  alt="찜하기 해제"
-                />
-                <span>3</span>
-                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
-                <span>0</span>
-                <span>(0)</span>
-              </p>
-            </a>
-          </div>
-          <div class="card3">
-            <a href="">
-              <div class="wrap">
-                <img
-                  class="main-img"
-                  src="/src/images/cardimages/11f00099eeee0d728b63e32c4e10599f.webp"
-                  alt="의류 상품 광고"
-                />
-                <input type="checkbox" class="like-icon" id="like-1" />
-                <label for="like-1">
-                  <img
-                    class="check default"
-                    src="/src/images/Iconimages/whiteheart.svg"
-                    alt="찜하기 해제"
-                  />
-                  <img
-                    class="check check-on"
-                    src="/src/images/Iconimages/redheart.svg"
-                    alt="찜하기 설정"
-                  />
-                </label>
-              </div>
-              <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
-              <h3>헤르만의 정원</h3>
-              <!-- 12px 130% 400 inherit -->
-              <p class="context">정원 밀크티 베이스</p>
-              <!-- 14px 140% 700  -->
-              <p>
-                <span class="discount">29%</span
-                ><span class="price">14,200</span>
-              </p>
-              <p class="icon-wrap">
-                <img
-                  src="/src/images/Iconimages/grayheart.svg"
-                  alt="찜하기 해제"
-                />
-                <span>3</span>
-                <img src="/src/images/Iconimages/star.svg" alt="찜하기 설정" />
-                <span>0</span>
-                <span>(0)</span>
-              </p>
-            </a>
-          </div>
+        <div class="list-num">
+          <img src="/src/images/Iconimages/left1.svg" alt="왼쪽 아이콘" />
+          <div class="num"><span>1</span><span>/</span><span>4</span></div>
+          <img src="/src/images/Iconimages/right1.svg" alt="오른쪽 아이콘" />
         </div>
       </div>
     </section>
 
-    <section class="review">
-      <div class="review-num">
-        <p>리뷰 (185)</p>
-        <span class="red-star">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            viewBox="0 0 10 10"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_188_429)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                fill="currentColor"
-                stroke="currentColor"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_188_429">
-                <rect width="10" height="10" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            viewBox="0 0 10 10"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_188_429)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                fill="currentColor"
-                stroke="currentColor"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_188_429">
-                <rect width="10" height="10" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            viewBox="0 0 10 10"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_188_429)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                fill="currentColor"
-                stroke="currentColor"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_188_429">
-                <rect width="10" height="10" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            viewBox="0 0 10 10"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_188_429)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                fill="currentColor"
-                stroke="currentColor"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_188_429">
-                <rect width="10" height="10" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            height="10"
-            viewBox="0 0 10 10"
-            fill="none"
-          >
-            <g clip-path="url(#clip0_188_429)">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                fill="currentColor"
-                stroke="currentColor"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_188_429">
-                <rect width="10" height="10" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </span>
-      </div>
-      <div class="review-filter">
-        <div class="review-filter-wrap">
-          <button class="toggle-button"></button>
-          <p class="filter">내 맞춤 필터</p>
+    <div class="size-wrap">
+      <section class="review">
+        <div class="review-num">
+          <p>리뷰 (185)</p>
+          <span class="red-star"
+            ><img
+              class="red-star"
+              src="/src/images/Iconimages/orangestar.svg"
+              alt=""
+            /><img
+              class="red-star"
+              src="/src/images/Iconimages/orangestar.svg"
+              alt=""
+            /><img
+              class="red-star"
+              src="/src/images/Iconimages/orangestar.svg"
+              alt=""
+            /><img
+              class="red-star"
+              src="/src/images/Iconimages/orangestar.svg"
+              alt=""
+            /><img
+              class="red-star"
+              src="/src/images/Iconimages/orangestar.svg"
+              alt=""
+            />
+          </span>
         </div>
-        <button>체형별</button>
-      </div>
-      <!-- <div></div> -->
-      <div class="review-context">
-        <div class="left">
-          <p class="init">
-            <span class="red-star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            abc<span aria-hidden="true">****</span>
+        <div class="review-filter">
+          <div class="review-filter-wrap">
+            <button class="toggle-button"></button>
+            <p class="filter">내 맞춤 필터</p>
+          </div>
+          <button>체형별</button>
+        </div>
+        <!-- <div></div> -->
+        <div class="review-context">
+          <div class="left">
+            <p class="init">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              ddes<span aria-hidden="true">****</span>
+            </p>
+            <p>옵션: [Color]Black [Size]One Size</p>
+            <p>체형 : 167cm 58kg</p>
+            <p>사이즈 잘 맞아요</p>
+            <p class="end">
+              소재가 탄탄하고 핏도 예뻐요 슬리브리스 자체도 괜찮고 티나 셔츠
+              받쳐입어도 예쁘네요
+            </p>
+          </div>
+          <div class="right">
+            <time datetime="2024.04.02">2024.04.02</time>
+            <img src="/src/images/cardimages/review1.webp" alt="리뷰 사진" />
+          </div>
+        </div>
+        <div class="review-context">
+          <div class="left">
+            <p class="init">
+              <span class="red-star">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              qw22<span aria-hidden="true">****</span>
+            </p>
+            <p>옵션: [Color]Black [Size]One Size</p>
+            <p>체형 : 170cm 50kg</p>
+            <p>사이즈 잘 맞아요</p>
+            <p class="end">
+              사이즈가 살짝 타이트해요 흰블라우스 레이어드가 젤 깔꿈
+            </p>
+          </div>
+          <div class="right">
+            <time datetime="2024.04.05">2024.04.05</time>
+            <img src="/src/images/cardimages/review2.webp" alt="리뷰 사진" />
+          </div>
+        </div>
+        <div class="review-context">
+          <div class="left">
+            <p class="init">
+              <span class="red-star">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              hhww<span aria-hidden="true">****</span>
+            </p>
+            <p>옵션: [Color]Black [Size]One Size</p>
+            <p>체형 : 160cm 60kg</p>
+            <p>사이즈 잘 맞아요</p>
+            <p class="end">
+              크림색 먼저 구입하고 맘에 들어서 블랙도 데려 왔어요
+            </p>
+          </div>
+          <div class="right">
+            <time datetime="2024.04.19">2024.04.19</time>
+            <img src="/src/images/cardimages/review4.webp" alt="리뷰 사진" />
+          </div>
+        </div>
+        <div class="review-context">
+          <div class="left">
+            <p class="init">
+              <span class="red-star">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              k28s<span aria-hidden="true">****</span>
+            </p>
+            <p>옵션: [Color]Black [Size]One Size</p>
+            <p>체형 : 180cm 80kg</p>
+            <p>사이즈 잘 맞아요</p>
+            <p class="end">
+              생각한 핏이 나와서 좋아요 사이즈가 낙낙해서 목티에 두꺼운 블라우스
+              입어도 핏이 잘 나와요 굳
+            </p>
+          </div>
+          <div class="right">
+            <time datetime="2025.01.02">2025.01.02</time>
+            <img src="/src/images/cardimages/review3.webp" alt="리뷰 사진" />
+          </div>
+        </div>
+        <div class="review-context last">
+          <div class="left">
+            <p class="init">
+              <span class="red-star">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="10"
+                  viewBox="0 0 10 10"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_188_429)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
+                      fill="black"
+                      stroke="black"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_188_429">
+                      <rect width="10" height="10" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              12ks<span aria-hidden="true">****</span>
+            </p>
+            <p>옵션: [Color]Black [Size]One Size</p>
+            <p>체형 : 163cm 55kg</p>
+            <p>사이즈 잘 맞아요</p>
+            <p class="end">
+              오랫동안 고민하다 세일해서 샀어요 티셔츠 셔츠 위에 레이어드해서 잘
+              입어볼께요ㅎ
+            </p>
+          </div>
+          <div class="right">
+            <time datetime="2025.03.21">2025.03.21</time>
+            <img src="/src/images/cardimages/review5.webp" alt="리뷰 사진" />
+          </div>
+        </div>
+        <button class="review-more-button">
+          <span>상품 리뷰 전체보기 (185)</span>
+          <span> </span>
+        </button>
+        <div class="num-select" hidden>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li><img src="/src/images/Iconimages/right1.svg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <section class="qustion">
+        <div class="q-title">
+          <p>
+            <span>상품 Q&A <span hidden>(68)</span></span
+            ><a href="">Q&A쓰기</a>
           </p>
-          <p>옵션: [Color]Black [Size]One Size</p>
-          <p>체형 : 167cm 55kg</p>
-          <p>사이즈 잘 맞아요</p>
-          <p class="end">셔츠를 잘 받았습니다. 감사합니다.</p>
+          <div class="qustion-option" hidden>
+            <ul>
+              <li>ALL</li>
+              <li>상품문의 (21)</li>
+              <li>재입고문의 (22)</li>
+              <li>사이즈문의 (2)</li>
+              <li>배송문의 (22)</li>
+              <li>기타 (1)</li>
+            </ul>
+          </div>
         </div>
-        <div class="right">
-          <time datetime="2024.04.02">2024.04.02</time>
-          <img src="/src/images/cardimages/i1-1.webp" alt="리뷰 사진" />
-        </div>
-      </div>
-      <div class="review-context">
-        <div class="left">
-          <p class="init">
-            <span class="red-star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            abc<span aria-hidden="true">****</span>
+        <div class="q-context">
+          <p class="date">
+            <time datetime="2025.03.22">2025.03.22</time><span>mint</span
+            ><span aria-hidden="true">****</span>
           </p>
-          <p>옵션: [Color]Black [Size]One Size</p>
-          <p>체형 : 167cm 55kg</p>
-          <p>사이즈 잘 맞아요</p>
-          <p class="end">셔츠를 잘 받았습니다. 감사합니다.</p>
+          <p class="title">[재입고문의]</p>
+          <p class="context">언제 재입고 될까요?</p>
+          <button>no</button>
         </div>
-        <div class="right">
-          <time datetime="2024.04.02">2024.04.02</time>
-          <img src="/src/images/cardimages/i1-1.webp" alt="리뷰 사진" />
-        </div>
-      </div>
-      <div class="review-context last">
-        <div class="left">
-          <p class="init">
-            <span class="red-star">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="10"
-                height="10"
-                viewBox="0 0 10 10"
-                fill="none"
-              >
-                <g clip-path="url(#clip0_188_429)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.18923 3.42298L0 3.90991L2.30769 6.27529L1.76308 9.61529L4.61538 8.03837L7.46769 9.61529L6.92308 6.27529L9.23077 3.90991L6.04154 3.42298L4.61538 0.384521L3.18923 3.42298Z"
-                    fill="black"
-                    stroke="black"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_188_429">
-                    <rect width="10" height="10" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </span>
-            abc<span aria-hidden="true">****</span>
+        <div class="q-context">
+          <p class="date">
+            <time datetime="2025.03.21">2025.03.21</time><span>dsedf</span
+            ><span aria-hidden="true">****</span>
           </p>
-          <p>옵션: [Color]Black [Size]One Size</p>
-          <p>체형 : 167cm 55kg</p>
-          <p>사이즈 잘 맞아요</p>
-          <p class="end">셔츠를 잘 받았습니다. 감사합니다.</p>
+          <p class="title">[재입고문의]</p>
+          <p class="context">
+            <img
+              src="/src/images/Iconimages/secret.svg"
+              alt="비밀 열쇠 아이콘"
+            />비밀글 입니다.
+          </p>
+          <button>no</button>
         </div>
-        <div class="right">
-          <time datetime="2024.04.02">2024.04.02</time>
-          <img src="/src/images/cardimages/i1-1.webp" alt="리뷰 사진" />
+        <div class="q-context">
+          <p class="date">
+            <time datetime="2025.03.20">2025.03.20</time><span>sdfege</span
+            ><span aria-hidden="true">****</span>
+          </p>
+          <p class="title">[재입고문의]</p>
+          <p class="context">
+            <img
+              src="/src/images/Iconimages/secret.svg"
+              alt="비밀 열쇠 아이콘"
+            />비밀글 입니다.
+          </p>
+          <button>yes</button>
         </div>
-      </div>
+        <div class="q-context">
+          <p class="date">
+            <time datetime="2025.03.19">2025.03.19</time><span>eeer3</span
+            ><span aria-hidden="true">****</span>
+          </p>
+          <p class="title">[재입고문의]</p>
+          <p class="context">
+            <img
+              src="/src/images/Iconimages/secret.svg"
+              alt="비밀 열쇠 아이콘"
+            />비밀글 입니다.
+          </p>
+          <button>yes</button>
+        </div>
+        <div class="q-context last">
+          <p class="date">
+            <time datetime="2025.03.19">2025.03.19</time><span>jj434</span
+            ><span aria-hidden="true">****</span>
+          </p>
+          <p class="title">[재입고문의]</p>
+          <p class="context">
+            <img
+              src="/src/images/Iconimages/secret.svg"
+              alt="비밀 열쇠 아이콘"
+            />비밀글 입니다.
+          </p>
+          <button>yes</button>
+        </div>
+        <button class="review-more-button">
+          <span>상품 Q&A 전체보기 (68)</span>
+          <span></span>
+        </button>
+        <div class="num-select" hidden>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li><img src="/src/images/Iconimages/right1.svg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
 
-      <button class="review-more-button">
-        <span>상품 리뷰 전체보기 (185)</span>
-        <span> </span>
-      </button>
-    </section>
-
-    <section class="qustion">
-      <div class="q-title">
-        <p><span>상품 Q&A</span><a href="">Q&A쓰기</a></p>
-      </div>
-      <div class="q-context">
-        <p class="date">
-          <time datetime="2025.03.19">2025.03.19</time><span>mint</span
-          ><span aria-hidden="true">****</span>
-        </p>
-        <p class="title">[재입고문의]</p>
-        <p class="context">언제 재입고 될까요?</p>
-        <button>yes</button>
-      </div>
-      <div class="q-context last">
-        <p class="date">
-          <time datetime="2025.03.19">2025.03.19</time><span>mint</span
-          ><span aria-hidden="true">****</span>
-        </p>
-        <p class="title">[재입고문의]</p>
-        <p class="context">
-          <img
-            src="/src/images/Iconimages/secret.svg"
-            alt="비밀 열쇠 아이콘"
-          />비밀글 입니다.
-        </p>
-        <button>yes</button>
-      </div>
-      <button class="review-more-button">
-        <span>상품 Q&A 전체보기 (68)</span>
-        <span></span>
-      </button>
-    </section>
+      <section class="table-item">
+        <div class="information" hidden>
+          <h3>배송정보</h3>
+          <ul>
+            <li>
+              Delivery 브랜드 업체발송은 상품설명에 별도로 기입된 브랜드 알림
+              배송공지 기준으로 출고되고 브랜드마다 개별 배송비가 부여됩니다.
+            </li>
+            <li>
+              Delivery 29CM 자체발송은 오후 2시까지 결제확인된 주문은 당일
+              출고되고 5만원 이상 주문은 무료배송, 5만원 미만은 3,000원의
+              배송비가 추가됩니다.
+            </li>
+            <li>
+              SPECIAL ORDER, PT 등 예약주문은 상세설명의 출고일정을 확인하시기
+              바랍니다.
+            </li>
+            <li>
+              구두, 액세서리, 침구, 액자, 가구 등 상품설명의 제작기간을
+              숙지해주시기 바랍니다.
+            </li>
+            <li>
+              가구 및 일부 상품, 제주도를 포함한 도서산간 지역은 추가배송비
+              입금요청이 있을 수 있습니다.
+            </li>
+          </ul>
+        </div>
+        <div class="information" hidden>
+          <h3>교환, 환불, A/S 안내</h3>
+          <ul>
+            <li>상품 수령일로부터 7일 이내 반품 / 환불 가능합니다.</li>
+            <li>
+              변심 반품의 경우 왕복배송비를 차감한 금액이 환불되며, 제품 및 포장
+              상태가 재판매 가능하여야 합니다.
+            </li>
+            <li>
+              동일상품 또는 동일상품 내 추가금액이 없는 옵션만 교환가능합니다.
+            </li>
+            <li>상품 불량인 경우는 배송비를 포함한 전액이 환불됩니다.</li>
+            <li>출고 이후 환불요청 시 상품 회수 후 처리됩니다.</li>
+            <li>
+              얼리 등 주문제작상품 / 카메라 / 밀봉포장상품 등은 변심에 따른 반품
+              / 환불이 불가합니다.
+            </li>
+            <li>일부 완제품으로 수입된 상품의 경우 A/S가 불가합니다.</li>
+            <li>
+              특정브랜드의 상품설명에 별도로 기입된 교환 / 환불 / AS 기준이
+              우선합니다.
+            </li>
+            <li>
+              구매자가 미성년자인 경우에는 상품 구입 시 법정대리인이 동의하지
+              아니하면 미성년자 본인 또는 법정대리인이 구매취소 할 수 있습니다.
+            </li>
+            <li>
+              상품의 색상과 이미지는 기기의 해상도에 따라 다르게 보일 수
+              있습니다.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
     <section class="plus-content">
       <div class="content">
@@ -1703,5 +2446,119 @@
       </div>
       <p>임시품절</p>
     </nav>
+
+    <!-- 🔥 웹용 시작-->
+    <div class="footer-web">
+      <div class="footer-customer">
+        <p class="footer-title">고객센터 <strong>1660-2929</strong></p>
+        <p class="footer-time">
+          운영시간 : 평일 09:00 - 18:00 (점심시간 12:00 - 13:00 제외)
+        </p>
+        <div class="btn-icons">
+          <div class="footer-buttons">
+            <button class="btn">FAQ</button>
+            <button class="btn">1:1 문의</button>
+          </div>
+          <div class="sns-icons">
+            <img src="/src/images/footerimages/InstargramIcon.svg" alt="" />
+            <img src="/src/images/footerimages/youtubeIcon.svg" alt="" />
+            <img src="/src/images/footerimages/appleIcon.svg" alt="" />
+            <img src="/src/images/footerimages/playstoreIcon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-notice-column">
+          <div class="footer-column">
+            <p class="footer-link-title">NOTICE</p>
+            <ul class="footer-notice">
+              <li>[공지] 무통장 입금 이용 가능한 은행 제외 안내</li>
+              <li>[공지] 29CM 고객센터 전화번호 변경 안내</li>
+              <li>
+                [공지] 29CM 안전 거래 정책 위반 행위에 대한 조사 및 제재 사항
+                안내
+              </li>
+              <li>[공지] 2025 설 연휴 고객센터 휴무 및 배송/반품 일정 안내</li>
+              <li>
+                [공지] 개인정보 처리방침 개정 예정 안내 (시행일: 2024년 10월
+                23일)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-etc-column">
+          <div class="footer-column">
+            <p class="footer-link-title">ABOUT US</p>
+            <ul>
+              <li>29CM 소개</li>
+              <li>인재채용</li>
+              <li>상시 할인 혜택</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ORDER</p>
+            <ul>
+              <li>주문배송</li>
+              <li>취소/교환/반품 내역</li>
+              <li>상품 리뷰 내역</li>
+              <li>증빙서류발급</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ACCOUNT</p>
+            <ul>
+              <li>회원정보수정</li>
+              <li>회원등급</li>
+              <li>마일리지현황</li>
+              <li>쿠폰</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">HELP</p>
+            <ul>
+              <li>1:1 문의</li>
+              <li>마케팅 제휴, 입점, 대량 주문 문의</li>
+              <li>상품 Q&A내역</li>
+              <li>공지사항</li>
+              <li>FAQ</li>
+              <li>고객의 소리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-web-nav">
+        <nav class="footer-nav">
+          <a href="/">개인정보처리방침</a>
+          <a href="/">이용약관</a>
+          <a href="/">분쟁해결기준</a>
+          <a href="/">안전거래센터</a>
+          <a href="/">결제대행 위탁사</a>
+        </nav>
+        <div class="footer-web-company">
+          <div>
+            상호명: 주식회사 무신사 (MUSINSA Co., Ltd.) 사업장소재지: 서울특별시
+            성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스) 팩스:
+            070-8622-7737 사업자등록번호: 211-88-79575
+          </div>
+          <p>
+            통신판매업신고: 2022-서울성동-01952
+            <a href="/" class="button">사업자정보확인</a>
+          </p>
+          <p>
+            전화번호: 1660-2929 이메일: customer@29cm.co.kr 대표: 조만호, 박준모
+            개인정보 보호책임자: 이재환 호스팅서비스: (주)무신사, 상품정보,
+            거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인
+            내용을 확인하시기 바랍니다.
+          </p>
+          <p>
+            일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+            상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+            페이지에서 구체적인 내용을 확인하시기 바랍니다.
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
