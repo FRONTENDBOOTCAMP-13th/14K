@@ -1,0 +1,152 @@
+@import "../../common/best-reset.css";
+@import "../../../public/font/pretendardvariable.css";
+
+body * {
+  font-family: "pretendard variable", sans-serif;
+}
+
+.custom-footer-wrap {
+  background: black;
+  color: white;
+  padding: 1.875rem 1.25rem;
+  @media (min-width: 540px) {
+    display: none;
+  }
+}
+
+.custom-footer-title-wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+
+.toggle {
+  position: relative;
+  width: 100%;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(93, 93, 93, 0.64);
+}
+
+/* 특수문자 기본 이미지 90도 회전 */
+.custom-footer-details {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+/* 특수문자 위 체크박스 숨기기 */
+.toggle > input {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  right: 0;
+}
+
+input[type="checkbox"]:checked ~ .custom-footer-details {
+  transform: rotate(270deg);
+}
+
+/* 체크박스가 체크된 상태일 때 */
+input[type="checkbox"]:checked ~ .hidden-text {
+  display: block;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
+/* 기본적으로 hidden-text는 숨김 처리 */
+.hidden-text {
+  display: none;
+  margin-top: 1.875rem;
+}
+
+/* footer-text */
+.custom-footer-text-wrap {
+  margin-top: 1.25rem;
+  p {
+    display: flex;
+    flex-flow: row nowrap;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+/* logo-wrap */
+.custom-footer-logo-wrap {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+}
+
+/* 폰트 관련 설정 */
+.custom-footer-wrap {
+  .custom-footer-title-wrap {
+    .toggle {
+      .toggle-title {
+        font-weight: 500;
+        color: rgb(155, 155, 155);
+        font-size: 1rem;
+        line-height: normal;
+      }
+      .custom-footer-details {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: rgb(155, 155, 155);
+      }
+      .hidden-text {
+        .main-title {
+          font-weight: 400;
+          color: rgb(100, 100, 100);
+          font-size: 0.75rem;
+          line-height: 1.25rem;
+        }
+        .sub-title {
+          font-weight: 300;
+          color: rgb(155, 155, 155);
+          font-size: 0.75rem;
+          line-height: 1.25rem;
+        }
+        .explain-text {
+          font-weight: 400;
+          color: rgb(100, 100, 100);
+          font-size: 0.75rem;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .custom-footer-text-wrap {
+    > p {
+      > a {
+        font-weight: 500;
+        color: rgb(155, 155, 155);
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+      }
+    }
+  }
+}
+
+/* custom-footer-text-wrap 가상연산자 추가 */
+.custom-footer-text-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.75rem;
+  > p {
+    > a {
+      padding: 0;
+    }
+    > a::after {
+      content: "|";
+      padding-left: 0.3125rem;
+      padding-right: 0.3125rem;
+      color: rgba(155, 155, 155, 0.5);
+    }
+    > a:last-child::after {
+      content: none;
+    }
+  }
+}
