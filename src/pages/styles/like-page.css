@@ -24,8 +24,8 @@ ul {
 .like-nav {
   position: sticky;
   width: 100%;
-  top: 20px;
-  z-index: 100;
+  top: 40px;
+  z-index: 99;
   background: white;
 
   font-size: 1rem;
