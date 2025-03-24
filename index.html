@@ -14,62 +14,67 @@
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <header>
-    <div class="project-container">
-      <img class="teamlogo" src="/src/images/logoimage/29Cm logo.svg" alt="" />
-
-      <div class="headline">
-        <ul>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Team-Member</a></li>
-          <li><a href="#">Links</a></li>
-          <li><a href="#">Tools</a></li>
-        </ul>
-
-        <a href="#" class="searchIcon"
-          ><img
-            width="34.29"
-            height="34.3"
-            src="/src/images/Iconimages/reading-glasses.svg"
-            alt="검색 아이콘"
-        /></a>
-      </div>
-
-      <div class="categorywrap">
-        <ul class="category">
-          <li><a href="#">BEST</a></li>
-          <li><a href="#" tabindex="-1">WOMEN</a></li>
-          <li><a href="#" tabindex="-1">MEN</a></li>
-          <li><a href="#" tabindex="-1">INTERIOR</a></li>
-          <li><a href="#" tabindex="-1">KITCHEN</a></li>
-          <li><a href="#" tabindex="-1">ELECTRONICS</a></li>
-          <li><a href="#" tabindex="-1">DIGITAL</a></li>
-          <li><a href="#" tabindex="-1">BEAUTY</a></li>
-          <li><a href="#" tabindex="-1">FOOD</a></li>
-          <li><a href="#" tabindex="-1">LEISURE</a></li>
-          <li><a href="#" tabindex="-1">KIDS</a></li>
-          <li><a href="#" tabindex="-1">CULTURE</a></li>
-          <li class="bar"></li>
-          <li><a href="#" class="italic">Event</a></li>
-          <li><a href="#" class="italic">Lookbook</a></li>
-        </ul>
-      </div>
-
-      <div class="project-description">
-        <h2><strong>14K 팀</strong></h2>
-        <div>
-          온라인 라이프 스타일 쇼핑 플랫폼 <strong>29CM</strong>의 UI를
-          구현합니다.
-        </div>
-        <div><strong>프로젝트 기간</strong> : 2025.03. 14 ~ 2025. 03. 25</div>
-        <div>
-          <strong>기술 스택</strong> : HTML5, CSS3 | Git, GitHub | Vite, Netlify
-        </div>
-      </div>
-    </div>
-  </header>
   <body>
-    <div class="index-page-14team">
+    <header id="project">
+      <div class="project-container">
+        <img
+          class="teamlogo"
+          src="/src/images/logoimage/29Cm logo.svg"
+          alt="29cm 메인 로고 아이콘"
+        />
+
+        <div class="headline">
+          <ul>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#team-profile">Team-Member</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#">Tools</a></li>
+          </ul>
+
+          <a href="#" class="searchIcon"
+            ><img
+              width="34.29"
+              height="34.3"
+              src="/src/images/Iconimages/reading-glasses.svg"
+              alt="검색 아이콘"
+          /></a>
+        </div>
+
+        <div class="categorywrap">
+          <ul class="category">
+            <li><a href="#">BEST</a></li>
+            <li><a href="#" tabindex="-1">WOMEN</a></li>
+            <li><a href="#" tabindex="-1">MEN</a></li>
+            <li><a href="#" tabindex="-1">INTERIOR</a></li>
+            <li><a href="#" tabindex="-1">KITCHEN</a></li>
+            <li><a href="#" tabindex="-1">ELECTRONICS</a></li>
+            <li><a href="#" tabindex="-1">DIGITAL</a></li>
+            <li><a href="#" tabindex="-1">BEAUTY</a></li>
+            <li><a href="#" tabindex="-1">FOOD</a></li>
+            <li><a href="#" tabindex="-1">LEISURE</a></li>
+            <li><a href="#" tabindex="-1">KIDS</a></li>
+            <li><a href="#" tabindex="-1">CULTURE</a></li>
+            <li class="bar"></li>
+            <li><a href="#" class="italic">Event</a></li>
+            <li><a href="#" class="italic">Lookbook</a></li>
+          </ul>
+        </div>
+
+        <div class="project-description">
+          <h2><strong>14K 팀</strong></h2>
+          <div>
+            온라인 라이프 스타일 쇼핑 플랫폼 <strong>29CM</strong>의 UI를
+            구현합니다.
+          </div>
+          <div><strong>프로젝트 기간</strong> : 2025.03. 14 ~ 2025. 03. 25</div>
+          <div>
+            <strong>기술 스택</strong> : HTML5, CSS3 | Git, GitHub | Vite,
+            Netlify
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="team-profile" class="index-page-14team">
       <div class="team-profile-title">Team Profile</div>
       <div class="team-profile">
         <div class="profile-card">
@@ -120,7 +125,7 @@
                   >GitHub</a
                 >
                 |
-                <a href="mailto:kjh@email.com">Email</a>
+                <a href="mailto:zzz6451@email.com">Email</a>
               </p>
             </div>
           </div>
@@ -174,16 +179,35 @@
         </div>
       </div>
 
-      <div class="project-links-title">Links</div>
+      <div id="links" class="project-links-title">Links</div>
       <div class="project-links">
         <div class="html-link">
           <h3><span>메인 페이지</span></h3>
           <ul>
-            <li><a href="/src/pages/main-page.html">메인 페이지</a></li>
             <li>
-              <a href="/src/pages/specialorder-page.html">Special Order</a>
+              <a
+                href="/src/pages/main-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >메인 페이지</a
+              >
             </li>
-            <li><a href="/src/pages/29Magazine.html">29 Magazine</a></li>
+            <li>
+              <a
+                href="/src/pages/specialorder-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Special Order</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/29Magazine.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >29 Magazine</a
+              >
+            </li>
             <li></li>
           </ul>
         </div>
@@ -191,16 +215,36 @@
           <h3>개인 페이지</h3>
           <ul>
             <li>
-              <a href="/src/pages/login-page.html">로그인</a>
+              <a
+                href="/src/pages/login-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >로그인</a
+              >
             </li>
             <li>
-              <a href="/src/pages/mypage.html">마이페이지</a>
+              <a
+                href="/src/pages/mypage.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >마이페이지</a
+              >
             </li>
             <li>
-              <a href="/src/pages/shoppingbag-page.html">장바구니</a>
+              <a
+                href="/src/pages/shoppingbag-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >장바구니</a
+              >
             </li>
             <li>
-              <a href="/src/pages/like-page.html">나의 좋아요</a>
+              <a
+                href="/src/pages/like-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >나의 좋아요</a
+              >
             </li>
           </ul>
         </div>
@@ -208,25 +252,75 @@
           <h3><span>상품 페이지</span></h3>
           <ul>
             <li>
-              <a href="/src/pages/itemdetail-page.html">제품 상세 페이지</a>
+              <a
+                href="/src/pages/itemdetail-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >제품 상세 페이지</a
+              >
             </li>
-            <li><a href="/src/pages/best-page.html">베스트 상품</a></li>
-            <li><a href="/src/pages/women-page.html">여성의류</a></li>
+            <li>
+              <a
+                href="/src/pages/best-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >베스트 상품</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/pages/women-page.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >여성의류</a
+              >
+            </li>
           </ul>
         </div>
 
         <div class="scrum-link">
           <h3>공통 컴포넌트</h3>
           <ul>
-            <li><a href="/src/component/header-component.html"></a>Header</li>
-            <li><a href="/src/component/footer.html">Footer1</a></li>
             <li>
-              <a href="/src/component/custom-footer-component.html">Footer2</a>
+              <a
+                href="/src/component/header-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Header</a
+              >
             </li>
             <li>
-              <a href="/src/component/navbar-component.html">Navigation bar</a>
+              <a
+                href="/src/component/footer.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Footer1</a
+              >
             </li>
-            <li><a href="/src/component/modal-component.html">모달창</a></li>
+            <li>
+              <a
+                href="/src/component/custom-footer-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Footer2</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/component/navbar-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Navigation bar</a
+              >
+            </li>
+            <li>
+              <a
+                href="/src/component/modal-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >모달창</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -234,13 +328,28 @@
           <h3>개인페이지 컴포넌트</h3>
           <ul>
             <li>
-              <a href="/src/component/login-component.html">로그인</a>
+              <a
+                href="/src/component/login-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >로그인</a
+              >
             </li>
             <li>
-              <a href="/src/component/mypage-component.html">마이페이지 </a>
+              <a
+                href="/src/component/mypage-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >마이페이지
+              </a>
             </li>
             <li>
-              <a href="/src/component/table-component.html">테이블</a>
+              <a
+                href="/src/component/table-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >테이블</a
+              >
             </li>
           </ul>
         </div>
@@ -249,41 +358,92 @@
           <h3>상품페이지 컴포넌트</h3>
           <ul>
             <li>
-              <a href="/src/component/29Magazine-component.html">29Magazine</a>
+              <a
+                href="/src/component/29Magazine-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >29Magazine</a
+              >
             </li>
             <li>
-              <a href="/src/component/card-list-component.html"
+              <a
+                href="/src/component/card-list-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 >상품카드 리스트</a
               >
             </li>
             <li>
-              <a href="/src/component/card1-component.html">상품카드1</a>
+              <a
+                href="/src/component/card1-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >상품카드1</a
+              >
             </li>
             <li>
-              <a href="/src/component/card2-component.html">상품카드2</a>
+              <a
+                href="/src/component/card2-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >상품카드2</a
+              >
             </li>
             <li>
-              <a href="/src/component/card3-component.html">상품카드3</a>
+              <a
+                href="/src/component/card3-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >상품카드3</a
+              >
             </li>
             <li>
-              <a href="/src/component/best-component.html">베스트 상품</a>
+              <a
+                href="/src/component/best-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >베스트 상품</a
+              >
             </li>
             <li>
-              <a href="/src/component/women-component.html">우먼 상품</a>
+              <a
+                href="/src/component/women-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >우먼 상품</a
+              >
             </li>
             <li>
-              <a href="/src/component/button-component.html">더보기 버튼</a>
+              <a
+                href="/src/component/button-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >더보기 버튼</a
+              >
             </li>
 
             <li>
-              <a href="/src/component/info-component.html">상품정보</a>
+              <a
+                href="/src/component/info-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >상품정보</a
+              >
             </li>
 
             <li>
-              <a href="/src/component/review-component.html">리뷰</a>
+              <a
+                href="/src/component/review-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >리뷰</a
+              >
             </li>
             <li>
-              <a href="/src/component/specialorder-component.html"
+              <a
+                href="/src/component/specialorder-component.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 >스페셜오더 상품카드</a
               >
             </li>
