@@ -137,9 +137,16 @@ section {
           line-height: 140%;
           font-weight: 400;
           vertical-align: middle;
+          /* background: yellow; */
+          display: inline-block;
+          width: 80px;
+          border-radius: 10px;
+          padding-inline: 6px;
 
           &:hover {
-            opacity: 0.9;
+            /* background: var(--gray-400); */
+            color: #000;
+            font-weight: 700;
           }
         }
         .first {
@@ -176,6 +183,10 @@ section {
           line-height: 140%;
           font-weight: 500;
           vertical-align: middle;
+
+          &:hover {
+            font-weight: 700;
+          }
         }
       }
     }
