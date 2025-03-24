@@ -23,6 +23,7 @@ header {
   width: 100%; /* 반응형 대응 */
   margin: 0 auto; /* 가로 중앙 정렬 */
   padding: 20px; /* 내부 여백 추가 */
+  position: relative;
 }
 .index-page-14team {
   max-width: 1020px; /* 최대 너비 설정 */
@@ -337,4 +338,38 @@ footer {
 
   letter-spacing: 0.5px;
   font-weight: 400;
+}
+
+body,
+html {
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+  overflow-y: visible; /* 세로 스크롤 허용 */
+  position: relative;
+  height: 100%;
+}
+
+header {
+  padding: 0;
+  padding-top: 1.25rem;
+}
+
+.categorywrap {
+  max-width: 1020px; /* 최대 너비 설정 */
+  width: 100%; /* 반응형 대응 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 0; /* 내부 여백 추가 */
+  position: relative;
+}
+
+.headline {
+  top: 0;
+  z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  max-width: 1020px; /* 최대 너비 설정 */
+  width: 100%; /* 반응형 대응 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 0px; /* 내부 여백 추가 */
+  z-index: 1;
+  background: white;
 }
