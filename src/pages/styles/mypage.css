@@ -636,4 +636,15 @@ body * {
       }
     }
   }
+  @media (min-width: 33.75rem) {
+    .img-wrap:hover {
+      transform: scale(1.05);
+    }
+    .mypage-brand:hover {
+      transform: scale(1.05);
+    }
+    .mypage-post:hover {
+      transform: scale(1.05);
+    }
+  }
 }
