@@ -1,0 +1,154 @@
+@import "../../common/best-reset.css";
+@import "../../common/theme.css";
+@import "../../component/style/header-component.css";
+@import "../../component/style/footer.css";
+@import "../../component/style/29Magazine-component.css";
+@import "../../../public/font/pretendardvariable.css";
+@import "../../component/style/button-component.css";
+@import "../../component/style/custom-footer-component.css";
+@import "../../component/style/navbar-component.css";
+
+body * {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+html,
+body {
+  overflow-x: auto; /* 창이 작아질 때 X축 스크롤 허용 */
+  width: 100%;
+}
+/* latest post */
+.magazine-latest-post-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+
+  @media (min-width: 33.75rem) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.875rem;
+    padding: 0 3.125rem;
+  }
+}
+
+/* Mar 2025 */
+.magazine-mar-2025 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 1.25rem 0 1.25rem;
+
+  @media (min-width: 33.75rem) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+    padding: 0 3.125rem;
+    margin-bottom: 6.25rem;
+    .magazine-fassion-news {
+      min-width: 12.5rem;
+      border-bottom: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column nowrap;
+      position: relative;
+      height: 100%;
+      padding-right: 2.5rem;
+    }
+
+    .magazine-fassion-news:not(:nth-child(5n)) {
+      /* padding-right: 8px; */
+      border-right: 1px solid #d4d4d4; /* 갭 중앙에 선 추가 */
+    }
+    .magazine-fassion-news:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+/* Feb 2025 */
+.magazine-feb-2025 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 1.25rem 0 1.25rem;
+
+  /* web view 일때 레이아웃 변경 */
+  @media (min-width: 33.75rem) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+    padding: 0 3.125rem;
+    .magazine-fassion-news {
+      min-width: 12.5rem;
+      border-bottom: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column nowrap;
+      position: relative;
+      height: 100%;
+      padding-right: 2.5rem;
+    }
+
+    .magazine-fassion-news:not(:nth-child(5n)) {
+      border-right: 1px solid #d4d4d4; /* 갭 중앙에 선 추가 */
+    }
+    .magazine-fassion-news:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+/* 최상단 Feb 2025 부분 */
+.magazine-post-title {
+  display: block;
+  font-weight: 600;
+  color: black;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+  padding-bottom: 0.3125rem;
+
+  margin: 3.125rem 1.25rem 0 1.25rem;
+  border-bottom: 0.25rem solid black;
+  @media (min-width: 33.75rem) {
+    margin-left: 4.375rem;
+    margin-right: 4.375rem;
+  }
+}
+/* news들 마지막 자식들만 아래 선 삭제 */
+.last-news {
+  border: 0;
+}
+
+/* web view 일때 Mar 2025, Feb 2025 타이틀 border 선, font size 변경 */
+@media (min-width: 33.75rem) {
+  .magazine-news-title {
+    display: block;
+    border-bottom: 0;
+    border-top: 0.25rem solid black;
+    padding-top: 0.5rem;
+  }
+}
+
+@media (min-width: 33.75rem) {
+  .more-button {
+    margin-top: 6.25rem;
+    margin-bottom: 7.5rem;
+  }
+}
+.magazine-web-image {
+  display: none;
+}
+
+@media (min-width: 33.75rem) {
+  .magazine-mobile-image {
+    display: none;
+  }
+  .magazine-web-image {
+    display: block;
+  }
+}

@@ -1,0 +1,123 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+
+body {
+  font-family: "Pretendard Variable", sans-serif;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.card {
+  /* padding: 2rem 1.5rem; */
+  /* padding-block: 2rem; */
+  padding-top: 2rem;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 12px;
+
+  .card-img {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  a {
+    display: contents;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 130%;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 11px;
+    line-height: 130%;
+    font-weight: 700;
+  }
+
+  .card-context {
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 400;
+  }
+
+  .item-context {
+    font-size: 12px;
+    line-height: 130%;
+    font-weight: 400;
+  }
+
+  li {
+    border-top: 1px solid rgba(93, 93, 93, 0.16);
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 8px;
+    padding-block: 10px;
+    align-items: center;
+
+    a {
+      display: contents;
+    }
+  }
+
+  .item-img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .discount {
+    font-size: 12px;
+    line-height: 130%;
+    font-weight: 700;
+    color: #ff4800;
+    margin-right: 2px;
+  }
+
+  .price {
+    font-size: 12px;
+    line-height: 130%;
+    font-weight: 700;
+  }
+
+  .item-content-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    row-gap: 2px;
+    flex-grow: 1;
+  }
+}
+
+.like-state {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: rgba(93, 93, 93, 0.64);
+  margin-right: 8px;
+  .like-icon {
+    display: none;
+  }
+
+  .check {
+    width: 24px;
+    height: 24px;
+
+    &.check-on {
+      display: none;
+    }
+  }
+  .like-icon:checked + label .check-on {
+    display: inline-block;
+  }
+
+  .like-icon:checked + label .default {
+    display: none;
+  }
+}

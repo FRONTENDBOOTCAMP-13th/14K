@@ -1,0 +1,129 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+@import "/src/component/style/header-component.css";
+@import "/src/component/style/footer.css";
+@import "/src/component/style/best-component.css";
+@import "/src/component/style/custom-footer-component.css";
+@import "/src/component/style/navbar-component.css";
+
+* {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+
+  .image-text {
+    margin: 8px;
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .context {
+    line-height: 16.8px;
+  }
+}
+
+@media (min-width: 540px) {
+  .best-page-container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .sidebar-component {
+    position: sticky;
+    display: block;
+    width: 300px;
+    margin: 50px;
+  }
+
+  .content {
+    margin-right: 10px;
+  }
+
+  .card-list {
+    grid-template-columns: repeat(12, 1fr);
+
+    .best-card {
+      margin: 10px 20px 30px 0;
+    }
+  }
+
+  .card1 hr,
+  .card2 hr {
+    display: block;
+    margin: 40px 0 10px 0;
+    border: 1px solid rgb(235, 235, 235);
+  }
+
+  .best-card:nth-child(1),
+  .best-card:nth-child(2) {
+    grid-column: span 6;
+  }
+
+  .best-card:nth-child(n + 3) {
+    grid-column: span 4;
+  }
+
+  .special {
+    .main-img {
+      width: 370px;
+    }
+  }
+
+  .other {
+    .main-img {
+      width: 250px;
+    }
+  }
+
+  footer {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .card-list {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .best-card:nth-child(1),
+  .best-card:nth-child(2),
+  .best-card:nth-child(3) {
+    grid-column: span 4;
+  }
+
+  .best-card:nth-child(n + 4) {
+    grid-column: span 3;
+  }
+
+  .card1 hr,
+  .card2 hr,
+  .card3 hr {
+    display: block;
+    margin: 40px 0 10px 0;
+    border: 1px solid rgb(235, 235, 235);
+  }
+
+  .special {
+    .main-img {
+      width: 100%;
+    }
+  }
+
+  .other {
+    .main-img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  footer {
+    display: none;
+  }
+}

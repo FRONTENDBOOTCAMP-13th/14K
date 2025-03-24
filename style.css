@@ -1,0 +1,345 @@
+@import "./src/common/best-reset.css";
+@import "./src/common/theme.css";
+@import "./public/font/pretendardvariable.css";
+@import "./src/component/style/header-component.css";
+@import "./src/component/style/footer.css";
+
+body * {
+  font-family: "Pretendard Variable", sans-serif;
+  /* background: pink; */
+
+  h3 {
+    text-align: center;
+    font-weight: 500;
+  }
+
+  li {
+    margin-block: 5px;
+  }
+}
+
+header {
+  max-width: 1020px; /* 최대 너비 설정 */
+  width: 100%; /* 반응형 대응 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 20px; /* 내부 여백 추가 */
+}
+.index-page-14team {
+  max-width: 1020px; /* 최대 너비 설정 */
+  width: 100%; /* 반응형 대응 */
+  margin: 0 auto; /* 가로 중앙 정렬 */
+  padding: 20px; /* 내부 여백 추가 */
+}
+
+/* 프로젝트 설명 컨테이너 */
+.project-description {
+  display: flex;
+  flex-direction: column; /* 요소를 세로 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  justify-content: center; /* 세로 중앙 정렬 (필요 시) */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  gap: 14px; /* 요소 간 간격 */
+  margin: 20px 0; /* 위아래 여백 */
+  min-height: 250px;
+  font-size: 17px;
+
+  .fourteenteam {
+    font-size: 40px;
+  }
+}
+
+.project-des--title,
+.team-profile-title,
+.project-links-title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 50px;
+  border-bottom: 3px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1020px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 팀원 프로필 컨테이너 */
+.team-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2명씩 가로 배치 */
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  max-width: 1020px;
+  margin-bottom: 80px;
+}
+
+/* 프로필 카드 */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  position: relative;
+}
+
+/* 체크박스 스타일 */
+.profile-card input[type="checkbox"] {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 18px;
+  height: 16px;
+  accent-color: black;
+}
+
+/* 프로필 정보 */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text a:hover {
+  color: #f24802;
+}
+.profile-info:hover {
+  cursor: pointer;
+
+  .text h3 {
+    color: #f24802;
+    background-color: black;
+  }
+}
+
+/* 프로필 이미지 */
+.profile-info img {
+  width: 120px;
+
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+/* 텍스트 스타일 */
+.text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.text .role {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #777;
+}
+
+.text .description {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.text .contact {
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.text .contact a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+}
+
+/* 반응형 디자인 - 작은 화면에서는 한 줄씩 */
+@media (max-width: 768px) {
+  .team-profile {
+    grid-template-columns: repeat(1, 1fr); /* 작은 화면에서는 한 줄 */
+  }
+}
+
+/* 프로젝트 링크 컨테이너 (2줄 2칸 그리드) */
+.project-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 */
+  grid-template-rows: repeat(2, auto); /* 2행 */
+  gap: 20px; /* 요소 사이 간격 */
+  padding: 20px;
+  max-width: 1020px;
+}
+
+/* 프로젝트 링크 컨테이너 (2줄 2칸 그리드) */
+.project-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 */
+  grid-template-rows: repeat(2, auto); /* 2행 */
+  gap: 20px; /* 요소 사이 간격 */
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+/* 모든 링크 박스 스타일 (HTML, Component, GitHub, Scrum) */
+.html-link,
+.component-link,
+.github-link,
+.scrum-link {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 제목 스타일 */
+.html-link h3,
+.component-link h3,
+.github-link h3,
+.scrum-link h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  position: relative;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+/* 제목 강조 효과 (밑줄 애니메이션) */
+.html-link h3::after,
+.component-link h3::after,
+.github-link h3::after,
+.scrum-link h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #f24802;
+  transition: width 0.3s ease-in-out;
+}
+
+.html-link:hover h3::after,
+.component-link:hover h3::after,
+.github-link:hover h3::after,
+.scrum-link:hover h3::after {
+  width: 100%;
+}
+
+/* 리스트 스타일 */
+.html-link ul,
+.component-link ul,
+.github-link ul,
+.scrum-link ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 링크 스타일 */
+.html-link ul li,
+.component-link ul li,
+.github-link ul li,
+.scrum-link ul li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* 링크 기본 스타일 */
+.html-link ul li a,
+.component-link ul li a,
+.github-link ul li a,
+.scrum-link ul li a {
+  text-decoration: none;
+  color: #111;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  position: relative;
+}
+
+/* 링크 호버 시 애니메이션 */
+.html-link ul li a:hover,
+.component-link ul li a:hover,
+.github-link ul li a:hover,
+.scrum-link ul li a:hover {
+  color: #f24802;
+}
+
+/* 링크 호버 시 흔들리는 효과 */
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.html-link ul li a:hover,
+.component-link ul li a:hover,
+.github-link ul li a:hover,
+.scrum-link ul li a:hover {
+  animation: wiggle 0.3s ease-in-out;
+}
+
+.footer-time {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-customer {
+  border: none;
+  padding-left: 20px;
+  padding-top: 0%;
+  margin-bottom: 30px;
+}
+.custom-footer {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-top: 5px;
+
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/* component-link만 두 줄로 배치 */
+.component-link ul {
+  display: flex;
+  flex-wrap: wrap; /* 두 줄 정렬 */
+  padding: 0;
+}
+
+.component-link ul li {
+  width: 50%; /* 두 줄 정렬 */
+  list-style: none;
+}
+
+footer {
+  border-bottom: none;
+  border-top: 1px solid #eee;
+  max-width: 1020px;
+  padding-top: 20px;
+
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}

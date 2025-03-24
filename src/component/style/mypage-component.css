@@ -1,0 +1,240 @@
+@import "../../common/best-reset.css";
+@import "../../../public/font/pretendardvariable.css";
+@import "../../common/a11y.css";
+
+body * {
+  font-family: "Pretendardvariable", sans-serif;
+}
+
+/* 최근 주문 */
+.mypage-current-order {
+  padding: 0.625rem 1.25rem 0.625rem 0.75rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.125rem;
+  align-items: center;
+  .order-date {
+    padding: 0.75rem 3rem 0.75rem 0;
+  }
+  .user-order {
+    padding: 0.625rem 9.375rem 0.625rem 0.75rem;
+    > span {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .order-number {
+    padding: 30px 85px 30px 12px;
+  }
+}
+
+/* Product 상품 좋아요 */
+.mypage-product-items {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  max-width: 10.875rem;
+  text-decoration: none;
+  .img-wrap {
+    width: 10.875rem;
+    height: 10.875rem;
+    position: relative;
+    display: grid;
+    grid-area: 1/1/2/2;
+
+    /* 좋아요 버튼(체크박스) 스타일 */
+    .product-like {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      cursor: pointer;
+      bottom: 5px;
+      right: 5px;
+      opacity: 0;
+    }
+    .product-like-label {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      width: 24px;
+      height: 24px;
+      z-index: 1;
+      background: url(../../images/Iconimages/whiteheart.svg) no-repeat;
+      cursor: pointer;
+    }
+    .product-like:checked + .product-like-label {
+      background: url(../../images/Iconimages/redheart.svg) no-repeat;
+    }
+    /* 좋아요 버튼(체크박스) 스타일 label2*/
+    .product-like2 {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      cursor: pointer;
+      bottom: 5px;
+      right: 5px;
+      opacity: 0;
+    }
+    .product-like-label2 {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      width: 24px;
+      height: 24px;
+      z-index: 1;
+      background: url(../../images/Iconimages/whiteheart.svg) no-repeat;
+      cursor: pointer;
+    }
+    .product-like2:checked + .product-like-label2 {
+      background: url(../../images/Iconimages/redheart.svg) no-repeat;
+    }
+    /* 좋아요 버튼(체크박스) 스타일 label3*/
+    .product-like3 {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      cursor: pointer;
+      bottom: 5px;
+      right: 5px;
+      opacity: 0;
+    }
+    .product-like-label3 {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      width: 24px;
+      height: 24px;
+      z-index: 1;
+      background: url(../../images/Iconimages/whiteheart.svg) no-repeat;
+      cursor: pointer;
+    }
+    .product-like3:checked + .product-like-label3 {
+      background: url(../../images/Iconimages/redheart.svg) no-repeat;
+    }
+  }
+  /* 아이템 이름 */
+  .item-text {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: black;
+    line-height: 1rem;
+  }
+  .item-price {
+    font-weight: 700;
+    color: black;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    .sale {
+      margin-right: 0.125rem;
+      color: rgb(255, 72, 0);
+    }
+  }
+}
+
+/* mypage-brand  */
+.mypage-brand {
+  text-decoration: none;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.3125rem;
+  max-width: 303px;
+  > img {
+    width: 303px;
+    height: 171px;
+  }
+  .brand-explain {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 18.9375rem;
+    align-items: center;
+    position: relative;
+    .brand-text {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.0625rem;
+      margin-left: 0.3125rem;
+
+      .brand-name-kr {
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: black;
+        line-height: 1.25rem;
+      }
+      /* 특수기호 > */
+      .show-more-btn {
+        font-size: 20px;
+        color: rgb(71, 71, 71);
+        margin-left: 2px;
+      }
+
+      .brand-name-en {
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1rem;
+        color: rgb(71, 71, 71);
+      }
+    }
+
+    /* brand 좋아요 버튼 */
+    .brand-check-box {
+      position: absolute;
+      right: 1px;
+      opacity: 0;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+    .brand-label {
+      width: 24px;
+      height: 24px;
+      margin-left: auto;
+      background: url(../../images/Iconimages/blackborderheart.svg) no-repeat;
+    }
+
+    .brand-check-box:checked + label {
+      background: url(../../images/Iconimages/redheart.svg) no-repeat;
+    }
+  }
+}
+
+/* mypage-post */
+.mypage-post {
+  display: flex;
+  max-width: 303px;
+  flex-flow: column nowrap;
+  gap: 0.3125rem;
+  text-decoration: none;
+  /* post 설명 부분 */
+  .post-explain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 303px;
+    position: relative;
+    > span {
+      font-weight: 700;
+      color: black;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    /* 좋아요 버튼 */
+    .post-like-btn {
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      right: 0;
+      opacity: 0;
+    }
+    .post-like-label {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url(../../images/Iconimages/blackborderheart.svg) no-repeat;
+    }
+    .post-like-btn:checked + label {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url(../../images/Iconimages/redheart.svg) no-repeat;
+    }
+  }
+}

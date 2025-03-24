@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mypage-component</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="./style/mypage-component.css" />
+  </head>
+  <body>
+    <!-- 최근 주문 -->
+    <div class="mypage-current-order">
+      <div class="order-date"><span>2024.11.09</span></div>
+      <div class="user-order">
+        <img
+          src="../images/mypageimages/Sweatpants.webp"
+          width="56px"
+          height="56px"
+          alt="Sweatpants"
+        />
+        <span>Soft Sweatpants - 17Colors</span>
+      </div>
+      <div class="order-number"><span>ORD2O241109-0863552</span></div>
+      <div class="pay"><span>44,260원</span></div>
+    </div>
+    <hr />
+    <!-- 나의 좋아요 Product -->
+    <a href="#" class="mypage-product-items">
+      <div class="img-wrap">
+        <input type="checkbox" class="product-like" id="product-like" />
+        <label for="product-like" class="product-like-label"></label>
+        <img
+          width="174px"
+          height="174px"
+          src="../images/mypageimages/product/prochidabag-black.webp"
+          alt="프로치다 백-블랙"
+        />
+      </div>
+
+      <span class="item-text">프로치다 백 - 블랙 </span>
+      <span class="item-price"><span class="sale">5%</span>339,150</span>
+    </a>
+    <hr />
+    <!-- Mypage Brand -->
+    <a class="mypage-brand">
+      <img
+        src="../images/mypageimages/Brand/COOR.jpg"
+        width="303px"
+        height="171px"
+        alt="COOR 브랜드"
+      />
+      <div class="brand-explain">
+        <img
+          src="../images/mypageimages/Brand/brandminiimage.jpg"
+          alt="coor 이미지"
+          width="48px"
+          height="48px"
+        />
+        <div class="brand-text">
+          <p>
+            <span class="brand-name-kr">쿠어</span
+            ><span class="show-more-btn">></span>
+          </p>
+          <p class="brand-name-en">COOR</p>
+        </div>
+        <input type="checkbox" class="brand-check-box" />
+        <label for="brand-check-box" class="brand-label"></label>
+      </div>
+    </a>
+    <hr />
+    <!-- Mypage Post -->
+    <a href="#" class="mypage-post">
+      <img
+        src="../images/mypageimages/Post/Postimages.jpg"
+        width="303px"
+        height="171px"
+        alt="올해의 봄 가방"
+      />
+      <div class="post-explain">
+        <span>엘리스펑크가 추천하는 올해의 봄 가방</span>
+        <input type="checkbox" class="post-like-btn" />
+        <label for="post-like-btn" class="post-like-label"></label>
+      </div>
+    </a>
+  </body>
+</html>

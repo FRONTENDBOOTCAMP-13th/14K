@@ -1,0 +1,629 @@
+@import "../../common/best-reset.css";
+@import "../../common/theme.css";
+@import "../../component/style/header-component.css";
+@import "../../component/style/footer.css";
+@import "../../../public/font/pretendardvariable.css";
+@import "../../component/style/mypage-component.css";
+@import "../../component/style/navbar-component.css";
+body * {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+/* mypage mobile */
+.mypage-mobile {
+  /* 회원 이름 */
+  .mypageusername {
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    background: black;
+    height: 158px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    > span {
+      color: white;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+    }
+
+    .likelink {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      .likecount {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 500;
+        color: rgba(93, 93, 93, 0.64);
+      }
+    }
+  }
+  @media (min-width: 79.9375rem) {
+    display: none;
+  }
+  margin: 0 auto;
+  max-width: 43.75rem;
+  /* 회원 등급 */
+  .mypageusertier {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    border-bottom: 0.0625rem solid rgb(244, 244, 244);
+    .usertiertext {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      height: 74px;
+      .explain {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgba(93, 93, 93, 0.64);
+        font-weight: 400;
+      }
+      .tier {
+        font-size: 1.75rem;
+        line-height: 2.375rem;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+      }
+    }
+
+    .btnwrap {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      /* 할인혜택보기 버튼 */
+      .showbenefitbtn {
+        display: inline-flex;
+        text-align: center;
+        height: 36px;
+        justify-content: center;
+        border: 0.0625rem solid rgba(93, 93, 93, 0.08);
+        background: rgba(93, 93, 93, 0.08);
+        border-radius: 624.9375rem;
+        padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+        > a {
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          font-size: 12px;
+          line-height: 1rem;
+          font-weight: 550;
+        }
+        /* hover 되었을 때 text 색상 변경 */
+        :hover {
+          color: rgb(93, 93, 93);
+        }
+      }
+    }
+  }
+
+  /* 쿠폰 및 마일리지 */
+  .mypagebenefit {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 6.125rem;
+    border-bottom: 0.0625rem solid rgb(244, 244, 244);
+    .mypagecoupon {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      width: 50%;
+      padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+      border-right: 0.0625rem solid rgb(244, 244, 244);
+    }
+    .mypagemileage {
+      width: 50%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem 0.75rem 1.25rem;
+    }
+    .mypagenametag {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 400;
+      color: rgba(93, 93, 93, 0.64);
+    }
+    .mypagebenefitcount {
+      font-size: 1.75rem;
+      font-weight: 700;
+      line-height: 2.375rem;
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  /* 친구 초대 */
+  .mypageinvite {
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+    margin: 1.25rem 1.25rem 0 1.25rem;
+    background: rgba(93, 93, 93, 0.08);
+    .invitetext {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      color: black;
+      padding-left: 16px;
+      .maintext {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 2px;
+      }
+      .subtext {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: rgb(71, 71, 71);
+        font-weight: 400;
+      }
+    }
+  }
+
+  /* navigation 리스트 */
+  .mypagenav {
+    padding: 64px 20px 64px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 32px;
+    .myshoppinginfo {
+      display: flex;
+      flex-flow: column nowrap;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      color: black;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      color: black;
+      padding-bottom: 6px;
+      border-bottom: 0.25rem solid black;
+    }
+    .infolist {
+      display: flex;
+      flex-flow: column nowrap;
+      > li {
+        padding: 16px 0;
+        list-style: none;
+        border-bottom: 0.0625rem solid rgb(244, 244, 244);
+        a {
+          text-decoration: none;
+          color: rgb(71, 71, 71);
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .mypagehomeinfo {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 10px;
+      > a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 400;
+      }
+      > span {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: black;
+        line-height: 1rem;
+      }
+
+      /* 화면 아랫단 버튼 */
+      .mypagebtnwrap {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        .abovebtn {
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 12px;
+          height: 52px;
+          width: 100%;
+          .abovebtn1 {
+            width: 50%;
+            border: 1px solid rgba(93, 93, 93, 0.08);
+            background: inherit;
+            > a {
+              display: block;
+              text-align: center;
+              align-content: center;
+              width: 100%;
+              height: 100%;
+              text-decoration: none;
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 700;
+              color: rgb(71, 71, 71);
+            }
+            :hover {
+              background: rgba(93, 93, 93, 0.08);
+            }
+          }
+          .abovebtn2 {
+            width: 50%;
+            background: inherit;
+            align-content: center;
+            border: 1px solid rgba(93, 93, 93, 0.08);
+
+            > a {
+              display: block;
+              text-align: center;
+              align-content: center;
+              width: 100%;
+              height: 100%;
+              text-decoration: none;
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 700;
+              color: rgb(71, 71, 71);
+            }
+            :hover {
+              background: rgba(93, 93, 93, 0.08);
+            }
+          }
+        }
+        .belowbtn {
+          width: 100%;
+          height: 52px;
+          text-align: center;
+          align-content: center;
+          border: 1px solid rgba(93, 93, 93, 0.08);
+          background: rgba(93, 93, 93, 0.08);
+          > a {
+            display: block;
+            text-align: center;
+            align-content: center;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 700;
+            color: rgb(71, 71, 71);
+          }
+        }
+      }
+    }
+  }
+}
+
+/* mypage web */
+.mypageweb {
+  display: none;
+  @media (min-width: 1279px) {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3.125rem;
+    padding: 4.5rem 3.125rem;
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-bottom: 3.125rem;
+  }
+
+  /* side-nav */
+  .mypage-web-nav {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+    .web-nav-username {
+      display: flex;
+      flex-flow: column nowrap;
+      /* 회원 이름 */
+      .username {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: black;
+        line-height: 3rem;
+        margin-bottom: 1.5625rem;
+      }
+
+      /* 좋아요 링크 */
+      .likecount {
+        font-size: 0.9375rem;
+        line-height: 1.4375rem;
+        font-weight: 700;
+        color: black;
+        text-decoration: none;
+      }
+    }
+    /* 사이드 nav 바 */
+    .sidebar-nav {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 0.75rem;
+
+      > span {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: black;
+        line-height: 1.5rem;
+      }
+
+      > a {
+        text-decoration: none;
+        color: rgb(71, 71, 71);
+        font-weight: 400;
+        line-height: 1.25rem;
+        font-size: 0.875rem;
+      }
+    }
+
+    /* 메일 및 문의하기 버튼 */
+    .inquiry {
+      display: grid;
+      flex-flow: column nowrap;
+      gap: 0.8125rem;
+      /* 메일 */
+      > a {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(93, 93, 93, 0.64);
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      /* 문의하기 버튼 */
+      > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: rgba(93, 93, 93, 0.08);
+        border: rgba(93, 93, 93, 0.08);
+        height: 43.5936px;
+        padding: 12px 32.5632px 12px 34.5632px;
+        white-space: nowrap;
+        > a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 20px;
+          color: black;
+          :hover {
+            color: rgb(71, 71, 71);
+          }
+        }
+      }
+    }
+  }
+
+  /* mypage-main */
+  .mypage-web-main {
+    width: 100%;
+
+    /* 회원정보 */
+    .userinfo {
+      background: rgba(39, 39, 42, 100);
+      display: flex;
+      flex-flow: row nowrap;
+      width: auto;
+      padding: 1rem 0;
+
+      /* 회원등급 */
+      .usertier {
+        flex: 2;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0 1.25rem;
+        gap: 1.875rem;
+        justify-content: space-between;
+        a:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+        .tier {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+          /* 할인혜택보기 버튼 */
+          .showbenefitbtn {
+            border-radius: 624.9375rem;
+            background: rgb(255, 255, 255);
+            padding: 5px 12px;
+            border: 0.0625rem solid rgba(93, 93, 93, 0.08);
+            > a {
+              color: black;
+              font-size: 0.75rem;
+              line-height: 1rem;
+              font-weight: 500;
+              text-decoration: none;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      /* 사용가능쿠폰 */
+      .usecoupon {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1;
+        gap: 1.875rem;
+        padding: 0 1.25rem;
+        a:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      /* 마일리지 */
+      .mileage {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1.875rem;
+        padding: 0 1.25rem;
+        a:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+
+      /* 회원정보 타이틀*/
+      .userinfotitle {
+        font-size: 1rem;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.375rem;
+        text-decoration: none;
+        :hover {
+          color: rgba(255, 255, 255, 0.2);
+        }
+      }
+
+      /* 회원정보 수치 */
+      .userinfotier {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+      }
+    }
+    /* 친구 초대 */
+    .mypage-invite {
+      display: flex;
+      flex-flow: row nowrap;
+      text-decoration: none;
+      margin: 1.25rem 1.25rem 2.5rem 1.25rem;
+      background: white;
+      .invitetext {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        color: black;
+        padding-left: 16px;
+        .maintext {
+          font-size: 1rem;
+          line-height: 1.375rem;
+          font-weight: 700;
+          margin-bottom: 0.125rem;
+        }
+        .subtext {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          color: rgb(71, 71, 71);
+          font-weight: 400;
+          margin-bottom: 0.6875rem;
+        }
+        .showevent {
+          font-size: 0.75rem;
+          line-height: 1rem;
+          font-weight: 400;
+          color: rgb(71, 71, 71);
+        }
+      }
+    }
+
+    /* 회원 주문 및 좋아요 */
+    .personal-info {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 2.5rem;
+      .order-box {
+        display: flex;
+        flex-flow: column nowrap;
+        .box-items {
+          min-height: 9.375rem;
+        }
+      }
+      /* 최근 주문 제목 바 부분 */
+      .order-box {
+        .box-items {
+          .box-info {
+            display: flex;
+            flex-flow: row nowrap;
+            border-bottom: 0.125rem solid black;
+            padding: 0 0.75rem 1.25rem 1.25rem;
+            gap: 0.125rem;
+            align-items: center;
+            .order-date {
+              width: 7.7894rem;
+            }
+            .user-order {
+              width: 26.5869rem;
+              > span {
+                margin-left: 0.5rem;
+              }
+            }
+
+            .order-number {
+              width: 17.31rem;
+            }
+          }
+          border-bottom: 1px solid rgba(93, 93, 93, 0.08);
+        }
+      }
+      /* 최근 주문, 나의 좋아요 font 수정 */
+      .box-title {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        border-bottom: 3px solid black;
+
+        .box-title-text {
+          display: inline-flex;
+          font-size: 1.25rem;
+          font-weight: 700;
+          line-height: 1.6875rem;
+          color: black;
+          padding-bottom: 0.75rem;
+        }
+        .show-more {
+          font-size: 1rem;
+          font-weight: 400;
+          color: rgb(93, 93, 93);
+          line-height: 1.375rem;
+          align-content: center;
+        }
+      }
+      /* Product, Brand, Post font 수정 */
+      .subtext {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.375rem;
+        color: black;
+      }
+
+      /* product,brand 아래 수평선 */
+      .product,
+      .brand {
+        border-bottom: 1px solid rgba(93, 93, 93, 0.8);
+      }
+
+      /* product,brand,post 기본 padding 값 */
+      .product,
+      .brand,
+      .post {
+        padding-top: 1.625rem;
+        padding-bottom: 14px;
+        .box-items {
+          display: flex;
+          flex-flow: row nowrap;
+          gap: 1.25rem;
+        }
+      }
+
+      /* box-items에 최소높이 부여 */
+      .box-items {
+        min-height: 9.375rem;
+        margin-top: 1.25rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+}

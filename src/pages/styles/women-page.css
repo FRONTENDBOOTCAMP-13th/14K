@@ -1,0 +1,72 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+@import "/src/component/style/header-component.css";
+@import "/src/component/style/footer.css";
+@import "/src/component/style/women-component.css";
+@import "/src/component/style/navbar-component.css";
+
+body * {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+/* 카드 컴포넌트 */
+.women-card-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+}
+
+@media (min-width: 540px) {
+  .women-card-list {
+    grid-template-columns: repeat(3, minmax(128px, 1fr));
+    gap: 10px;
+  }
+
+  .women-container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .sidebar-component {
+    position: sticky;
+    display: block;
+    width: 250px;
+    margin: 50px;
+  }
+
+  .spring {
+    margin: 10px;
+  }
+
+  .mobile-women-option {
+    display: none;
+  }
+
+  .web-women-option {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .women-card-list {
+    grid-template-columns: repeat(4, minmax(128px, 1fr));
+  }
+}
+
+@media (min-width: 1640px) {
+  .women-card-list {
+    grid-template-columns: repeat(5, minmax(128px, 1fr));
+  }
+}
+
+@media (min-width: 1920px) {
+  .women-card-list {
+    grid-template-columns: repeat(6, minmax(128px, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  footer {
+    display: none;
+  }
+}

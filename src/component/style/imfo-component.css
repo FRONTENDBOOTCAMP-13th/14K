@@ -1,0 +1,50 @@
+@import "/src/common/a11y.css";
+@import "/src/common/best-reset.css";
+
+body {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+.information {
+  padding-block: 30px;
+  padding-inline: 20px;
+  h3 {
+    border-bottom: 4px solid black;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 13px;
+  }
+
+  ul {
+    /* list-style: none; */
+    padding-block: 13px;
+
+    li {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: start;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      position: relative;
+      padding-left: 12px;
+      color: rgb(48 48 51);
+    }
+
+    li::before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      left: 0px;
+      top: 13px;
+      background: rgb(48 48 51);
+      border-radius: 100%;
+    }
+  }
+
+  @media (min-width: 540px) {
+    display: block;
+  }
+}

@@ -1,0 +1,31 @@
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+@import "/src/component/style/header-component.css";
+@import "/src/component/style/footer.css";
+@import "/src/component/style/login-component.css";
+
+* {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+/* 메인 */
+.user-support {
+  margin: 1.875rem 0 3.125rem 0;
+}
+
+.login-title {
+  margin: 70px 0 4.375rem 0;
+}
+
+/* 푸터 */
+@media (max-width: 540px) {
+  .footer-web {
+    display: none;
+  }
+}
+
+@media (min-width: 541px) {
+  .footer-web {
+    display: block;
+  }
+}

@@ -1,0 +1,28 @@
+:root {
+  /* Color styles */
+  --color-white: #ffffff;
+  --color-blue: #365fff;
+  --color-red: #ff4800; /* 세일 */
+  --color-black: #000000; /* 메인 색상 */
+  --color-black-1: #1d1d1d; /* 쿠폰 버튼 */
+  --color-gray-1: #f3f3f3; /* mylike 장바구니 담기 테두리, 셀렉션 버튼배경 */
+  --color-gray-2: #c4c4c4; /* 할인 전 가격(원가) */
+  --color-gray-3: #a0a0a0; /* footer 운영시간, 로그인 계정찾기 */
+  --gray-gray-4: #5d5d5d; /* footer 사업자, best 옷 카테고리, best 하트 색상, main 하트 색상, mypage 회원등급 */
+  --color-gra-5: #474747; /* mypage 마일리지 */
+  --color-gray-6: #27272a; /* mypage 마일리지 배경 */
+
+  /* Font-size */
+  --text-xxs: 9px; /* Extra Extra Small */
+  --text-xs: 10px; /* Extra Small */
+  --text-sm: 11px; /* Small */
+  --text-base: 12px; /* Base (기본 크기) */
+  --text-md: 13px; /* Medium */
+  --text-lg: 14px; /* Large */
+  --text-xl: 15px; /* Extra Large */
+  --text-2xl: 16px;
+  --text-3xl: 18px;
+  --text-4xl: 28px;
+  --text-5xl: 32px;
+  --text-6xl: 40px;
+}

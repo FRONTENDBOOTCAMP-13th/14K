@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" href="/src/images/farvicon/29cm.ico" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/pages/styles/like-page.css" />
+  </head>
+  <body>
+    <h1 class="sr-only">like page</h1>
+
+    <!-- 헤더 part -->
+    <!-- 모바일 헤더 -->
+    <div class="mobile">
+      <div class="headercontext">
+        <div class="apptextwrap">
+          <span class="logotext">29</span>
+          <span class="apptext"
+            >29CM 앱 설치하고 <span class="redtext">15% </span>할인 받기</span
+          >
+        </div>
+        <button class="showappbtn">앱으로 보기</button>
+      </div>
+    </div>
+
+    <!-- 모바일 버전 sticky에 해당하는 부분 -->
+    <div class="icon">
+      <a href="../pages/main-page.html"
+        ><img
+          src="../images/logoimage/29Cm logo.svg"
+          class="logoimage"
+          alt="로고 이미지"
+      /></a>
+      <div class="mobileIcon">
+        <a href="../pages/shoppingbag-page.html">
+          <img
+            width="13.5px"
+            height="15.75px"
+            src="../images/Iconimages/shopping-bag-Icon.svg"
+            alt="ShoppingbagIcon"
+            class="ShoppingbagIcon"
+          />
+        </a>
+
+        <a href="#">
+          <img
+            width="14.03px"
+            height="14.03px"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="SearchIcon"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- 웹 헤더 -->
+    <header class="webheader">
+      <div class="logo">
+        <a href="../pages/main-page.html"
+          ><img
+            src="../images/logoimage/29Cm logo.svg"
+            width="60"
+            height="16"
+            alt="29cm 로고 이미지"
+        /></a>
+        <ul class="Icons">
+          <li class="MypageIcon" tabindex="0">
+            <a href="../pages/mypage.html" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="14.63px"
+                src="../../src/images/Iconimages/mypageIcon.svg"
+                alt="My Page Icon"
+            /></a>
+            <a href="../pages/mypage.html" class="Icontext" tabindex="-1"
+              >MY PAGE</a
+            >
+          </li>
+          <li class="MylikeIcon" tabindex="0">
+            <a href="../pages/like-page.html" tabindex="-1"
+              ><img
+                width="14.25px"
+                height="12.92px"
+                src="../../src/images/Iconimages/blackheartIcon.svg"
+                alt="My Like Icon"
+            /></a>
+            <a href="../pages/like-page.html" class="Icontext" tabindex="-1"
+              >MY LIKE</a
+            >
+          </li>
+          <li class="ShoppingBagIcon" tabindex="0">
+            <a href="../pages/shoppingbag-page.html" tabindex="-1"
+              ><img
+                width="13.5px"
+                height="15.75px"
+                src="../../src/images/Iconimages/shopping-bag-Icon.svg"
+                alt="Shopping Bag Icon"
+            /></a>
+            <a
+              href="../pages/shoppingbag-page.html"
+              class="Icontext"
+              tabindex="-1"
+              >SHOPPING BAG</a
+            >
+          </li>
+          <li class="loginIcon" tabindex="-1">
+            <a href="../pages/login-page.html" tabindex="-1"
+              ><img
+                width="12px"
+                height="15px"
+                src="../../src/images/Iconimages/loginIcon.svg"
+                alt="LoginIcon"
+            /></a>
+            <a href="../pages/login-page.html" class="Icontext" tabindex="-1"
+              >LOGIN</a
+            >
+          </li>
+          <li class="SearchIcon">
+            <a href="#"
+              ><img
+                width="14.03px"
+                height="14.03px"
+                src="../../src/images/Iconimages/reading-glasses.svg"
+                alt="Search Icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="headline">
+        <ul>
+          <li><a href="../pages/specialorder-page.html">Special-Order</a></li>
+          <li><a href="#">Showcase</a></li>
+          <li><a href="#">PT</a></li>
+          <li><a href="../pages/29Magazine.html">29Magazine</a></li>
+        </ul>
+
+        <a href="#" class="searchIcon"
+          ><img
+            width="34.29"
+            height="34.3"
+            src="../images/Iconimages/reading-glasses.svg"
+            alt="검색 아이콘"
+        /></a>
+      </div>
+
+      <div class="categorywrap">
+        <ul class="category">
+          <li><a href="../pages/best-page.html">BEST</a></li>
+          <li><a href="../pages/women-page.html" tabindex="-1">WOMEN</a></li>
+          <li><a href="#" tabindex="-1">MEN</a></li>
+          <li><a href="#" tabindex="-1">INTERIOR</a></li>
+          <li><a href="#" tabindex="-1">KITCHEN</a></li>
+          <li><a href="#" tabindex="-1">ELECTRONICS</a></li>
+          <li><a href="#" tabindex="-1">DIGITAL</a></li>
+          <li><a href="#" tabindex="-1">BEAUTY</a></li>
+          <li><a href="#" tabindex="-1">FOOD</a></li>
+          <li><a href="#" tabindex="-1">LEISURE</a></li>
+          <li><a href="#" tabindex="-1">KIDS</a></li>
+          <li><a href="#" tabindex="-1">CULTURE</a></li>
+          <li class="bar"></li>
+          <li><a href="#" class="italic">Event</a></li>
+          <li><a href="#" class="italic">Lookbook</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- moblie nav section part -->
+
+    <nav class="like-nav">
+      <button>상품</button>
+      <button>브랜드</button>
+      <button>마이셀렉션</button>
+      <button>콘텐츠</button>
+    </nav>
+
+    <section>
+      <button>
+        <span>카테고리</span>
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="19"
+            height="18"
+            viewBox="0 0 19 18"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.16083 12.8431L15.5853 6.41931L14.7363 5.57031L9.16083 11.1473L3.58533 5.57031L2.73633 6.41931L9.16083 12.8431Z"
+              fill="black"
+            />
+          </svg>
+        </span>
+      </button>
+      <a href="/">셀렉션에 상품 추가</a>
+    </section>
+
+    <!-- main part -->
+
+    <div class="main-wrap">
+      <aside>
+        <div class="option-nav">
+          <h3>like</h3>
+          <ul>
+            <li><a class="first" href="">상품</a></li>
+            <li><a href="">브랜드</a></li>
+            <li><a href="">마이셀렉션</a></li>
+            <li><a href="">콘텐츠</a></li>
+          </ul>
+        </div>
+        <div class="category-filter">
+          <h3>카테고리 필터</h3>
+          <ul>
+            <li><a href="">주방,생활</a></li>
+            <li><a href="">남성의류</a></li>
+            <li><a href="">가구,인테리어</a></li>
+            <li><a href="">푸드</a></li>
+            <li><a href="">여성신발</a></li>
+          </ul>
+        </div>
+        <div class="button-wrap">
+          <button class="button black">10개의 상품 보기</button>
+          <button class="button">초기화</button>
+        </div>
+      </aside>
+      <main>
+        <div class="button" hidden>
+          <button>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="13"
+                viewBox="0 0 12 13"
+                fill="none"
+              >
+                <path
+                  d="M5.46667 6.44323H5.96667V5.94323V0.976562H6.03333V5.94323V6.44323H6.53333H11.5V6.5099H6.53333H6.03333V7.0099V11.9766H5.96667V7.0099V6.5099H5.46667H0.5V6.44323H5.46667Z"
+                  fill="black"
+                  stroke="black"
+                />
+              </svg>
+            </span>
+            <span>셀렉션에 상품 추가</span>
+          </button>
+        </div>
+
+        <div class="item-wrap">
+          <div class="card5">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/like1.webp"
+                  alt="코모레비뮤지엄 구두"
+                />
+                <input type="checkbox" class="like-icon" id="like-1" />
+                <label for="like-1">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <div class="context-wrap">
+                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+                <h4>
+                  코모레비뮤지엄
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                    >
+                      <mask id="path-1-inside-1_6_948" fill="white">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        />
+                      </mask>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M8.84764 6.6328L9.55475 7.3399L10.2619 6.6328L9.55475 5.92569L8.84764 6.6328ZM4.49414 10.9863L3.78703 11.6934L4.49414 12.4005L5.20125 11.6934L4.49414 10.9863ZM3.78714 10.2793L3.08003 9.57219L2.37293 10.2793L3.08003 10.9864L3.78714 10.2793ZM7.43364 6.6328L8.14075 7.3399L8.84785 6.6328L8.14075 5.92569L7.43364 6.6328ZM3.78714 2.9863L3.08003 2.27919L2.37293 2.9863L3.08003 3.6934L3.78714 2.9863ZM4.49414 2.2793L5.20125 1.57219L4.49414 0.865083L3.78703 1.57219L4.49414 2.2793ZM8.14053 5.92569L3.78703 10.2792L5.20125 11.6934L9.55475 7.3399L8.14053 5.92569ZM5.20125 10.2792L4.49425 9.57219L3.08003 10.9864L3.78703 11.6934L5.20125 10.2792ZM4.49425 10.9864L8.14075 7.3399L6.72653 5.92569L3.08003 9.57219L4.49425 10.9864ZM8.14075 5.92569L4.49425 2.27919L3.08003 3.6934L6.72653 7.3399L8.14075 5.92569ZM4.49425 3.6934L5.20125 2.9864L3.78703 1.57219L3.08003 2.27919L4.49425 3.6934ZM3.78703 2.9864L8.14053 7.3399L9.55475 5.92569L5.20125 1.57219L3.78703 2.9864Z"
+                        fill="black"
+                        mask="url(#path-1-inside-1_6_948)"
+                      />
+                    </svg>
+                  </span>
+                </h4>
+                <!-- 12px 130% 400 inherit -->
+                <p class="context">
+                  25SS 런칭_KM337 핸드메아드 카우레더 오픈 스트랩 펌프스
+                </p>
+                <!-- 14px 140% 700  -->
+                <p>
+                  <span class="discount">25%</span
+                  ><span class="price">108,000</span>
+                </p>
+                <p class="tag">신상품</p>
+              </div>
+            </a>
+            <button>장바구니 담기</button>
+          </div>
+          <div class="card5">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/like2.webp"
+                  alt="터치스 티핸들 화장품"
+                />
+                <input type="checkbox" class="like-icon" id="like-2" />
+                <label for="like-2">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <div class="context-wrap">
+                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+                <h4>
+                  A.C 퍼치스 티핸들
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                    >
+                      <mask id="path-1-inside-1_6_948" fill="white">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        />
+                      </mask>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M8.84764 6.6328L9.55475 7.3399L10.2619 6.6328L9.55475 5.92569L8.84764 6.6328ZM4.49414 10.9863L3.78703 11.6934L4.49414 12.4005L5.20125 11.6934L4.49414 10.9863ZM3.78714 10.2793L3.08003 9.57219L2.37293 10.2793L3.08003 10.9864L3.78714 10.2793ZM7.43364 6.6328L8.14075 7.3399L8.84785 6.6328L8.14075 5.92569L7.43364 6.6328ZM3.78714 2.9863L3.08003 2.27919L2.37293 2.9863L3.08003 3.6934L3.78714 2.9863ZM4.49414 2.2793L5.20125 1.57219L4.49414 0.865083L3.78703 1.57219L4.49414 2.2793ZM8.14053 5.92569L3.78703 10.2792L5.20125 11.6934L9.55475 7.3399L8.14053 5.92569ZM5.20125 10.2792L4.49425 9.57219L3.08003 10.9864L3.78703 11.6934L5.20125 10.2792ZM4.49425 10.9864L8.14075 7.3399L6.72653 5.92569L3.08003 9.57219L4.49425 10.9864ZM8.14075 5.92569L4.49425 2.27919L3.08003 3.6934L6.72653 7.3399L8.14075 5.92569ZM4.49425 3.6934L5.20125 2.9864L3.78703 1.57219L3.08003 2.27919L4.49425 3.6934ZM3.78703 2.9864L8.14053 7.3399L9.55475 5.92569L5.20125 1.57219L3.78703 2.9864Z"
+                        fill="black"
+                        mask="url(#path-1-inside-1_6_948)"
+                      />
+                    </svg>
+                  </span>
+                </h4>
+                <!-- 12px 130% 400 inherit -->
+                <p class="context">화이트템플 (미니틴,클래식틴,티백)</p>
+                <!-- 14px 140% 700  -->
+                <p>
+                  <span class="discount">5%</span
+                  ><span class="price">24,700</span>
+                </p>
+                <p class="tag">쿠폰</p>
+              </div>
+            </a>
+            <button>장바구니 담기</button>
+          </div>
+          <div class="card5">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/like3.webp"
+                  alt="이딸라 접시 컵 세트 상품"
+                />
+                <input type="checkbox" class="like-icon" id="like-3" />
+                <label for="like-3">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <div class="context-wrap">
+                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+                <h4>
+                  이딸라
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                    >
+                      <mask id="path-1-inside-1_6_948" fill="white">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        />
+                      </mask>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M8.84764 6.6328L9.55475 7.3399L10.2619 6.6328L9.55475 5.92569L8.84764 6.6328ZM4.49414 10.9863L3.78703 11.6934L4.49414 12.4005L5.20125 11.6934L4.49414 10.9863ZM3.78714 10.2793L3.08003 9.57219L2.37293 10.2793L3.08003 10.9864L3.78714 10.2793ZM7.43364 6.6328L8.14075 7.3399L8.84785 6.6328L8.14075 5.92569L7.43364 6.6328ZM3.78714 2.9863L3.08003 2.27919L2.37293 2.9863L3.08003 3.6934L3.78714 2.9863ZM4.49414 2.2793L5.20125 1.57219L4.49414 0.865083L3.78703 1.57219L4.49414 2.2793ZM8.14053 5.92569L3.78703 10.2792L5.20125 11.6934L9.55475 7.3399L8.14053 5.92569ZM5.20125 10.2792L4.49425 9.57219L3.08003 10.9864L3.78703 11.6934L5.20125 10.2792ZM4.49425 10.9864L8.14075 7.3399L6.72653 5.92569L3.08003 9.57219L4.49425 10.9864ZM8.14075 5.92569L4.49425 2.27919L3.08003 3.6934L6.72653 7.3399L8.14075 5.92569ZM4.49425 3.6934L5.20125 2.9864L3.78703 1.57219L3.08003 2.27919L4.49425 3.6934ZM3.78703 2.9864L8.14053 7.3399L9.55475 5.92569L5.20125 1.57219L3.78703 2.9864Z"
+                        fill="black"
+                        mask="url(#path-1-inside-1_6_948)"
+                      />
+                    </svg>
+                  </span>
+                </h4>
+                <!-- 12px 130% 400 inherit -->
+                <p class="context">
+                  [29CM 단독][선물포장] 가스테헬미 유니버설 앤 플레이드 3P
+                </p>
+                <!-- 14px 140% 700  -->
+                <p>
+                  <span class="discount">15%</span
+                  ><span class="price">81,000</span>
+                </p>
+                <!-- <p class="tag">쿠폰</p> -->
+              </div>
+            </a>
+            <button>장바구니 담기</button>
+          </div>
+          <div class="card5">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/like4.webp"
+                  alt="이딸라 글래스 클리어 세트"
+                />
+                <input type="checkbox" class="like-icon" id="like-4" />
+                <label for="like-4">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <div class="context-wrap">
+                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+                <h4>
+                  이딸라
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                    >
+                      <mask id="path-1-inside-1_6_948" fill="white">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        />
+                      </mask>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M8.84764 6.6328L9.55475 7.3399L10.2619 6.6328L9.55475 5.92569L8.84764 6.6328ZM4.49414 10.9863L3.78703 11.6934L4.49414 12.4005L5.20125 11.6934L4.49414 10.9863ZM3.78714 10.2793L3.08003 9.57219L2.37293 10.2793L3.08003 10.9864L3.78714 10.2793ZM7.43364 6.6328L8.14075 7.3399L8.84785 6.6328L8.14075 5.92569L7.43364 6.6328ZM3.78714 2.9863L3.08003 2.27919L2.37293 2.9863L3.08003 3.6934L3.78714 2.9863ZM4.49414 2.2793L5.20125 1.57219L4.49414 0.865083L3.78703 1.57219L4.49414 2.2793ZM8.14053 5.92569L3.78703 10.2792L5.20125 11.6934L9.55475 7.3399L8.14053 5.92569ZM5.20125 10.2792L4.49425 9.57219L3.08003 10.9864L3.78703 11.6934L5.20125 10.2792ZM4.49425 10.9864L8.14075 7.3399L6.72653 5.92569L3.08003 9.57219L4.49425 10.9864ZM8.14075 5.92569L4.49425 2.27919L3.08003 3.6934L6.72653 7.3399L8.14075 5.92569ZM4.49425 3.6934L5.20125 2.9864L3.78703 1.57219L3.08003 2.27919L4.49425 3.6934ZM3.78703 2.9864L8.14053 7.3399L9.55475 5.92569L5.20125 1.57219L3.78703 2.9864Z"
+                        fill="black"
+                        mask="url(#path-1-inside-1_6_948)"
+                      />
+                    </svg>
+                  </span>
+                </h4>
+                <!-- 12px 130% 400 inherit -->
+                <p class="context">
+                  [선물포장] 가스테헬미 유니버셜 글래스 클리어 260ml 2개입
+                </p>
+                <!-- 14px 140% 700  -->
+                <p>
+                  <span class="discount">25%</span
+                  ><span class="price">72,000</span>
+                </p>
+                <p class="tag">쿠폰</p>
+              </div>
+            </a>
+            <button>장바구니 담기</button>
+          </div>
+          <div class="card5">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/like5.webp"
+                  alt="서피에디션 검정 자켓"
+                />
+                <input type="checkbox" class="like-icon" id="like-5" />
+                <label for="like-5">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <div class="context-wrap">
+                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+                <h4>
+                  서피에디션
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                    >
+                      <mask id="path-1-inside-1_6_948" fill="white">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        />
+                      </mask>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M8.84764 6.6328L9.55475 7.3399L10.2619 6.6328L9.55475 5.92569L8.84764 6.6328ZM4.49414 10.9863L3.78703 11.6934L4.49414 12.4005L5.20125 11.6934L4.49414 10.9863ZM3.78714 10.2793L3.08003 9.57219L2.37293 10.2793L3.08003 10.9864L3.78714 10.2793ZM7.43364 6.6328L8.14075 7.3399L8.84785 6.6328L8.14075 5.92569L7.43364 6.6328ZM3.78714 2.9863L3.08003 2.27919L2.37293 2.9863L3.08003 3.6934L3.78714 2.9863ZM4.49414 2.2793L5.20125 1.57219L4.49414 0.865083L3.78703 1.57219L4.49414 2.2793ZM8.14053 5.92569L3.78703 10.2792L5.20125 11.6934L9.55475 7.3399L8.14053 5.92569ZM5.20125 10.2792L4.49425 9.57219L3.08003 10.9864L3.78703 11.6934L5.20125 10.2792ZM4.49425 10.9864L8.14075 7.3399L6.72653 5.92569L3.08003 9.57219L4.49425 10.9864ZM8.14075 5.92569L4.49425 2.27919L3.08003 3.6934L6.72653 7.3399L8.14075 5.92569ZM4.49425 3.6934L5.20125 2.9864L3.78703 1.57219L3.08003 2.27919L4.49425 3.6934ZM3.78703 2.9864L8.14053 7.3399L9.55475 5.92569L5.20125 1.57219L3.78703 2.9864Z"
+                        fill="black"
+                        mask="url(#path-1-inside-1_6_948)"
+                      />
+                    </svg>
+                  </span>
+                </h4>
+                <!-- 12px 130% 400 inherit -->
+                <p class="context">HERRINGBONE TRUCKER JACKET BLACK</p>
+                <!-- 14px 140% 700  -->
+                <p>
+                  <span class="price">50,445</span>
+                </p>
+                <p class="tag">신상품</p>
+              </div>
+            </a>
+            <button>장바구니 담기</button>
+          </div>
+          <div class="card5">
+            <a href="">
+              <div class="wrap">
+                <img
+                  class="main-img"
+                  src="/src/images/cardimages/like6.webp"
+                  alt="서피스에디션 라이더 자켓"
+                />
+                <input type="checkbox" class="like-icon" id="like-6" />
+                <label for="like-6">
+                  <img
+                    class="check default"
+                    src="/src/images/Iconimages/whiteheart.svg"
+                    alt="찜하기 해제"
+                  />
+                  <img
+                    class="check check-on"
+                    src="/src/images/Iconimages/redheart.svg"
+                    alt="찜하기 설정"
+                  />
+                </label>
+              </div>
+              <div class="context-wrap">
+                <!-- 12px 130% 700 black (hober: rgb(71 71 71) )  -->
+                <h4>
+                  서피스에디션
+                  <span aria-hidden="true">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                    >
+                      <mask id="path-1-inside-1_6_948" fill="white">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        />
+                      </mask>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.84764 6.6328L4.49414 10.9863L3.78714 10.2793L7.43364 6.6328L3.78714 2.9863L4.49414 2.2793L8.84764 6.6328Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M8.84764 6.6328L9.55475 7.3399L10.2619 6.6328L9.55475 5.92569L8.84764 6.6328ZM4.49414 10.9863L3.78703 11.6934L4.49414 12.4005L5.20125 11.6934L4.49414 10.9863ZM3.78714 10.2793L3.08003 9.57219L2.37293 10.2793L3.08003 10.9864L3.78714 10.2793ZM7.43364 6.6328L8.14075 7.3399L8.84785 6.6328L8.14075 5.92569L7.43364 6.6328ZM3.78714 2.9863L3.08003 2.27919L2.37293 2.9863L3.08003 3.6934L3.78714 2.9863ZM4.49414 2.2793L5.20125 1.57219L4.49414 0.865083L3.78703 1.57219L4.49414 2.2793ZM8.14053 5.92569L3.78703 10.2792L5.20125 11.6934L9.55475 7.3399L8.14053 5.92569ZM5.20125 10.2792L4.49425 9.57219L3.08003 10.9864L3.78703 11.6934L5.20125 10.2792ZM4.49425 10.9864L8.14075 7.3399L6.72653 5.92569L3.08003 9.57219L4.49425 10.9864ZM8.14075 5.92569L4.49425 2.27919L3.08003 3.6934L6.72653 7.3399L8.14075 5.92569ZM4.49425 3.6934L5.20125 2.9864L3.78703 1.57219L3.08003 2.27919L4.49425 3.6934ZM3.78703 2.9864L8.14053 7.3399L9.55475 5.92569L5.20125 1.57219L3.78703 2.9864Z"
+                        fill="black"
+                        mask="url(#path-1-inside-1_6_948)"
+                      />
+                    </svg>
+                  </span>
+                </h4>
+                <!-- 12px 130% 400 inherit -->
+                <p class="context">NOIR RIDER JACKET</p>
+                <!-- 14px 140% 700  -->
+                <p>
+                  <span class="price">348,000</span>
+                </p>
+                <!-- <p class="tag">신상품</p> -->
+              </div>
+            </a>
+            <button>장바구니 담기</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- footer part -->
+
+    <!-- 🔥 모바일용 -->
+    <div class="footer-mobile">
+      <nav class="footer-nav">
+        <a href="/">개인정보 처리방침</a>
+        <a href="/">이용약관</a>
+        <a href="/">분쟁해결기준</a>
+        <a href="/">안전거래센터</a>
+        <a href="/">결제대행 위탁사</a>
+      </nav>
+      <div class="footer-company">
+        <p>상호명: 주식회사 무신사 (MUSINSA Co., Ltd.)</p>
+        <p>
+          사업장소재지: 서울특별시 성동구 아차산로 13길 11, 1층 (성수동2가,
+          무신사캠퍼스)
+        </p>
+        <p>팩스: 070-8622-7737</p>
+        <p>사업자등록번호: 211-88-79575</p>
+        <p>
+          통신판매업신고: 2022-서울성동-01952
+          <a href="/" class="button">사업자정보확인</a>
+        </p>
+        <p>전화번호: 1660-2929</p>
+        <p>이메일: customer@29cm.co.kr</p>
+        <p>대표: 조만호, 박준모</p>
+        <p>개인정보 보호책임자: 이재환</p>
+        <p>호스팅서비스: (주)무신사</p>
+        <p>
+          일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+          상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+          페이지에서 구체적인 내용을 확인하시기 바랍니다.
+        </p>
+      </div>
+    </div>
+    <!-- 🔥 모바일용 끝-->
+
+    <!-- 🔥 웹용 시작-->
+    <div class="footer-web">
+      <div class="footer-customer">
+        <p class="footer-title">고객센터 <strong>1660-2929</strong></p>
+        <p class="footer-time">
+          운영시간 : 평일 09:00 - 18:00 (점심시간 12:00 - 13:00 제외)
+        </p>
+        <div class="btn-icons">
+          <div class="footer-buttons">
+            <button class="btn">FAQ</button>
+            <button class="btn">1:1 문의</button>
+          </div>
+          <div class="sns-icons">
+            <img src="/src/images/footerimages/InstargramIcon.svg" alt="" />
+            <img src="/src/images/footerimages/youtubeIcon.svg" alt="" />
+            <img src="/src/images/footerimages/appleIcon.svg" alt="" />
+            <img src="/src/images/footerimages/playstoreIcon.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-notice-column">
+          <div class="footer-column">
+            <p class="footer-link-title">NOTICE</p>
+            <ul class="footer-notice">
+              <li>[공지] 무통장 입금 이용 가능한 은행 제외 안내</li>
+              <li>[공지] 29CM 고객센터 전화번호 변경 안내</li>
+              <li>
+                [공지] 29CM 안전 거래 정책 위반 행위에 대한 조사 및 제재 사항
+                안내
+              </li>
+              <li>[공지] 2025 설 연휴 고객센터 휴무 및 배송/반품 일정 안내</li>
+              <li>
+                [공지] 개인정보 처리방침 개정 예정 안내 (시행일: 2024년 10월
+                23일)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-etc-column">
+          <div class="footer-column">
+            <p class="footer-link-title">ABOUT US</p>
+            <ul>
+              <li>29CM 소개</li>
+              <li>인재채용</li>
+              <li>상시 할인 혜택</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ORDER</p>
+            <ul>
+              <li>주문배송</li>
+              <li>취소/교환/반품 내역</li>
+              <li>상품 리뷰 내역</li>
+              <li>증빙서류발급</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">MY ACCOUNT</p>
+            <ul>
+              <li>회원정보수정</li>
+              <li>회원등급</li>
+              <li>마일리지현황</li>
+              <li>쿠폰</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="footer-link-title">HELP</p>
+            <ul>
+              <li>1:1 문의</li>
+              <li>마케팅 제휴, 입점, 대량 주문 문의</li>
+              <li>상품 Q&A내역</li>
+              <li>공지사항</li>
+              <li>FAQ</li>
+              <li>고객의 소리</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-web-nav">
+        <nav class="footer-nav">
+          <a href="/">개인정보처리방침</a>
+          <a href="/">이용약관</a>
+          <a href="/">분쟁해결기준</a>
+          <a href="/">안전거래센터</a>
+          <a href="/">결제대행 위탁사</a>
+        </nav>
+        <div class="footer-web-company">
+          <div>
+            상호명: 주식회사 무신사 (MUSINSA Co., Ltd.) 사업장소재지: 서울특별시
+            성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스) 팩스:
+            070-8622-7737 사업자등록번호: 211-88-79575
+          </div>
+          <p>
+            통신판매업신고: 2022-서울성동-01952
+            <a href="/" class="button">사업자정보확인</a>
+          </p>
+          <p>
+            전화번호: 1660-2929 이메일: customer@29cm.co.kr 대표: 조만호, 박준모
+            개인정보 보호책임자: 이재환 호스팅서비스: (주)무신사, 상품정보,
+            거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서 구체적인
+            내용을 확인하시기 바랍니다.
+          </p>
+          <p>
+            일부 상품의 경우 29CM는 통신판매의 당사자가 아닌 통신판매중개자로서
+            상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품
+            페이지에서 구체적인 내용을 확인하시기 바랍니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모바일 하단 네비게이션 바 기존 버전 -->
+    <nav class="bottom-navbar">
+      <ul>
+        <li>
+          <a class="first" href="../pages/main-page.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.59375 5.23438C3.59375 4.54401 4.15339 3.98438 4.84375 3.98438H11.5938V11.9844H3.59375V5.23438ZM12.5938 3.98438H19.3438C20.0341 3.98438 20.5938 4.54401 20.5938 5.23438V11.9844H12.5938V3.98438ZM3.59375 12.9844H11.5938V20.9844H4.84375C4.15339 20.9844 3.59375 20.4248 3.59375 19.7344V12.9844ZM12.5938 12.9844H20.5938V19.7344C20.5938 20.4248 20.0341 20.9844 19.3438 20.9844H12.5938V12.9844Z"
+                fill="black"
+              />
+            </svg>
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="../pages/women-page.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 19 19"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_177_441)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.28125 0.984375H0.78125V3.48438H1.78125V1.98438H16.7812V3.48438H17.7812V0.984375H1.28125ZM1.28125 4.98438H0.78125V17.9844H17.7812V4.98438H1.28125ZM1.78125 16.9844V5.98438H16.7812V16.9844H9.78125V10.9844H8.78125V16.9844H1.78125Z"
+                  fill="black"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_177_441">
+                  <rect
+                    width="24"
+                    height="24"
+                    fill="white"
+                    transform="translate(0.28125 0.484375)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+            SHOP
+          </a>
+        </li>
+        <li>
+          <a href="../pages/like-page.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="18"
+              viewBox="0 0 20 18"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.3 1.6C3.28502 1.6 1.6 3.30633 1.6 5.472C1.6 6.2591 1.9296 7.03339 2.30447 7.64849C2.48761 7.94889 2.67124 8.19449 2.80805 8.36359C2.87617 8.44779 2.93189 8.51209 2.96908 8.55379C2.98765 8.57459 3.00152 8.58969 3.00992 8.59869L3.0183 8.60769C3.01815 8.60749 3.01853 8.60789 3.0183 8.60769C3.01837 8.60779 3.019 8.60839 3.01905 8.60849C3.01904 8.60849 3.01915 8.60859 3.01905 8.60849L9.8 15.647L16.5808 8.60859L16.5816 8.60779L16.5901 8.59869C16.5985 8.58969 16.6123 8.57459 16.6309 8.55379C16.6681 8.51209 16.7238 8.44779 16.7919 8.36359C16.9287 8.19449 17.1124 7.94889 17.2955 7.64849C17.6704 7.03339 18 6.2591 18 5.472C18 3.3055 16.3151 1.6 14.3 1.6C12.285 1.6 10.6 3.30633 10.6 5.472H9C9 3.3055 7.31508 1.6 5.3 1.6ZM9.8001 2.58178C8.8689 1.03808 7.21209 0 5.3 0C2.34508 0 0 2.48003 0 5.472C0 6.67737 0.49176 7.74869 0.93826 8.48119C1.1658 8.85449 1.39285 9.15819 1.56406 9.36979C1.64994 9.47599 1.72255 9.55999 1.77521 9.61899C1.80156 9.64859 1.82297 9.67189 1.83864 9.68869L1.85773 9.70909L1.86387 9.71549L1.86605 9.71779L9.8 17.9531L17.7327 9.71909L17.7339 9.71779L17.7361 9.71549L17.7422 9.70909L17.7613 9.68869C17.777 9.67189 17.7984 9.64859 17.8248 9.61899C17.8774 9.55999 17.95 9.47599 18.0359 9.36979C18.2071 9.15819 18.4342 8.85449 18.6617 8.48119C19.1082 7.74869 19.6 6.67737 19.6 5.472C19.6 2.47898 17.2548 0 14.3 0C12.388 0 10.7314 1.03831 9.8001 2.58178Z"
+                fill="#222222"
+              />
+            </svg>
+            LIKE
+          </a>
+        </li>
+        <li>
+          <a href="../pages/29Magazine.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.15625 4.98438V19.9844H20.1562V4.98438H15.6562V12.4844H14.6562V4.98438H10.6562V12.4844H9.65625V4.98438H5.15625ZM4.15625 4.73438C4.15625 4.32017 4.49204 3.98438 4.90625 3.98438H20.4062C20.8204 3.98438 21.1562 4.32017 21.1562 4.73438V20.2344C21.1562 20.6486 20.8204 20.9844 20.4062 20.9844H4.90625C4.49204 20.9844 4.15625 20.6486 4.15625 20.2344V4.73438Z"
+                fill="black"
+              />
+            </svg>
+            29MAGAZINE
+          </a>
+        </li>
+        <li>
+          <a href="../pages/mypage.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.3438 3.48438V2.98438H12.3438V3.48438V8.48438V8.98438H13.3438V8.48438V3.48438ZM5.34375 17.6069V12.4844H20.3438V20.9844V21.4844H21.3438V20.9844V12.2344C21.3438 11.8202 21.0079 11.4844 20.5938 11.4844H5.09375C4.68171 11.4844 4.34375 11.8172 4.34375 12.2336V20.9844V21.4844H5.34375V20.9844V17.6069Z"
+                fill="black"
+              />
+            </svg>
+            MY
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
