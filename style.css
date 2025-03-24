@@ -60,14 +60,6 @@ header {
   max-width: 1020px;
 }
 
-/* 반응형 스타일 */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 /* 팀원 프로필 컨테이너 */
 .team-profile {
   display: grid;
@@ -115,6 +107,10 @@ header {
   .text h3 {
     color: #f24802;
     background-color: black;
+  }
+
+  .text .role {
+    color: #f24802;
   }
 }
 
@@ -178,8 +174,8 @@ header {
 /* 프로젝트 링크 컨테이너 (2줄 2칸 그리드) */
 .project-links {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2열 */
-  grid-template-rows: repeat(2, auto); /* 2행 */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 20px; /* 요소 사이 간격 */
   padding: 20px;
   margin-bottom: 80px;
@@ -191,8 +187,8 @@ header {
 .github-link,
 .scrum-link {
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid gray;
+  border-radius: 10px;
   transition: background-color 0.3s ease-in-out;
   text-align: left;
   position: relative;
@@ -202,8 +198,7 @@ header {
 /* 제목 스타일 */
 .html-link h3,
 .component-link h3,
-.github-link h3,
-.scrum-link h3 {
+.github-link h3 {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -211,6 +206,18 @@ header {
   position: relative;
   background-color: black;
   color: white;
+  padding: 10px;
+}
+
+.scrum-link h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  position: relative;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
   padding: 10px;
 }
 
@@ -320,18 +327,6 @@ header {
 
   letter-spacing: 0.5px;
   font-weight: 400;
-}
-
-/* component-link만 두 줄로 배치 */
-.component-link ul {
-  display: flex;
-  flex-wrap: wrap; /* 두 줄 정렬 */
-  padding: 0;
-}
-
-.component-link ul li {
-  width: 50%; /* 두 줄 정렬 */
-  list-style: none;
 }
 
 footer {
