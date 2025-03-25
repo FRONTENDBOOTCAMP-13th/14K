@@ -11,7 +11,7 @@
       href="/font/woff2/PretendardVariable.woff2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="modulepreload" as="style" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/pages/styles/mypage.css" />
   </head>
   <body>
@@ -32,7 +32,7 @@
     <div class="icon">
       <a href="../pages/main-page.html"
         ><img
-          src="../images/logoimage/29Cm logo.svg"
+          src="../images/logoimage/29Cm-logo.svg"
           class="logoimage"
           alt="로고 이미지"
       /></a>
@@ -63,49 +63,50 @@
       <div class="logo">
         <a href="../pages/main-page.html"
           ><img
-            src="../images/logoimage/29Cm logo.svg"
-            width="60"
-            height="16"
+            src="../images/logoimage/29Cm-logo.svg"
+            width="60px"
+            height="16px"
             alt="29cm 로고 이미지"
         /></a>
         <ul class="Icons">
           <li class="MypageIcon" tabindex="0">
             <a href="../pages/mypage.html" tabindex="-1"
               ><img
-                width="13.5px"
-                height="14.63px"
+                width="13px"
+                height="14px"
                 src="../../src/images/Iconimages/mypageIcon.svg"
                 alt="My Page Icon"
-            /></a>
-            <a href="../pages/mypage.html" class="Icontext" tabindex="-1"
-              >MY PAGE</a
+              /><span class="Icontext" tabindex="-1">MY PAGE</span></a
             >
           </li>
           <li class="MylikeIcon" tabindex="0">
             <a href="../pages/like-page.html" tabindex="-1"
               ><img
-                width="14.25px"
-                height="12.92px"
+                width="14px"
+                height="13px"
                 src="../../src/images/Iconimages/blackheartIcon.svg"
                 alt="My Like Icon"
-            /></a>
-            <a href="../pages/like-page.html" class="Icontext" tabindex="-1"
-              >MY LIKE</a
+              /><span
+                href="../pages/like-page.html"
+                class="Icontext"
+                tabindex="-1"
+                >MY LIKE</span
+              ></a
             >
           </li>
           <li class="ShoppingBagIcon" tabindex="0">
             <a href="../pages/shoppingbag-page.html" tabindex="-1"
               ><img
-                width="13.5px"
-                height="15.75px"
+                width="13px"
+                height="16px"
                 src="../../src/images/Iconimages/shopping-bag-Icon.svg"
                 alt="Shopping Bag Icon"
-            /></a>
-            <a
-              href="../pages/shoppingbag-page.html"
-              class="Icontext"
-              tabindex="-1"
-              >SHOPPING BAG</a
+              /><span
+                href="../pages/shoppingbag-page.html"
+                class="Icontext"
+                tabindex="-1"
+                >SHOPPING BAG</span
+              ></a
             >
           </li>
           <li class="loginIcon" tabindex="-1">
@@ -115,16 +116,19 @@
                 height="15px"
                 src="../../src/images/Iconimages/loginIcon.svg"
                 alt="LoginIcon"
-            /></a>
-            <a href="../pages/login-page.html" class="Icontext" tabindex="-1"
-              >LOGIN</a
+              /><span
+                href="../pages/login-page.html"
+                class="Icontext"
+                tabindex="-1"
+                >LOGIN</span
+              ></a
             >
           </li>
           <li class="SearchIcon">
             <a href="#"
               ><img
-                width="14.03px"
-                height="14.03px"
+                width="14px"
+                height="14px"
                 src="../../src/images/Iconimages/reading-glasses.svg"
                 alt="Search Icon"
             /></a>
@@ -142,8 +146,8 @@
 
         <a href="#" class="searchIcon"
           ><img
-            width="34.29"
-            height="34.3"
+            width="34px"
+            height="34px"
             src="../images/Iconimages/reading-glasses.svg"
             alt="검색 아이콘"
         /></a>
@@ -545,7 +549,12 @@
                   />
                   <div class="post-explain">
                     <span>엘리스펑크가 추천하는 올해의 봄 가방</span>
-                    <input type="checkbox" class="post-like-btn" checked />
+                    <input
+                      type="checkbox"
+                      class="post-like-btn"
+                      id="post-like-btn"
+                      checked
+                    />
                     <label for="post-like-btn" class="post-like-label"></label>
                   </div>
                 </a>

@@ -139,7 +139,7 @@ header.webheader {
         display: inline-block;
         font-size: 0.625rem;
         line-height: 0.75rem;
-        margin-left: 0.125rem;
+        margin-left: 0.5rem;
         margin-right: 0.5rem;
         text-decoration: none;
         color: black;
@@ -237,9 +237,9 @@ header.webheader {
     }
 
     .italic {
-      font-weight: 200;
+      font-weight: bold;
       font-style: italic;
-      opacity: 0.5;
+      color: var(--color-gray-6);
     }
   }
   /* 뷰포트 720일 때 */
