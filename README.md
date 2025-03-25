@@ -49,7 +49,7 @@
 <br />
 <br />
 
-<video src="./src/images/readmeimages/mainvideo.mp4" width="600" controls loop autoplay muted></video>
+<img src="./src/images/readmeimages/mainimg.png" width="600" />
 <br />
 
 - 화면 너비가 540px 이상일 경우, 웹 버전으로 변경되는 반응형 디자인을 적용했습니다. 다른 세부 페이지에도 동일한 반응형 스타일을 적용했습니다.
