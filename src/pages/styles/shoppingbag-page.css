@@ -328,6 +328,10 @@ input:checked + .slider:before {
   margin-bottom: 15px;
 }
 
+.buy-btn:hover {
+  color: #f24802;
+}
+
 /* 쿠폰 섹션 */
 
 .coupon-section {
@@ -718,6 +722,11 @@ input:checked + .slider:before {
   height: 42px;
 }
 
+.shopping-btn:hover {
+  color: #f24802;
+  background-color: black;
+}
+
 .cart-warning {
   font-size: 14px;
   color: #333;
@@ -740,11 +749,11 @@ input:checked + .slider:before {
 .active {
   color: black; /* 현재 단계 강조 */
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .inactive {
-  color: rgb(228, 228, 228);
+  color: gray;
   line-height: 20px;
   font-weight: 500;
 }
