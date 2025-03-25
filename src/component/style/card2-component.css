@@ -74,6 +74,8 @@ body {
 
   .discount {
     font-size: 12px;
+    /* 대비도 향상을 위한 폰트 크기 조정 */
+    /* font-size: 20px; */
     line-height: 130%;
     font-weight: 700;
     color: #ff4800;
@@ -119,5 +121,11 @@ body {
 
   .like-icon:checked + label .default {
     display: none;
+  }
+
+  p {
+    /* color: red;
+    font-size: 20px; */
+    color: var(--color-gray-6);
   }
 }
