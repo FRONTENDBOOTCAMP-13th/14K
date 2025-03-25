@@ -19,6 +19,7 @@
     <h1 hidden>디테일 페이지</h1>
 
     <!-- 헤더 part -->
+
     <!-- 모바일 헤더 -->
     <div class="mobile">
       <div class="headercontext">
@@ -36,15 +37,15 @@
     <div class="icon">
       <a href="../pages/main-page.html"
         ><img
-          src="../images/logoimage/29Cm logo.svg"
+          src="../images/logoimage/29Cm-logo.svg"
           class="logoimage"
           alt="로고 이미지"
       /></a>
       <div class="mobileIcon">
         <a href="../pages/shoppingbag-page.html">
           <img
-            width="13.5px"
-            height="15.75px"
+            width="13px"
+            height="16px"
             src="../images/Iconimages/shopping-bag-Icon.svg"
             alt="ShoppingbagIcon"
             class="ShoppingbagIcon"
@@ -53,8 +54,8 @@
 
         <a href="#">
           <img
-            width="14.03px"
-            height="14.03px"
+            width="14px"
+            height="14px"
             src="../images/Iconimages/reading-glasses.svg"
             alt="SearchIcon"
           />
@@ -67,49 +68,40 @@
       <div class="logo">
         <a href="../pages/main-page.html"
           ><img
-            src="../images/logoimage/29Cm logo.svg"
-            width="60"
-            height="16"
+            src="../images/logoimage/29Cm-logo.svg"
+            width="60px"
+            height="16px"
             alt="29cm 로고 이미지"
         /></a>
         <ul class="Icons">
           <li class="MypageIcon" tabindex="0">
             <a href="../pages/mypage.html" tabindex="-1"
               ><img
-                width="13.5px"
-                height="14.63px"
+                width="13px"
+                height="14px"
                 src="../../src/images/Iconimages/mypageIcon.svg"
                 alt="My Page Icon"
-            /></a>
-            <a href="../pages/mypage.html" class="Icontext" tabindex="-1"
-              >MY PAGE</a
+              /><span class="Icontext">MY PAGE</span></a
             >
           </li>
           <li class="MylikeIcon" tabindex="0">
             <a href="../pages/like-page.html" tabindex="-1"
               ><img
-                width="14.25px"
-                height="12.92px"
+                width="14px"
+                height="13px"
                 src="../../src/images/Iconimages/blackheartIcon.svg"
                 alt="My Like Icon"
-            /></a>
-            <a href="../pages/like-page.html" class="Icontext" tabindex="-1"
-              >MY LIKE</a
+              /><span class="Icontext">MY LIKE</span></a
             >
           </li>
           <li class="ShoppingBagIcon" tabindex="0">
             <a href="../pages/shoppingbag-page.html" tabindex="-1"
               ><img
-                width="13.5px"
-                height="15.75px"
+                width="13px"
+                height="16px"
                 src="../../src/images/Iconimages/shopping-bag-Icon.svg"
                 alt="Shopping Bag Icon"
-            /></a>
-            <a
-              href="../pages/shoppingbag-page.html"
-              class="Icontext"
-              tabindex="-1"
-              >SHOPPING BAG</a
+              /><span class="Icontext">SHOPPING BAG</span></a
             >
           </li>
           <li class="loginIcon" tabindex="-1">
@@ -119,16 +111,14 @@
                 height="15px"
                 src="../../src/images/Iconimages/loginIcon.svg"
                 alt="LoginIcon"
-            /></a>
-            <a href="../pages/login-page.html" class="Icontext" tabindex="-1"
-              >LOGIN</a
+              /><span class="Icontext">LOGIN</span></a
             >
           </li>
           <li class="SearchIcon">
             <a href="#"
               ><img
-                width="14.03px"
-                height="14.03px"
+                width="14px"
+                height="14px"
                 src="../../src/images/Iconimages/reading-glasses.svg"
                 alt="Search Icon"
             /></a>
@@ -146,8 +136,8 @@
 
         <a href="#" class="searchIcon"
           ><img
-            width="34.29"
-            height="34.3"
+            width="34px"
+            height="34px"
             src="../images/Iconimages/reading-glasses.svg"
             alt="검색 아이콘"
         /></a>
@@ -177,16 +167,30 @@
     <aside class="top-info" hidden>
       <div class="option">
         <div>
-          여성의류 <img src="/src/images/Iconimages/check.svg" alt="" />
+          여성의류
+          <img
+            src="/src/images/Iconimages/check.svg"
+            alt="여성의류 더보기 아이콘"
+          />
           &nbsp;&nbsp;
           <span>/</span>
         </div>
         <div>
-          EXCLUSIVE <img src="/src/images/Iconimages/check.svg" alt="" />
+          EXCLUSIVE
+          <img
+            src="/src/images/Iconimages/check.svg"
+            alt="EXCLUSIVE 더보기 아이콘"
+          />
           &nbsp;&nbsp;
           <span>/</span>
         </div>
-        <div>상의 <img src="/src/images/Iconimages/check.svg" alt="" /></div>
+        <div>
+          상의
+          <img
+            src="/src/images/Iconimages/check.svg"
+            alt="상의 더보기 아이콘"
+          />
+        </div>
       </div>
 
       <div class="card-ad">
@@ -354,6 +358,7 @@
             <span class="discount">24%</span><span class="price">75,735원</span>
             <button>
               <svg
+                aria-label="가격 정보 더보기"
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -1317,7 +1322,7 @@
         </div>
         <div class="review-filter">
           <div class="review-filter-wrap">
-            <button class="toggle-button"></button>
+            <button class="toggle-button" aria-label="토글 버튼"></button>
             <p class="filter">내 맞춤 필터</p>
           </div>
           <button>체형별</button>
@@ -2036,7 +2041,7 @@
             <time datetime="2025.03.20">2025.03.20</time><span>sdfege</span
             ><span aria-hidden="true">****</span>
           </p>
-          <p class="title">[재입고문의]</p>
+          <p class="title">[사이즈문의]</p>
           <p class="context">
             <img
               src="/src/images/Iconimages/secret.svg"
@@ -2050,7 +2055,7 @@
             <time datetime="2025.03.19">2025.03.19</time><span>eeer3</span
             ><span aria-hidden="true">****</span>
           </p>
-          <p class="title">[재입고문의]</p>
+          <p class="title">[배송문의]</p>
           <p class="context">
             <img
               src="/src/images/Iconimages/secret.svg"
@@ -2064,7 +2069,7 @@
             <time datetime="2025.03.19">2025.03.19</time><span>jj434</span
             ><span aria-hidden="true">****</span>
           </p>
-          <p class="title">[재입고문의]</p>
+          <p class="title">[배송문의]</p>
           <p class="context">
             <img
               src="/src/images/Iconimages/secret.svg"

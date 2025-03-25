@@ -60,7 +60,10 @@ a {
 
     .discount {
       font-size: 14px;
+      /* 대비도 에러 해결을 위한 폰트 크기 조정 */
+      /* font-size: 20px; */
       color: #ff4800;
+      margin-right: 3px;
     }
 
     .price {
@@ -76,6 +79,7 @@ a {
       line-height: 120%;
       font-weight: 500;
       color: rgba(93, 93, 93, 0.64);
+      color: var(--color-gray-6);
     }
   }
 }
