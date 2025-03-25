@@ -384,7 +384,7 @@
     height: 100%;
     text-decoration: none;
 
-    font-size: 0.75rem;
+    font-size: var(--text-base);
     line-height: 130%;
     font-weight: 700;
     font-family: "Pretendard Variable", sans-serif;
@@ -455,12 +455,12 @@
     }
 
     .price {
-      font-size: 0.875rem;
+      font-size: var(--text-lg);
     }
 
     .tag {
       display: inline-flex;
-      font-size: 0.625rem;
+      font-size: var(--text-xs);
       font-weight: 500;
       line-height: 120%;
       color: rgb(71 71 71);
@@ -476,7 +476,7 @@
       column-gap: 5px;
       margin-top: 10px;
       align-items: center;
-      font-size: 11px;
+      font-size: var(--text-sm);
       line-height: 120%;
       font-weight: 300;
       color: var(--color-black);

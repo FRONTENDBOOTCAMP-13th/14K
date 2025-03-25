@@ -11,7 +11,7 @@ nav {
   .best-nav {
     display: flex;
     flex-flow: row wrap;
-    border: 1px solid var(--color-gray-3);
+    border: 1px solid var(--color-gray-2);
     align-items: center;
     padding: 5px;
   }
@@ -22,7 +22,7 @@ nav {
 
   label {
     text-align: center;
-    color: var(--color-gray-3);
+    color: var(--color-gray-4);
     padding: 10px;
     height: 46px;
   }
@@ -31,10 +31,15 @@ nav {
     color: #333;
   }
 
+  label:hover {
+    font-weight: 700;
+  }
+
   .best-nav :nth-child(n + 3)::before {
     content: "|";
     color: var(--color-gray-3);
     padding-right: 1rem;
+    font-weight: normal;
   }
 }
 
@@ -58,6 +63,12 @@ nav {
   }
 
   input[type="radio"]:checked + label {
+    color: var(--color-white);
+    background: var(--color-black);
+    border: none;
+    font-weight: 700;
+  }
+  label:hover {
     color: var(--color-white);
     background: var(--color-black);
     border: none;
@@ -137,10 +148,12 @@ nav {
         font-size: var(--text-lg);
         color: var(--color-red);
         margin-right: 5px;
+        font-weight: 600;
       }
 
       .price {
         font-size: var(--text-lg);
+        font-weight: 600;
       }
 
       .icon-wrap {

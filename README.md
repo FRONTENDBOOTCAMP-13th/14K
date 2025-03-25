@@ -39,7 +39,7 @@
 
 ## 🎥 프로젝트 미리보기
 
-🚀 배포 링크: [`배포된 사이트 URL`]
+🚀 [배포 링크](https://ms14team-uiproject.netlify.app/)
 
 ### 주요 화면
 
